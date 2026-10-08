@@ -1,0 +1,14 @@
+{
+  "prepared_date": "2026-10-08",
+  "analysis_python": "3.12.7",
+  "numpy": "1.26.4",
+  "matplotlib": "3.9.2",
+  "all_four_regenerated_figures_visually_inspected": true,
+  "scripts_compile": true,
+  "citation_authors_in_confirmed_order": true,
+  "study_owned_code_license": "MIT",
+  "data_and_figures_license": "CC-BY-4.0",
+  "model_weights_or_third_party_papers_or_fonts_included": false,
+  "research_experiments_executed_during_packaging": false,
+  "github_publication_performed": false
+}

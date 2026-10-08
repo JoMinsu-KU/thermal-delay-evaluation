@@ -1,0 +1,3050 @@
+[
+  {
+    "episode": "l2_240064",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240065",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240066",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240068",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240069",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240070",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240072",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240073",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240074",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240076",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240077",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240078",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240080",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240081",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240082",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240084",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240085",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240086",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240088",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240089",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240090",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240092",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240093",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  },
+  {
+    "episode": "l2_240094",
+    "deadline_fallbacks": [
+      {
+        "request": 67,
+        "source_trace_request": 12022,
+        "request_s": 6.7,
+        "delay_ms": 192.886257,
+        "deadline_s": 6.8,
+        "ready_s": 6.892886257,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 68,
+        "source_trace_request": 24022,
+        "request_s": 6.9,
+        "delay_ms": 102.61248,
+        "deadline_s": 7.0,
+        "ready_s": 7.00261248,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 250,
+        "source_trace_request": 12083,
+        "request_s": 25.2,
+        "delay_ms": 102.665744,
+        "deadline_s": 25.3,
+        "ready_s": 25.302665744,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 258,
+        "source_trace_request": 86,
+        "request_s": 26.1,
+        "delay_ms": 191.833285,
+        "deadline_s": 26.2,
+        "ready_s": 26.291833285,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 508,
+        "source_trace_request": 12169,
+        "request_s": 51.2,
+        "delay_ms": 195.190053,
+        "deadline_s": 51.3,
+        "ready_s": 51.395190053,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 542,
+        "source_trace_request": 24180,
+        "request_s": 54.7,
+        "delay_ms": 190.109399,
+        "deadline_s": 54.8,
+        "ready_s": 54.890109399,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 551,
+        "source_trace_request": 24183,
+        "request_s": 55.7,
+        "delay_ms": 141.956139,
+        "deadline_s": 55.8,
+        "ready_s": 55.841956139,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "request": 554,
+        "source_trace_request": 24184,
+        "request_s": 56.1,
+        "delay_ms": 185.573932,
+        "deadline_s": 56.2,
+        "ready_s": 56.285573932,
+        "applied_command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "busy_skip_times_s": [
+      6.8,
+      7.0,
+      25.3,
+      26.2,
+      51.3,
+      54.8,
+      55.8,
+      56.2
+    ]
+  }
+]

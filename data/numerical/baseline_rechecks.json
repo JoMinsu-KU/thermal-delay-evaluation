@@ -1,0 +1,3404 @@
+[
+  {
+    "case": "fixed_d13_h10",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "fixed_d38_h10",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "fixed_d50_h10",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pi_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pi_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_fv_mpc_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_fv_mpc_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_pino_mpc_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_pino_mpc_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_shared_physics_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_shared_physics_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_zero_small_physics_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240064",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240065",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240066",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240068",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240069",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240070",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240072",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240073",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240074",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240076",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240077",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240078",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240080",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240081",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240082",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240084",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240085",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240086",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240088",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240089",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240090",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240092",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240093",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  },
+  {
+    "case": "D_h10_delayed_small_physics_l2_240094",
+    "passed": true,
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+    "trace_records_changed": 0,
+    "continuous_trace_max_abs_difference": {
+      "scores": 0.0,
+      "probabilities": 0.0,
+      "predicted_peak_c": 0.0
+    },
+    "failures": []
+  }
+]

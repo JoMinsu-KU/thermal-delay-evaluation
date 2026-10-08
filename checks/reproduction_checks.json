@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "primary_independent_normal_episodes": 24,
+  "numerical_executions": 741,
+  "extended_cases": 732,
+  "prior_C_cases": 9,
+  "conditional_bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261007,
+  "verified_numerical_contrasts": 27,
+  "baseline_episode_costs_match": true,
+  "rankings": [
+    {
+      "h_ms": 10.0,
+      "mode": "zero",
+      "methods": [
+        "fv_mpc",
+        "shared_physics",
+        "small_physics",
+        "pino_mpc",
+        "pi"
+      ]
+    },
+    {
+      "h_ms": 10.0,
+      "mode": "delayed",
+      "methods": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ]
+    },
+    {
+      "h_ms": 5.0,
+      "mode": "zero",
+      "methods": [
+        "fv_mpc",
+        "shared_physics",
+        "small_physics",
+        "pino_mpc",
+        "pi"
+      ]
+    },
+    {
+      "h_ms": 5.0,
+      "mode": "delayed",
+      "methods": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ]
+    },
+    {
+      "h_ms": 2.5,
+      "mode": "zero",
+      "methods": [
+        "fv_mpc",
+        "shared_physics",
+        "small_physics",
+        "pino_mpc",
+        "pi"
+      ]
+    },
+    {
+      "h_ms": 2.5,
+      "mode": "delayed",
+      "methods": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ]
+    }
+  ],
+  "adverse_individual_episode_relative_pct": 3.892016729222192,
+  "simulation_training_or_inference_executed": false,
+  "raw_audit_required_for": [
+    "Latency journal reaggregation",
+    "Quadrature cost reconstruction",
+    "Field-difference reconstruction"
+  ]
+}

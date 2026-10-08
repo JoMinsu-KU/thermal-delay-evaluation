@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "prepared_date": "2026-10-08",
+  "primary_D_archived_rows": 480,
+  "primary_D_test_episodes": 32,
+  "primary_D_normal_test_episodes": 24,
+  "primary_D_initially_hot_test_episodes": 8,
+  "primary_D_OOD_episodes_included_for_completeness": 16,
+  "extended_cases": 732,
+  "initial_C_cases": 9,
+  "independent_numerical_C_episodes": 1,
+  "independent_numerical_D_episodes": 24,
+  "original_extended_zip_sha256": "1cc129f571e26cf9c513ed3fad168eaea0e40b76a5def8f013db092c2883d173",
+  "original_initial_C_zip_sha256": "8b0cc0ca7f1a8c0c30501591839a18f200292fa58d8cd05e13a2cbb205780af1",
+  "scientific_raw_records_byte_preserved": true,
+  "metadata_changes": "Absolute metadata paths normalized; machine identity/session/import/environment records omitted. Original seals checked locally before export. Exported files receive new release checksums.",
+  "full_training_or_model_rerun_bundle": false,
+  "excluded": [
+    "Model weights and pretrained model caches",
+    "Full training/cache snapshots",
+    "Third-party fonts and journal templates",
+    "Downloaded literature PDFs",
+    "Author biographies/photos and internal review conversations",
+    "Machine identities, private paths, and session logs"
+  ]
+}

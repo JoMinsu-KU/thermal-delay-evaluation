@@ -1,0 +1,305 @@
+{
+  "source": "snapshot/runs/L2_diagnostics/diagnosis_20260926/full_relative_s3030/delay_sensitivity",
+  "temperature_trajectory_available_in_trace": false,
+  "comparisons": [
+    {
+      "delay_ms": 13,
+      "reference_delay_ms": 38,
+      "first_request_index": 14,
+      "different_command_requests": 374,
+      "runs": [
+        {
+          "delay_ms": 13,
+          "request_s": 1.4,
+          "apply_event": {
+            "event": "apply",
+            "time_ns": 1413000000,
+            "request": 14,
+            "fallback": false,
+            "command": [
+              0.24000000000000002,
+              0.0,
+              0.32,
+              0.0
+            ],
+            "no_change": false
+          },
+          "choice_zero_based": 5,
+          "command": [
+            0.24000000000000002,
+            0.0,
+            0.32,
+            0.0
+          ],
+          "top_two_indices": [
+            5,
+            1
+          ],
+          "top_two_scores": [
+            4.0747480392456055,
+            4.044832706451416
+          ],
+          "score_gap": 0.029915332794189453,
+          "chosen_predicted_peak_c": 72.5689926147461,
+          "calibration_margin_k": 0.27945345016314604,
+          "chosen_gate_slack_k": 47.15155393509076,
+          "valid_mask": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ],
+          "predicted_safe_mask": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ],
+          "filter_intervention": false,
+          "expired": false
+        },
+        {
+          "delay_ms": 38,
+          "request_s": 1.4,
+          "apply_event": {
+            "event": "apply",
+            "time_ns": 1438000000,
+            "request": 14,
+            "fallback": false,
+            "command": [
+              0.28,
+              0.0,
+              0.28,
+              0.0
+            ],
+            "no_change": false
+          },
+          "choice_zero_based": 1,
+          "command": [
+            0.28,
+            0.0,
+            0.28,
+            0.0
+          ],
+          "top_two_indices": [
+            1,
+            5
+          ],
+          "top_two_scores": [
+            4.08765983581543,
+            4.076196193695068
+          ],
+          "score_gap": 0.011463642120361328,
+          "chosen_predicted_peak_c": 72.57149505615234,
+          "calibration_margin_k": 0.27945345016314604,
+          "chosen_gate_slack_k": 47.14905149368451,
+          "valid_mask": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ],
+          "predicted_safe_mask": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ],
+          "filter_intervention": false,
+          "expired": false
+        }
+      ],
+      "same_admission_mask": true
+    },
+    {
+      "delay_ms": 50,
+      "reference_delay_ms": 38,
+      "first_request_index": 27,
+      "different_command_requests": 374,
+      "runs": [
+        {
+          "delay_ms": 50,
+          "request_s": 2.7,
+          "apply_event": {
+            "event": "apply",
+            "time_ns": 2750000000,
+            "request": 27,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.32
+            ],
+            "no_change": false
+          },
+          "choice_zero_based": 7,
+          "command": [
+            0.32,
+            0.08,
+            0.36,
+            0.32
+          ],
+          "top_two_indices": [
+            7,
+            3
+          ],
+          "top_two_scores": [
+            3.2731754779815674,
+            3.2511231899261475
+          ],
+          "score_gap": 0.022052288055419922,
+          "chosen_predicted_peak_c": 73.73222351074219,
+          "calibration_margin_k": 0.27945345016314604,
+          "chosen_gate_slack_k": 45.98832303909467,
+          "valid_mask": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "predicted_safe_mask": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "filter_intervention": false,
+          "expired": false
+        },
+        {
+          "delay_ms": 38,
+          "request_s": 2.7,
+          "apply_event": {
+            "event": "apply",
+            "time_ns": 2738000000,
+            "request": 27,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.28
+            ],
+            "no_change": false
+          },
+          "choice_zero_based": 3,
+          "command": [
+            0.32,
+            0.12,
+            0.36,
+            0.28
+          ],
+          "top_two_indices": [
+            3,
+            7
+          ],
+          "top_two_scores": [
+            3.274407148361206,
+            3.273696184158325
+          ],
+          "score_gap": 0.0007109642028808594,
+          "chosen_predicted_peak_c": 73.7342758178711,
+          "calibration_margin_k": 0.27945345016314604,
+          "chosen_gate_slack_k": 45.98627073196576,
+          "valid_mask": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "predicted_safe_mask": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "filter_intervention": false,
+          "expired": false
+        }
+      ],
+      "same_admission_mask": true
+    }
+  ],
+  "trace_event_keys": {
+    "request": [
+      "calibrated_temperature",
+      "choice",
+      "command",
+      "compute_ready_ns",
+      "deadline_ns",
+      "delay_ms",
+      "e2e_ms",
+      "event",
+      "expired",
+      "fallback_reason",
+      "filter_intervention",
+      "gpu_compute_ms",
+      "injected_apply_ms",
+      "injected_compute_ms",
+      "margin_k",
+      "method",
+      "predicted_peak_c",
+      "predicted_safe_mask",
+      "probabilities",
+      "ready_ns",
+      "request",
+      "scope",
+      "scores",
+      "snapshot_ns",
+      "thermal_age_s",
+      "tokens",
+      "trace_request",
+      "trace_token_gap",
+      "valid_mask"
+    ],
+    "apply": [
+      "command",
+      "event",
+      "fallback",
+      "no_change",
+      "request",
+      "time_ns"
+    ]
+  }
+}

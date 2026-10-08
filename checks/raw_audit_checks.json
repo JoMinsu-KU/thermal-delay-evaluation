@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "extended_full_quadrature_reconstructions": 732,
+  "earlier_C_partial_cost_checks_using_reported_tracking": 9,
+  "baseline_reproductions_rechecked": 243,
+  "max_extended_cost_absolute_error": 5.828670879282072e-16,
+  "fixed_field_comparisons": 12,
+  "D_episode_trace_comparisons": 720,
+  "latency_journal_rows": 180000,
+  "latency_summaries": 60,
+  "normal_replay_request_mappings": 71808,
+  "research_simulation_inference_or_training_executed": false
+}

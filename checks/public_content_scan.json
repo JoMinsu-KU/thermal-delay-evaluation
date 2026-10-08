@@ -1,0 +1,6 @@
+{
+  "text_or_compressed_record_files_scanned": 5038,
+  "pattern_matches": 0,
+  "scope": "Common credential formats and known local machine/path identifiers; not a universal secret-detection guarantee.",
+  "exact_byte_source_copies_verified": 6483
+}

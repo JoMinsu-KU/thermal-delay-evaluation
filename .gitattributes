@@ -1,0 +1,8 @@
+# Preserve released bytes across operating systems: MANIFEST.sha256 hashes them.
+* -text
+*.sh text eol=lf
+*.pdf binary
+*.png binary
+*.npz binary
+*.npy binary
+*.gz binary

@@ -1,0 +1,26 @@
+# Extracted release assets and regenerated analysis
+/raw_data/
+/outputs/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Credentials, machine settings, and large model artifacts
+.env
+.env.*
+!.env.example
+.ssh/
+*.pem
+*.key
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+.DS_Store
+Thumbs.db

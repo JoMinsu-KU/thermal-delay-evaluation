@@ -1,0 +1,127 @@
+{
+  "schema": "jev-single-case-integration-step-v1",
+  "parent_run": "runs/L2_diagnostics/diagnosis_20260926/full_relative_s3030",
+  "episode": "l2_090006",
+  "duration_s": 60.0,
+  "method": "shared_physics",
+  "post_hoc": true,
+  "actuation_enabled": false,
+  "training_or_selection": false,
+  "cases": [
+    {
+      "key": "h10ms_d13ms",
+      "step_ms": 10.0,
+      "delay_ms": 13.0
+    },
+    {
+      "key": "h10ms_d38ms",
+      "step_ms": 10.0,
+      "delay_ms": 38.0
+    },
+    {
+      "key": "h10ms_d50ms",
+      "step_ms": 10.0,
+      "delay_ms": 50.0
+    },
+    {
+      "key": "h5ms_d13ms",
+      "step_ms": 5.0,
+      "delay_ms": 13.0
+    },
+    {
+      "key": "h5ms_d38ms",
+      "step_ms": 5.0,
+      "delay_ms": 38.0
+    },
+    {
+      "key": "h5ms_d50ms",
+      "step_ms": 5.0,
+      "delay_ms": 50.0
+    },
+    {
+      "key": "h2.5ms_d13ms",
+      "step_ms": 2.5,
+      "delay_ms": 13.0
+    },
+    {
+      "key": "h2.5ms_d38ms",
+      "step_ms": 2.5,
+      "delay_ms": 38.0
+    },
+    {
+      "key": "h2.5ms_d50ms",
+      "step_ms": 2.5,
+      "delay_ms": 50.0
+    }
+  ],
+  "source": "SHA256-verified 2026-09-26 revision artifact; all src files match the delay experiment protocol",
+  "source_root_rel": "artifacts/L2_revision_final_20260926/source",
+  "change": "only max_dt of the true-plant FV integrator",
+  "fixed": [
+    "FV64 FP64 spatial solver",
+    "selected checkpoint and Qwen revision",
+    "observer and PINO",
+    "calibration",
+    "initial condition and noise seeds",
+    "100 Hz sensors and 5 Hz thermal frames",
+    "100 ms control request grid",
+    "conditional fallback latency replay",
+    "event-driven no-op semantics",
+    "original 10 ms/event endpoint cost and peak evaluation"
+  ],
+  "baseline_gate": {
+    "metric_atol": 1e-10,
+    "metric_rtol": 1e-08,
+    "trace": "exact semantic event records excluding wall timing and continuous candidate diagnostics",
+    "failure_action": "stop before any 5 or 2.5 ms case; preserve all evidence"
+  },
+  "fresh_process_per_case": true,
+  "seed": 3030,
+  "reference_sha256": "aa938bb91a01f9b8a4cd9e5b02819cd270dcdc54f6547425eb97d0824ed1be13",
+  "harness_sha256": {
+    "run_validation.py": "5a1c549dfe1dd27663943b19b4d54a34e00255c41ad5b3b14299ec1e90beac79",
+    "step_plant.py": "55ccd8bd14d6ac7c408ea07beeb769afb7eb37707e8a7f4b58d4ea86c714005e",
+    "analyze_results.py": "bbd0363e8be5bc263ae9f0e44bacdc90437f7d479ebc16d9b3bcb043515e8d62",
+    "validation_io.py": "563f167357e6a157133e1011cac162706a100961119bbc0b99fe7854ea2d0820",
+    "reference.json": "aa938bb91a01f9b8a4cd9e5b02819cd270dcdc54f6547425eb97d0824ed1be13",
+    "README_KO.md": "14949378b5fd8a28999717d62a17538673b039dc4b512301af89301af296ea74",
+    "run_validation.sh": "50e6aeb8d5acf9c1662e2dca4551791b7a2a5ca17a16aa278edb5737ce498344",
+    "test_validation.py": "dc136f3f75a530ee4bd64f9522785f9d1b7df3b876c5296d5690e1dbb5d13324",
+    "verify_archive.py": "36dd6990188b050e175a0f834265254f95ff3a0fb6dc26486d51da24fbb341e9"
+  },
+  "archived_source_sha256": {
+    "src/ojpoc/__init__.py": "9c3ac2850277920512d02ef89b4846b7f9d77e8d9ea2e61193b86a0305dd4d2b",
+    "src/ojpoc/cli.py": "5b3efcb7b0a3f3eb563b785b3ee2196a66cbd12a3fc392b8b8032fe932ef4c94",
+    "src/ojpoc/common.py": "076f7db0c0a169e806a6124f5bb7877bc6b04801a84daa84486d9abbea193660",
+    "src/ojpoc/control.py": "b8047b6843f502b9a1bb28944f2f333a6d16ea78e87eb3f072af07340fd99891",
+    "src/ojpoc/data.py": "35f64dfe90bc95a80ca9ec02cd2a41410b1ddf05a989fe67283a9594fab3c37b",
+    "src/ojpoc/evaluation.py": "a70bd7e85b502a2a874c6045743ff5813c86fdcb26b20fd1040b78f48fff350f",
+    "src/ojpoc/l2/__init__.py": "0a11a60fd48ceb0f34756d0a5109a7468e0b198af02e3c38597c0f8fcc05f6af",
+    "src/ojpoc/l2/cache.py": "1a5864b29310665a1114d55874d756d6165bd50b8a112845b3e71a7e1427707b",
+    "src/ojpoc/l2/calibration.py": "0d761ecf860fe62f1fc61259c4782a844488bec1095fc1a0f224e3b9d83a6e9f",
+    "src/ojpoc/l2/contracts.py": "2ec5cdf89eb2dccf0e98fbb080454a984fe53742eb8a47bf039a22dafda175fa",
+    "src/ojpoc/l2/control.py": "e837939490fa703e669fbdfba2760a47d6f8dd4a3d9f227f875c7b8253aae9c7",
+    "src/ojpoc/l2/data.py": "3fc55e64f6e47a40f6917001f31ab289e7924e06f5950cecb5389e998e79d809",
+    "src/ojpoc/l2/engine.py": "f73cee1619bbfa1b3f5ec9b224c5a36dd613646b3b775b52712fba05e0763ffc",
+    "src/ojpoc/l2/evaluation.py": "5c3f317040eb45cec871fc8ecb7ad72c952bb8a94b60e27784c03d6a5e0896d0",
+    "src/ojpoc/l2/graph.py": "9956a18cfe1e9b09e1abc5a1ebc763ec3f10d3b6c32ff65d1910df2abb6b11cc",
+    "src/ojpoc/l2/latency.py": "06d678dbd8274c296e72ade23e250c9970b14235548bd8d4673a73d7c48a5754",
+    "src/ojpoc/l2/models.py": "e78426ef898f4e70df6145f3a1e82273b14ee691c324a7f8fedfacad11f29975",
+    "src/ojpoc/l2/observer.py": "3415c91d0e2133c04575a1e5c0d611c6d4b5a4c8a0a0e2499b52f1541d995558",
+    "src/ojpoc/l2/report.py": "b6e3b7a84c9eb426cf9fac89ddf796cff3d795a9cd598c5efba446ab769a333b",
+    "src/ojpoc/l2/runner.py": "edc76929a404f892ca360fb772810d086fa493cf92c17d7a43ac34b07796944d",
+    "src/ojpoc/l2/suite.py": "459cac1b6680656d2b1bb38bcd05bfd7f3d94a2baa857c5205148c8c80685a09",
+    "src/ojpoc/l2/training.py": "759619a9f7fa3c35acaa5245e5e89d6526b36e7d01d9546e7a87052a6159cc97",
+    "src/ojpoc/l2/validation_control.py": "252d942c64e00132a98df54a05798f1de7192ebf70b659b8aa30e18ab319fae2",
+    "src/ojpoc/l2/worker.py": "b38cc159b450532801d507d4665f9bcd4894dda2072193c428fcab0d5eae98c7",
+    "src/ojpoc/operator.py": "c5dcb1856d48027c9861a0bbbf8cc4589df5b84aefc49cd229186e19e7834125",
+    "src/ojpoc/physics.py": "e44b0f0e563a4ef31168dc0f26842f37a0d72738c0b55006c4f059a8f682112d",
+    "src/ojpoc/pilot.py": "34c41ec1a7a04df6498f0c8bb866340710ab520fa168d6f41fdc4e7e38457d4e",
+    "src/ojpoc/policy.py": "b91ea61eb2c65237020bef081bc7079eb913e296237cefc89d8609606be0d25b",
+    "src/ojpoc/recheck.py": "72eb82fda7b0decdc312601b5c0cdca58354b3e538593ef7e148f43e4153895b",
+    "src/ojpoc/recheck_latency.py": "40ebc9a2d36bc5be44ca466f2b406b760d8da6cad8914e47d7afb3c8422b0991",
+    "src/ojpoc/stages.py": "36f8515a163af25cac4d9de0d160e962f226fac6d963c2ea8253672634e00865",
+    "src/ojpoc/training.py": "1d1c4c7ec113f31d239862e68dc865ac74fcafe94c3b263a00fc565af8069ed4"
+  },
+  "interpretation": "Descriptive single-case robustness check; no prevalence estimate or automatic convergence threshold"
+}
