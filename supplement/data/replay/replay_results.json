@@ -1,0 +1,239 @@
+{
+  "rows": [
+    {
+      "sequence": "legacy",
+      "label": "Original",
+      "deadline_misses_per_episode": 8,
+      "busy_skips_per_episode": 8,
+      "FV_zero_change_pct": 25.015364030546205,
+      "FV_zero_ci": [
+        19.031330078200963,
+        28.805336461345778
+      ],
+      "FV_hold_change_pct": 2.3488019821011674,
+      "FV_hold_ci": [
+        1.8809995945897602,
+        3.0575713737969137
+      ],
+      "FV_hold_vs_zero_pct": -18.13102111425817,
+      "FV_hold_vs_zero_ci": [
+        -20.774327055879677,
+        -13.618785211189195
+      ],
+      "hold_wins": 21,
+      "hold_losses": 3,
+      "FV_hold_mean_rank": 1,
+      "Shared_minus_Small_pct": 0.37421427292700926,
+      "Shared_minus_Small_ci": [
+        0.1388078855450564,
+        0.7632538609724723
+      ],
+      "Shared_wins": 4,
+      "FV_zero_rmse_k": 10.917759785542444,
+      "FV_hold_rmse_k": 9.973490908919628
+    },
+    {
+      "sequence": "r0_b0",
+      "label": "R1B1",
+      "deadline_misses_per_episode": 6,
+      "busy_skips_per_episode": 6,
+      "FV_zero_change_pct": 18.421077165961798,
+      "FV_zero_ci": [
+        9.880642642023288,
+        23.217933742578154
+      ],
+      "FV_hold_change_pct": 2.188736820438142,
+      "FV_hold_ci": [
+        1.5311739276130105,
+        3.407393737676653
+      ],
+      "FV_hold_vs_zero_pct": -13.707306785239549,
+      "FV_hold_vs_zero_ci": [
+        -17.506415001464106,
+        -6.076364427862126
+      ],
+      "hold_wins": 14,
+      "hold_losses": 10,
+      "FV_hold_mean_rank": 1,
+      "Shared_minus_Small_pct": 0.3231879036444951,
+      "Shared_minus_Small_ci": [
+        0.076298235867161,
+        0.7247628033986545
+      ],
+      "Shared_wins": 7,
+      "FV_zero_rmse_k": 10.518846506563397,
+      "FV_hold_rmse_k": 9.990273337127816
+    },
+    {
+      "sequence": "r0_b1",
+      "label": "R1B2",
+      "deadline_misses_per_episode": 9,
+      "busy_skips_per_episode": 9,
+      "FV_zero_change_pct": 62.46908621558407,
+      "FV_zero_ci": [
+        50.790336447738085,
+        69.56187732172603
+      ],
+      "FV_hold_change_pct": 5.633542486825416,
+      "FV_hold_ci": [
+        3.5640331296263645,
+        9.327838461217434
+      ],
+      "FV_hold_vs_zero_pct": -34.98237421815878,
+      "FV_hold_vs_zero_ci": [
+        -38.88354803546515,
+        -27.645135305814904
+      ],
+      "hold_wins": 23,
+      "hold_losses": 1,
+      "FV_hold_mean_rank": 1,
+      "Shared_minus_Small_pct": 0.2597639153185449,
+      "Shared_minus_Small_ci": [
+        0.03912819924624722,
+        0.6558548015941527
+      ],
+      "Shared_wins": 7,
+      "FV_zero_rmse_k": 12.386661711666576,
+      "FV_hold_rmse_k": 10.153326920625394
+    },
+    {
+      "sequence": "r1_b0",
+      "label": "R2B1",
+      "deadline_misses_per_episode": 9,
+      "busy_skips_per_episode": 9,
+      "FV_zero_change_pct": 79.34269483433218,
+      "FV_zero_ci": [
+        59.204903431050745,
+        92.75053522616605
+      ],
+      "FV_hold_change_pct": 5.627921186588902,
+      "FV_hold_ci": [
+        4.282487760735575,
+        7.35620384258416
+      ],
+      "FV_hold_vs_zero_pct": -41.102746736262276,
+      "FV_hold_vs_zero_ci": [
+        -45.820274279838046,
+        -32.72776798845975
+      ],
+      "hold_wins": 23,
+      "hold_losses": 1,
+      "FV_hold_mean_rank": 1,
+      "Shared_minus_Small_pct": 0.35163105708939657,
+      "Shared_minus_Small_ci": [
+        0.11210272120871445,
+        0.7341634956395288
+      ],
+      "Shared_wins": 2,
+      "FV_zero_rmse_k": 12.839166204973074,
+      "FV_hold_rmse_k": 10.126346756434957
+    },
+    {
+      "sequence": "r1_b1",
+      "label": "R2B2",
+      "deadline_misses_per_episode": 2,
+      "busy_skips_per_episode": 2,
+      "FV_zero_change_pct": 11.698837636913751,
+      "FV_zero_ci": [
+        7.930358008494181,
+        14.999831501909894
+      ],
+      "FV_hold_change_pct": 4.504809225784245,
+      "FV_hold_ci": [
+        3.5029569533637432,
+        5.9461891698021585
+      ],
+      "FV_hold_vs_zero_pct": -6.440557989076212,
+      "FV_hold_vs_zero_ci": [
+        -9.906627126121156,
+        -2.0400068891943137
+      ],
+      "hold_wins": 20,
+      "hold_losses": 4,
+      "FV_hold_mean_rank": 1,
+      "Shared_minus_Small_pct": 0.3148451040590805,
+      "Shared_minus_Small_ci": [
+        0.07268179754282456,
+        0.7019853973424183
+      ],
+      "Shared_wins": 5,
+      "FV_zero_rmse_k": 10.49914251857267,
+      "FV_hold_rmse_k": 10.082153155284734
+    },
+    {
+      "sequence": "r2_b0",
+      "label": "R3B1",
+      "deadline_misses_per_episode": 7,
+      "busy_skips_per_episode": 7,
+      "FV_zero_change_pct": 19.430166879725984,
+      "FV_zero_ci": [
+        13.852146958220391,
+        24.39479324576632
+      ],
+      "FV_hold_change_pct": 6.458460442512393,
+      "FV_hold_ci": [
+        4.684977472955113,
+        8.634147213092994
+      ],
+      "FV_hold_vs_zero_pct": -10.861331584905976,
+      "FV_hold_vs_zero_ci": [
+        -15.783451271254263,
+        -4.7415444610353825
+      ],
+      "hold_wins": 20,
+      "hold_losses": 4,
+      "FV_hold_mean_rank": 3,
+      "Shared_minus_Small_pct": 0.3397395027362027,
+      "Shared_minus_Small_ci": [
+        0.10040790554908918,
+        0.7172321252683267
+      ],
+      "Shared_wins": 5,
+      "FV_zero_rmse_k": 10.829968463408058,
+      "FV_hold_rmse_k": 10.143825387813836
+    },
+    {
+      "sequence": "r2_b1",
+      "label": "R3B2",
+      "deadline_misses_per_episode": 6,
+      "busy_skips_per_episode": 6,
+      "FV_zero_change_pct": 46.79071212179069,
+      "FV_zero_ci": [
+        41.0263313920036,
+        50.27022721644556
+      ],
+      "FV_hold_change_pct": 5.236626926260346,
+      "FV_hold_ci": [
+        4.469086215474659,
+        6.583115573852207
+      ],
+      "FV_hold_vs_zero_pct": -28.308388585957246,
+      "FV_hold_vs_zero_ci": [
+        -30.1947516460195,
+        -24.847537130369567
+      ],
+      "hold_wins": 23,
+      "hold_losses": 1,
+      "FV_hold_mean_rank": 1,
+      "Shared_minus_Small_pct": 0.39098210540371436,
+      "Shared_minus_Small_ci": [
+        0.15422055910432497,
+        0.7822709213165543
+      ],
+      "Shared_wins": 3,
+      "FV_zero_rmse_k": 11.899624957300404,
+      "FV_hold_rmse_k": 10.150502180314552
+    }
+  ],
+  "total_cases": 1128,
+  "baseline_cases": 240,
+  "additional_cases": 888,
+  "unique_episodes": 24,
+  "max_cost_reconstruction_error": 4.579669976578771e-16,
+  "all_reported_csv_values_reproduced": true,
+  "new_diagnostic_violations": 0,
+  "inference_failures": 0,
+  "delayed_slew_rejections": 0,
+  "original_excess_cost_reduction_pct": 90.61056245580497,
+  "scope": "Fixed frozen systems, three archived measurement repeats, six additional conditional blocks; no new training or timing measurements."
+}

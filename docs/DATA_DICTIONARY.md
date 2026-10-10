@@ -1,3 +1,11 @@
+# Current manuscript data
+
+For the 10 October 2026 manuscript, use `python -B scripts/reproduce_all.py`; current results appear in `supplement/outputs/`. See [the complete map](../supplement/TABLE_FIGURE_MAP.md), [methods](../supplement/METHODS.md), and [supplement README](../supplement/README.md). The new 1,128-case batch reuses 24 episodes. Its full raw records are not included. Original raw assets at v1.0.0 cover the earlier primary/numerical evidence only.
+
+The material below documents the original v1.0.0 data and tools, which are retained for compatibility.
+
+---
+
 # Data dictionary
 
 All temperatures are in degrees Celsius unless a difference or RMSE is explicitly labelled K. Applied commands are dimensionless, with four heater components. Time fields ending in `_ns` are integer nanoseconds; `_s` and `_ms` denote seconds and milliseconds. JSON `null` and empty CSV cells mean unavailable/not applicable, not zero.

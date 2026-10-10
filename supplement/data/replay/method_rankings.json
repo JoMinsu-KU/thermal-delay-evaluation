@@ -1,0 +1,142 @@
+[
+  {
+    "sequence": "legacy",
+    "ascending_mean_cost": [
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi",
+      "fv_mpc"
+    ],
+    "FV_highest": true,
+    "Small_below_Shared": true,
+    "ranking_with_FV_hold": [
+      "fv_mpc",
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi"
+    ],
+    "FV_hold_highest": false
+  },
+  {
+    "sequence": "r0_b0",
+    "ascending_mean_cost": [
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi",
+      "fv_mpc"
+    ],
+    "FV_highest": true,
+    "Small_below_Shared": true,
+    "ranking_with_FV_hold": [
+      "fv_mpc",
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi"
+    ],
+    "FV_hold_highest": false
+  },
+  {
+    "sequence": "r0_b1",
+    "ascending_mean_cost": [
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi",
+      "fv_mpc"
+    ],
+    "FV_highest": true,
+    "Small_below_Shared": true,
+    "ranking_with_FV_hold": [
+      "fv_mpc",
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi"
+    ],
+    "FV_hold_highest": false
+  },
+  {
+    "sequence": "r1_b0",
+    "ascending_mean_cost": [
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi",
+      "fv_mpc"
+    ],
+    "FV_highest": true,
+    "Small_below_Shared": true,
+    "ranking_with_FV_hold": [
+      "fv_mpc",
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi"
+    ],
+    "FV_hold_highest": false
+  },
+  {
+    "sequence": "r1_b1",
+    "ascending_mean_cost": [
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi",
+      "fv_mpc"
+    ],
+    "FV_highest": true,
+    "Small_below_Shared": true,
+    "ranking_with_FV_hold": [
+      "fv_mpc",
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi"
+    ],
+    "FV_hold_highest": false
+  },
+  {
+    "sequence": "r2_b0",
+    "ascending_mean_cost": [
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi",
+      "fv_mpc"
+    ],
+    "FV_highest": true,
+    "Small_below_Shared": true,
+    "ranking_with_FV_hold": [
+      "small_physics",
+      "shared_physics",
+      "fv_mpc",
+      "pino_mpc",
+      "pi"
+    ],
+    "FV_hold_highest": false
+  },
+  {
+    "sequence": "r2_b1",
+    "ascending_mean_cost": [
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi",
+      "fv_mpc"
+    ],
+    "FV_highest": true,
+    "Small_below_Shared": true,
+    "ranking_with_FV_hold": [
+      "fv_mpc",
+      "small_physics",
+      "shared_physics",
+      "pino_mpc",
+      "pi"
+    ],
+    "FV_hold_highest": false
+  }
+]

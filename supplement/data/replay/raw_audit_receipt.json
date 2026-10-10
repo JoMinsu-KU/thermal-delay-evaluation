@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "consumed_latency_rows_matched_to_original_journals": 602544,
+  "new_setting_source_rows_matched": 516528,
+  "FV_zero_hold_pairs_with_identical_request_and_deadline_schedules": 168,
+  "FV_zero_hold_semantic_prefixes_before_first_expiration_equal": 168,
+  "measurement_trials": 15,
+  "all_timing_trials_original_seals_verified": true,
+  "new_timing_measurements": false,
+  "scope": "Complete replay row comparison with original immutable source journals; all 168 FV pairs share request timing and pre-intervention semantics.",
+  "metric_audit_cases": 1128,
+  "max_cost_reconstruction_error": 4.579669976578771e-16,
+  "original_baseline_cases_reproduced": 240,
+  "archive_sha256": "0c85c1c1a964a6a55e555573187be0b1eff8f13e562b15d68185f2995aabd733"
+}

@@ -24,3 +24,6 @@ __pycache__/
 *.ckpt
 .DS_Store
 Thumbs.db
+
+# Current manuscript reanalysis
+/supplement/outputs/

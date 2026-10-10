@@ -1,0 +1,5187 @@
+{
+  "design": {
+    "schema": "jev-replay-fallback-validation-v1",
+    "created_date": "2026-10-08",
+    "actuation_enabled": false,
+    "training": false,
+    "model_or_alpha_selection": false,
+    "duration_s": 60.0,
+    "plant_max_step_ms": 10.0,
+    "jobs": [
+      {
+        "id": "baseline_pi_zero_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pi",
+        "mode": "zero",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_pi_zero_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_pi_delayed_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pi",
+        "mode": "delayed",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_pi_delayed_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_fv_mpc_zero_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "zero",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_fv_mpc_zero_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_fv_mpc_delayed_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_fv_mpc_delayed_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_pino_mpc_zero_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pino_mpc",
+        "mode": "zero",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_pino_mpc_zero_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_pino_mpc_delayed_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pino_mpc",
+        "mode": "delayed",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_pino_mpc_delayed_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_shared_physics_zero_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "shared_physics",
+        "mode": "zero",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_shared_physics_zero_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_shared_physics_delayed_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "shared_physics",
+        "mode": "delayed",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_shared_physics_delayed_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_small_physics_zero_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "small_physics",
+        "mode": "zero",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_small_physics_zero_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "baseline_small_physics_delayed_legacy_zero",
+        "phase": "baseline",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "small_physics",
+        "mode": "delayed",
+        "sequence": "legacy",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "baseline_small_physics_delayed_legacy_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pi_delayed_r0_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pi",
+        "mode": "delayed",
+        "sequence": "r0_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pi_delayed_r0_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pi",
+        "mode": "delayed",
+        "sequence": "r0_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pi_delayed_r0_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pi_delayed_r1_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pi",
+        "mode": "delayed",
+        "sequence": "r1_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pi_delayed_r1_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pi",
+        "mode": "delayed",
+        "sequence": "r1_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pi_delayed_r1_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pi_delayed_r2_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pi",
+        "mode": "delayed",
+        "sequence": "r2_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pi_delayed_r2_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pi",
+        "mode": "delayed",
+        "sequence": "r2_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pi_delayed_r2_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_fv_mpc_delayed_r0_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r0_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_fv_mpc_delayed_r0_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r0_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r0_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_fv_mpc_delayed_r1_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r1_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_fv_mpc_delayed_r1_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r1_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r1_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_fv_mpc_delayed_r2_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r2_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_fv_mpc_delayed_r2_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r2_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_fv_mpc_delayed_r2_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pino_mpc_delayed_r0_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pino_mpc",
+        "mode": "delayed",
+        "sequence": "r0_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pino_mpc_delayed_r0_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pino_mpc",
+        "mode": "delayed",
+        "sequence": "r0_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r0_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pino_mpc_delayed_r1_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pino_mpc",
+        "mode": "delayed",
+        "sequence": "r1_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pino_mpc_delayed_r1_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pino_mpc",
+        "mode": "delayed",
+        "sequence": "r1_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r1_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pino_mpc_delayed_r2_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pino_mpc",
+        "mode": "delayed",
+        "sequence": "r2_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_pino_mpc_delayed_r2_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "pino_mpc",
+        "mode": "delayed",
+        "sequence": "r2_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_pino_mpc_delayed_r2_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_shared_physics_delayed_r0_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "shared_physics",
+        "mode": "delayed",
+        "sequence": "r0_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_shared_physics_delayed_r0_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "shared_physics",
+        "mode": "delayed",
+        "sequence": "r0_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r0_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_shared_physics_delayed_r1_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "shared_physics",
+        "mode": "delayed",
+        "sequence": "r1_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_shared_physics_delayed_r1_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "shared_physics",
+        "mode": "delayed",
+        "sequence": "r1_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r1_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_shared_physics_delayed_r2_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "shared_physics",
+        "mode": "delayed",
+        "sequence": "r2_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_shared_physics_delayed_r2_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "shared_physics",
+        "mode": "delayed",
+        "sequence": "r2_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_shared_physics_delayed_r2_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_small_physics_delayed_r0_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "small_physics",
+        "mode": "delayed",
+        "sequence": "r0_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_small_physics_delayed_r0_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "small_physics",
+        "mode": "delayed",
+        "sequence": "r0_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_small_physics_delayed_r0_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_small_physics_delayed_r1_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "small_physics",
+        "mode": "delayed",
+        "sequence": "r1_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_small_physics_delayed_r1_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "small_physics",
+        "mode": "delayed",
+        "sequence": "r1_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_small_physics_delayed_r1_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_small_physics_delayed_r2_b0_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "small_physics",
+        "mode": "delayed",
+        "sequence": "r2_b0",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b0_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "replay_small_physics_delayed_r2_b1_zero",
+        "phase": "replay",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "small_physics",
+        "mode": "delayed",
+        "sequence": "r2_b1",
+        "fallback_policy": "zero",
+        "cases": [
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "replay_small_physics_delayed_r2_b1_zero_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "fallback_fv_mpc_delayed_legacy_hold",
+        "phase": "fallback",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "legacy",
+        "fallback_policy": "hold",
+        "cases": [
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_legacy_hold_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "fallback_fv_mpc_delayed_r0_b0_hold",
+        "phase": "fallback",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r0_b0",
+        "fallback_policy": "hold",
+        "cases": [
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b0_hold_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "fallback_fv_mpc_delayed_r0_b1_hold",
+        "phase": "fallback",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r0_b1",
+        "fallback_policy": "hold",
+        "cases": [
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r0_b1_hold_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "fallback_fv_mpc_delayed_r1_b0_hold",
+        "phase": "fallback",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r1_b0",
+        "fallback_policy": "hold",
+        "cases": [
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b0_hold_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "fallback_fv_mpc_delayed_r1_b1_hold",
+        "phase": "fallback",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r1_b1",
+        "fallback_policy": "hold",
+        "cases": [
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r1_b1_hold_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "fallback_fv_mpc_delayed_r2_b0_hold",
+        "phase": "fallback",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r2_b0",
+        "fallback_policy": "hold",
+        "cases": [
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b0_hold_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      },
+      {
+        "id": "fallback_fv_mpc_delayed_r2_b1_hold",
+        "phase": "fallback",
+        "source": "D",
+        "h_ms": 10.0,
+        "method": "fv_mpc",
+        "mode": "delayed",
+        "sequence": "r2_b1",
+        "fallback_policy": "hold",
+        "cases": [
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240064",
+            "episode": "l2_240064"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240065",
+            "episode": "l2_240065"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240066",
+            "episode": "l2_240066"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240068",
+            "episode": "l2_240068"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240069",
+            "episode": "l2_240069"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240070",
+            "episode": "l2_240070"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240072",
+            "episode": "l2_240072"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240073",
+            "episode": "l2_240073"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240074",
+            "episode": "l2_240074"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240076",
+            "episode": "l2_240076"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240077",
+            "episode": "l2_240077"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240078",
+            "episode": "l2_240078"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240080",
+            "episode": "l2_240080"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240081",
+            "episode": "l2_240081"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240082",
+            "episode": "l2_240082"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240084",
+            "episode": "l2_240084"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240085",
+            "episode": "l2_240085"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240086",
+            "episode": "l2_240086"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240088",
+            "episode": "l2_240088"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240089",
+            "episode": "l2_240089"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240090",
+            "episode": "l2_240090"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240092",
+            "episode": "l2_240092"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240093",
+            "episode": "l2_240093"
+          },
+          {
+            "key": "fallback_fv_mpc_delayed_r2_b1_hold_l2_240094",
+            "episode": "l2_240094"
+          }
+        ]
+      }
+    ],
+    "normal_episodes": [
+      "l2_240064",
+      "l2_240065",
+      "l2_240066",
+      "l2_240068",
+      "l2_240069",
+      "l2_240070",
+      "l2_240072",
+      "l2_240073",
+      "l2_240074",
+      "l2_240076",
+      "l2_240077",
+      "l2_240078",
+      "l2_240080",
+      "l2_240081",
+      "l2_240082",
+      "l2_240084",
+      "l2_240085",
+      "l2_240086",
+      "l2_240088",
+      "l2_240089",
+      "l2_240090",
+      "l2_240092",
+      "l2_240093",
+      "l2_240094"
+    ],
+    "baseline_runs": 240,
+    "new_sequence_zero_fallback_runs": 720,
+    "hold_fallback_runs": 168,
+    "total_runs": 1128,
+    "sequence_ids": [
+      "r0_b0",
+      "r0_b1",
+      "r1_b0",
+      "r1_b1",
+      "r2_b0",
+      "r2_b1"
+    ],
+    "sequence_design": {
+      "measurement_repeats": [
+        0,
+        1,
+        2
+      ],
+      "normal_pool_starts": [
+        0,
+        5000
+      ],
+      "fallback_pool_starts": [
+        0,
+        400
+      ],
+      "window_requests": 600,
+      "rule": "Restore each repeat from the original interleaved loader; preserve within-repeat order in each path/token-matched pool. Select start + global request_id, without wraparound.",
+      "matching": "Exact fallback reason and nearest valid token count, as in the original chooser. Timing-error records are excluded as in the original.",
+      "scope": "Six fixed conditional replay settings, not six independent hardware trials. Three original measurement repeats each supply two blocks; fallback blocks may overlap."
+    },
+    "hold_intervention": "At deadline expiration hold the currently applied vector and mark fallback=True. Preserve busy-until-compute-ready, skipped ticks, discarded late result, and all other zero fallback causes.",
+    "unchanged": [
+      "frozen weights and selected alpha",
+      "observations and noise",
+      "candidate prediction solver",
+      "calibration and gate",
+      "100 ms request clock and deadline",
+      "100 Hz sensor emission",
+      "10 ms/event quadrature",
+      "no-op application semantics",
+      "64x64 FP64 plant"
+    ],
+    "statistics": {
+      "unit": "paired episode",
+      "n": 24,
+      "resamples": 20000,
+      "seed": 20261008,
+      "interval": "conditional episode percentile 95%",
+      "sequence_uncertainty": "Report each block and descriptive spread across six blocks; do not count 144 trajectories as independent episodes or infer a hardware-population CI."
+    },
+    "reproduction_gate": "All 240 legacy metrics and semantic events must reproduce before either new phase.",
+    "scientific_stop_rule": "Finish the fixed design regardless of effect direction. No retraining, reselection, added blocks, or positive-effect threshold.",
+    "archive_10ms_D_wall_seconds": 5410.00033970119
+  },
+  "harness_sha256": {
+    "run_suite.py": "19ce60de4b035db363c19c9dfbd0b20aac2333613a528570d68be96461eff134",
+    "worker.py": "f4ff6434e3d62036af668c57dc354dab8f2b750fbe2dbf18b601d86cd91a4ca1",
+    "runtime.py": "ae83a4a66251e429bc750547f166a51c96c023896db3d6c20581321b4bc409ab",
+    "plan.py": "6f5ebc20ac1500446d9fefb37f458df34ec8dc153a2bfaa187a0ed3057be4e92",
+    "scheduler.py": "a3b601858c8f640b898d6284d90529b2538fc96859d3d80acf7941a0f3ef1d29",
+    "latency_replay.py": "fda8aa156fabd58326c382243be6a527195b59e4ca50a8c506fc7fd68028c2b9",
+    "metric_audit.py": "a803f301253eb69c55a48193692cb2c4186ad54e48d11b56a81a7ee922dcf426",
+    "step_plant.py": "504b0da5c9c0e357aba957a3285d76e642aa2f018f41dde0ba8763e38c7ab8e5",
+    "validation_io.py": "6ce7d724614c131b442efbe4b0c2ccbb47816a976174363cc4c67809f186bbf0",
+    "baseline_check.py": "f2bdd5227863b2a08471ba7e15a358d6df515b617e24310770581776fab94ca3",
+    "analyze_results.py": "8373927d1f5a9db0d3c4599cb8d07a70238a900c0e757a0aac704e52c925a3a5",
+    "reference.json": "22a47a8813c04f490bf3e790b9bd8296b5e151a8aaabbb7ecdf9b3049dadc30c",
+    "run_validation.sh": "e27d73c3a17a79eb8c9fe4273b4cdbfcb5b6204e24391d12024277c6eae97be8",
+    "README_KO.md": "9409f845935d69e1451db93446316d6665715b10c3d29a30ae3f0ce39ce8f89b",
+    "test_validation.py": "c639b29eeaf6c3a0affb8b75bd5f4ec28f7610741e65a8848d8311b438dad680",
+    "legacy_scheduler_reference.py": "9602fcefafb66add71bf670ec45e2455fd486671967bd192dab1ec2caff42149"
+  }
+}

@@ -1,0 +1,1894 @@
+{
+  "input_zip_sha256": "8b0cc0ca7f1a8c0c30501591839a18f200292fa58d8cd05e13a2cbb205780af1",
+  "case_metrics": [
+    {
+      "step_ms": 10.0,
+      "delay_ms": 13.0,
+      "episode_cost": 0.03628939158773115,
+      "tracking_rmse_k": 16.47541799840866,
+      "max_temperature_c": 119.09074018720318,
+      "filter_interventions": 10,
+      "fallback_s": 0.5094426170000003,
+      "missed_deadlines": 0,
+      "fv_steps": 6319,
+      "actual_max_fv_step_ms": 10.0
+    },
+    {
+      "step_ms": 10.0,
+      "delay_ms": 38.0,
+      "episode_cost": 0.009911605536688642,
+      "tracking_rmse_k": 9.423001058278787,
+      "max_temperature_c": 101.49802867112284,
+      "filter_interventions": 0,
+      "fallback_s": 0.13799999999999998,
+      "missed_deadlines": 0,
+      "fv_steps": 6200,
+      "actual_max_fv_step_ms": 10.0
+    },
+    {
+      "step_ms": 10.0,
+      "delay_ms": 50.0,
+      "episode_cost": 0.036601913873235574,
+      "tracking_rmse_k": 16.515805508453646,
+      "max_temperature_c": 118.99632134897035,
+      "filter_interventions": 8,
+      "fallback_s": 0.5574426170000003,
+      "missed_deadlines": 0,
+      "fv_steps": 6003,
+      "actual_max_fv_step_ms": 10.0
+    },
+    {
+      "step_ms": 5.0,
+      "delay_ms": 13.0,
+      "episode_cost": 0.03691408897656462,
+      "tracking_rmse_k": 16.528294488522985,
+      "max_temperature_c": 118.94573567644787,
+      "filter_interventions": 7,
+      "fallback_s": 0.40944261700000023,
+      "missed_deadlines": 0,
+      "fv_steps": 12317,
+      "actual_max_fv_step_ms": 5.0
+    },
+    {
+      "step_ms": 5.0,
+      "delay_ms": 38.0,
+      "episode_cost": 0.03718208630274534,
+      "tracking_rmse_k": 16.618592677173996,
+      "max_temperature_c": 119.15612903668409,
+      "filter_interventions": 10,
+      "fallback_s": 0.7620001910000005,
+      "missed_deadlines": 0,
+      "fv_steps": 12343,
+      "actual_max_fv_step_ms": 5.0
+    },
+    {
+      "step_ms": 5.0,
+      "delay_ms": 50.0,
+      "episode_cost": 0.009918880854718988,
+      "tracking_rmse_k": 9.4270671737336,
+      "max_temperature_c": 101.49727270981663,
+      "filter_interventions": 0,
+      "fallback_s": 0.15,
+      "missed_deadlines": 0,
+      "fv_steps": 12000,
+      "actual_max_fv_step_ms": 5.0
+    },
+    {
+      "step_ms": 2.5,
+      "delay_ms": 13.0,
+      "episode_cost": 0.009131363829077596,
+      "tracking_rmse_k": 9.125235084388331,
+      "max_temperature_c": 100.91743154818124,
+      "filter_interventions": 0,
+      "fallback_s": 0.11299999999999999,
+      "missed_deadlines": 0,
+      "fv_steps": 24200,
+      "actual_max_fv_step_ms": 2.5
+    },
+    {
+      "step_ms": 2.5,
+      "delay_ms": 38.0,
+      "episode_cost": 0.036788837170149136,
+      "tracking_rmse_k": 16.560960033109666,
+      "max_temperature_c": 119.04074916365099,
+      "filter_interventions": 5,
+      "fallback_s": 0.6365795180000003,
+      "missed_deadlines": 0,
+      "fv_steps": 24319,
+      "actual_max_fv_step_ms": 2.5
+    },
+    {
+      "step_ms": 2.5,
+      "delay_ms": 50.0,
+      "episode_cost": 0.009164233401157318,
+      "tracking_rmse_k": 9.142653949842655,
+      "max_temperature_c": 100.9152147325123,
+      "filter_interventions": 0,
+      "fallback_s": 0.15,
+      "missed_deadlines": 0,
+      "fv_steps": 24000,
+      "actual_max_fv_step_ms": 2.5
+    }
+  ],
+  "refinements": {
+    "d13:10to5": {
+      "cost_change_percent": 1.7214325220174422,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 168,
+        "command_disagreement_fraction": 0.28,
+        "requested_command_rmse": 0.020445048300260872,
+        "safe_mask_disagreements": 52,
+        "fallback_path_disagreements": 1,
+        "application_event_disagreements": 172,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 2813000000,
+            "request": 28,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.36
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 2813000000,
+            "request": 28,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.32
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 28,
+            "snapshot_ns": 2800000000,
+            "ready_ns": 2813000000,
+            "choice": 7,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.36
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.6644352674484253,
+              2.863677740097046,
+              0.4773142635822296,
+              3.276676654815674,
+              0.35787928104400635,
+              2.806082010269165,
+              0.5901964902877808,
+              3.279912233352661,
+              0.25162938237190247
+            ],
+            "predicted_peak_c": [
+              74.12579345703125,
+              74.1821060180664,
+              74.0683364868164,
+              74.17899322509766,
+              74.07173156738281,
+              74.18099212646484,
+              74.06990051269531,
+              74.18792724609375,
+              74.06281280517578
+            ],
+            "top_two_allowed_score_gap": 0.0032355785369873047
+          },
+          "right": {
+            "request": 28,
+            "snapshot_ns": 2800000000,
+            "ready_ns": 2813000000,
+            "choice": 3,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.32
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.674073576927185,
+              2.865307569503784,
+              0.47584161162376404,
+              3.27700138092041,
+              0.37809693813323975,
+              2.8056857585906982,
+              0.581122875213623,
+              3.276061773300171,
+              0.27684682607650757
+            ],
+            "predicted_peak_c": [
+              74.12580871582031,
+              74.18211364746094,
+              74.068359375,
+              74.17900848388672,
+              74.07174682617188,
+              74.1810073852539,
+              74.06991577148438,
+              74.18794250488281,
+              74.06282806396484
+            ],
+            "top_two_allowed_score_gap": 0.0009396076202392578
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 0.3143328225576196,
+          "max_abs_k": 0.5148524647406418,
+          "final_difference_k": 0.500495542918145
+        },
+        "max_temperature_c": {
+          "rmse_k": 0.13258364211021514,
+          "max_abs_k": 0.21717183131900697,
+          "final_difference_k": 0.09558896162762665
+        }
+      },
+      "first_divergence_s": 2.8,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -3.2307500958950186e-06,
+          "largest_abs_difference_through_request_k": 3.2307500958950186e-06
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": -0.00026992434544581556,
+          "largest_abs_difference_through_request_k": 0.0002757276664908659
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 0.6372317100618093,
+      "final_field_max_abs_difference_k": 1.244217274127564
+    },
+    "d13:5to2.5": {
+      "cost_change_percent": -75.26320144356059,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 370,
+        "command_disagreement_fraction": 0.6166666666666667,
+        "requested_command_rmse": 0.442727154501882,
+        "safe_mask_disagreements": 357,
+        "fallback_path_disagreements": 3,
+        "application_event_disagreements": 372,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 3213000000,
+            "request": 32,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.4799999999999999
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 3213000000,
+            "request": 32,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.16,
+              0.36,
+              0.43999999999999995
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 32,
+            "snapshot_ns": 3200000000,
+            "ready_ns": 3213000000,
+            "choice": 7,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.4799999999999999
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.6515697240829468,
+              2.9829723834991455,
+              0.2602223753929138,
+              3.3071811199188232,
+              0.18241015076637268,
+              2.8313615322113037,
+              0.4009115695953369,
+              3.3090598583221436,
+              0.37350091338157654
+            ],
+            "predicted_peak_c": [
+              74.85265350341797,
+              74.91499328613281,
+              74.78968048095703,
+              74.91114807128906,
+              74.79431915283203,
+              74.9139175415039,
+              74.79113006591797,
+              74.91291809082031,
+              74.79193878173828
+            ],
+            "top_two_allowed_score_gap": 0.0018787384033203125
+          },
+          "right": {
+            "request": 32,
+            "snapshot_ns": 3200000000,
+            "ready_ns": 3213000000,
+            "choice": 3,
+            "command": [
+              0.32,
+              0.16,
+              0.36,
+              0.43999999999999995
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.6397663354873657,
+              2.9741270542144775,
+              0.25885629653930664,
+              3.3521265983581543,
+              0.17891675233840942,
+              2.8319242000579834,
+              0.43654191493988037,
+              3.3079586029052734,
+              0.3642151355743408
+            ],
+            "predicted_peak_c": [
+              74.85265350341797,
+              74.91498565673828,
+              74.78968048095703,
+              74.91114044189453,
+              74.79431915283203,
+              74.91392517089844,
+              74.79112243652344,
+              74.91291809082031,
+              74.79194641113281
+            ],
+            "top_two_allowed_score_gap": 0.04416799545288086
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 10.084711443165295,
+          "max_abs_k": 16.42425331865512,
+          "final_difference_k": -9.338518007058056
+        },
+        "max_temperature_c": {
+          "rmse_k": 15.214112547413075,
+          "max_abs_k": 18.1641579307245,
+          "final_difference_k": -16.757984061519693
+        }
+      },
+      "first_divergence_s": 3.2,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -2.2061208113655084e-06,
+          "largest_abs_difference_through_request_k": 2.2061208113655084e-06
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": -0.0001148454609278815,
+          "largest_abs_difference_through_request_k": 0.00013783641001907654
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 10.535543806109146,
+      "final_field_max_abs_difference_k": 17.107051779640372
+    },
+    "d13:10to2.5": {
+      "cost_change_percent": -74.83737414830411,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 372,
+        "command_disagreement_fraction": 0.62,
+        "requested_command_rmse": 0.44133736151233177,
+        "safe_mask_disagreements": 356,
+        "fallback_path_disagreements": 4,
+        "application_event_disagreements": 374,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 2813000000,
+            "request": 28,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.36
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 2813000000,
+            "request": 28,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.32
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 28,
+            "snapshot_ns": 2800000000,
+            "ready_ns": 2813000000,
+            "choice": 7,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.36
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.6644352674484253,
+              2.863677740097046,
+              0.4773142635822296,
+              3.276676654815674,
+              0.35787928104400635,
+              2.806082010269165,
+              0.5901964902877808,
+              3.279912233352661,
+              0.25162938237190247
+            ],
+            "predicted_peak_c": [
+              74.12579345703125,
+              74.1821060180664,
+              74.0683364868164,
+              74.17899322509766,
+              74.07173156738281,
+              74.18099212646484,
+              74.06990051269531,
+              74.18792724609375,
+              74.06281280517578
+            ],
+            "top_two_allowed_score_gap": 0.0032355785369873047
+          },
+          "right": {
+            "request": 28,
+            "snapshot_ns": 2800000000,
+            "ready_ns": 2813000000,
+            "choice": 3,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.32
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.6943742036819458,
+              2.8625385761260986,
+              0.4717482328414917,
+              3.2989039421081543,
+              0.3603876531124115,
+              2.8054773807525635,
+              0.5774651765823364,
+              3.2785751819610596,
+              0.2708887457847595
+            ],
+            "predicted_peak_c": [
+              74.12580871582031,
+              74.18211364746094,
+              74.06836700439453,
+              74.17900848388672,
+              74.07174682617188,
+              74.18101501464844,
+              74.06991577148438,
+              74.18794250488281,
+              74.06282806396484
+            ],
+            "top_two_allowed_score_gap": 0.020328760147094727
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 9.941088790752968,
+          "max_abs_k": 16.505865661188906,
+          "final_difference_k": -8.838022464139911
+        },
+        "max_temperature_c": {
+          "rmse_k": 15.176544326383196,
+          "max_abs_k": 18.189277074039794,
+          "final_difference_k": -16.662395099892066
+        }
+      },
+      "first_divergence_s": 2.8,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -4.8505151681865755e-06,
+          "largest_abs_difference_through_request_k": 4.8505151681865755e-06
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": -0.0004048921905592806,
+          "largest_abs_difference_through_request_k": 0.0004135640765099424
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 10.273015514092373,
+      "final_field_max_abs_difference_k": 17.011462818012745
+    },
+    "d38:10to5": {
+      "cost_change_percent": 275.13686521434613,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 396,
+        "command_disagreement_fraction": 0.66,
+        "requested_command_rmse": 0.440470203305513,
+        "safe_mask_disagreements": 377,
+        "fallback_path_disagreements": 5,
+        "application_event_disagreements": 401,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 1438000000,
+            "request": 14,
+            "fallback": false,
+            "command": [
+              0.28,
+              0.0,
+              0.28,
+              0.0
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 1438000000,
+            "request": 14,
+            "fallback": false,
+            "command": [
+              0.24000000000000002,
+              0.0,
+              0.32,
+              0.0
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 14,
+            "snapshot_ns": 1400000000,
+            "ready_ns": 1438000000,
+            "choice": 1,
+            "command": [
+              0.28,
+              0.0,
+              0.28,
+              0.0
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "scores": [
+              1.429526448249817,
+              4.08765983581543,
+              0.24256646633148193,
+              3.5594024658203125,
+              1.429526448249817,
+              4.076196193695068,
+              0.2862756848335266,
+              2.8416454792022705,
+              1.429526448249817
+            ],
+            "predicted_peak_c": [
+              72.5245132446289,
+              72.57149505615234,
+              72.47726440429688,
+              72.57115936279297,
+              72.5245132446289,
+              72.5712890625,
+              72.47791290283203,
+              72.58859252929688,
+              72.5245132446289
+            ],
+            "top_two_allowed_score_gap": 0.011463642120361328
+          },
+          "right": {
+            "request": 14,
+            "snapshot_ns": 1400000000,
+            "ready_ns": 1438000000,
+            "choice": 5,
+            "command": [
+              0.24000000000000002,
+              0.0,
+              0.32,
+              0.0
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "scores": [
+              1.4422099590301514,
+              4.081902503967285,
+              0.2514503002166748,
+              3.622941255569458,
+              1.4422099590301514,
+              4.086861610412598,
+              0.28239673376083374,
+              2.842611789703369,
+              1.4422099590301514
+            ],
+            "predicted_peak_c": [
+              72.52452087402344,
+              72.57149505615234,
+              72.4772720336914,
+              72.57115173339844,
+              72.52452087402344,
+              72.5712890625,
+              72.47791290283203,
+              72.58859252929688,
+              72.52452087402344
+            ],
+            "top_two_allowed_score_gap": 0.0049591064453125
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 10.34185653171694,
+          "max_abs_k": 16.925257663723528,
+          "final_difference_k": 8.55125727595589
+        },
+        "max_temperature_c": {
+          "rmse_k": 14.907576948289675,
+          "max_abs_k": 17.81282381844791,
+          "final_difference_k": 16.42618361248543
+        }
+      },
+      "first_divergence_s": 1.4,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -5.077158107269497e-07,
+          "largest_abs_difference_through_request_k": 5.077158107269497e-07
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": 3.818841349811919e-06,
+          "largest_abs_difference_through_request_k": 3.818841349811919e-06
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 10.0614157084889,
+      "final_field_max_abs_difference_k": 16.731615047834993
+    },
+    "d38:5to2.5": {
+      "cost_change_percent": -1.057630627271089,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 248,
+        "command_disagreement_fraction": 0.41333333333333333,
+        "requested_command_rmse": 0.14890936840910987,
+        "safe_mask_disagreements": 157,
+        "fallback_path_disagreements": 5,
+        "application_event_disagreements": 251,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 2838000000,
+            "request": 28,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.32
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 2838000000,
+            "request": 28,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.36
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 28,
+            "snapshot_ns": 2800000000,
+            "ready_ns": 2838000000,
+            "choice": 3,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.32
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.6551575660705566,
+              2.8773915767669678,
+              0.4944906234741211,
+              3.2785513401031494,
+              0.34877845644950867,
+              2.8148696422576904,
+              0.5887141227722168,
+              3.2747392654418945,
+              0.2911631762981415
+            ],
+            "predicted_peak_c": [
+              74.09542846679688,
+              74.15126037597656,
+              74.03894805908203,
+              74.14913177490234,
+              74.04195404052734,
+              74.1502685546875,
+              74.04026794433594,
+              74.15815734863281,
+              74.03266906738281
+            ],
+            "top_two_allowed_score_gap": 0.003812074661254883
+          },
+          "right": {
+            "request": 28,
+            "snapshot_ns": 2800000000,
+            "ready_ns": 2838000000,
+            "choice": 7,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.36
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.6902642250061035,
+              2.8771438598632812,
+              0.4274919629096985,
+              3.256108522415161,
+              0.35620248317718506,
+              2.8162715435028076,
+              0.5537409782409668,
+              3.270181655883789,
+              0.31840965151786804
+            ],
+            "predicted_peak_c": [
+              74.0954360961914,
+              74.15126037597656,
+              74.03895568847656,
+              74.14913177490234,
+              74.04195404052734,
+              74.15027618408203,
+              74.04027557373047,
+              74.15815734863281,
+              74.03266906738281
+            ],
+            "top_two_allowed_score_gap": 0.01407313346862793
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 1.8259165028979114,
+          "max_abs_k": 5.283585914322643,
+          "final_difference_k": -0.033656310567025116
+        },
+        "max_temperature_c": {
+          "rmse_k": 0.25949114369977944,
+          "max_abs_k": 0.2991685520233318,
+          "final_difference_k": -0.28296228545850965
+        }
+      },
+      "first_divergence_s": 2.8,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -1.6036320147350125e-06,
+          "largest_abs_difference_through_request_k": 1.6036320147350125e-06
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": -0.00013747917442685775,
+          "largest_abs_difference_through_request_k": 0.00013961741952073226
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 0.3718275613422021,
+      "final_field_max_abs_difference_k": 0.7238313861616916
+    },
+    "d38:10to2.5": {
+      "cost_change_percent": 271.1693028336545,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 376,
+        "command_disagreement_fraction": 0.6266666666666667,
+        "requested_command_rmse": 0.44573684314103235,
+        "safe_mask_disagreements": 358,
+        "fallback_path_disagreements": 4,
+        "application_event_disagreements": 379,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 1438000000,
+            "request": 14,
+            "fallback": false,
+            "command": [
+              0.28,
+              0.0,
+              0.28,
+              0.0
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 1438000000,
+            "request": 14,
+            "fallback": false,
+            "command": [
+              0.24000000000000002,
+              0.0,
+              0.32,
+              0.0
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 14,
+            "snapshot_ns": 1400000000,
+            "ready_ns": 1438000000,
+            "choice": 1,
+            "command": [
+              0.28,
+              0.0,
+              0.28,
+              0.0
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "scores": [
+              1.429526448249817,
+              4.08765983581543,
+              0.24256646633148193,
+              3.5594024658203125,
+              1.429526448249817,
+              4.076196193695068,
+              0.2862756848335266,
+              2.8416454792022705,
+              1.429526448249817
+            ],
+            "predicted_peak_c": [
+              72.5245132446289,
+              72.57149505615234,
+              72.47726440429688,
+              72.57115936279297,
+              72.5245132446289,
+              72.5712890625,
+              72.47791290283203,
+              72.58859252929688,
+              72.5245132446289
+            ],
+            "top_two_allowed_score_gap": 0.011463642120361328
+          },
+          "right": {
+            "request": 14,
+            "snapshot_ns": 1400000000,
+            "ready_ns": 1438000000,
+            "choice": 5,
+            "command": [
+              0.24000000000000002,
+              0.0,
+              0.32,
+              0.0
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "scores": [
+              1.443259835243225,
+              4.082140922546387,
+              0.2519772946834564,
+              3.6221625804901123,
+              1.443259835243225,
+              4.086949348449707,
+              0.2833523452281952,
+              2.844672918319702,
+              1.443259835243225
+            ],
+            "predicted_peak_c": [
+              72.52452850341797,
+              72.57150268554688,
+              72.47727966308594,
+              72.57115936279297,
+              72.52452850341797,
+              72.57129669189453,
+              72.47792053222656,
+              72.5886001586914,
+              72.52452850341797
+            ],
+            "top_two_allowed_score_gap": 0.0048084259033203125
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 10.129220467686542,
+          "max_abs_k": 17.061805793671653,
+          "final_difference_k": 8.517600965388866
+        },
+        "max_temperature_c": {
+          "rmse_k": 14.718813781905574,
+          "max_abs_k": 17.58569223734787,
+          "final_difference_k": 16.14322132702692
+        }
+      },
+      "first_divergence_s": 1.4,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -7.624193045785432e-07,
+          "largest_abs_difference_through_request_k": 7.624193045785432e-07
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": 5.7280385732383365e-06,
+          "largest_abs_difference_through_request_k": 5.7280385732383365e-06
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 9.862055617457111,
+      "final_field_max_abs_difference_k": 16.448652762376483
+    },
+    "d50:10to5": {
+      "cost_change_percent": -72.90064970626584,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 373,
+        "command_disagreement_fraction": 0.6216666666666667,
+        "requested_command_rmse": 0.44441497124496904,
+        "safe_mask_disagreements": 357,
+        "fallback_path_disagreements": 3,
+        "application_event_disagreements": 375,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 2850000000,
+            "request": 28,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.36
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 2850000000,
+            "request": 28,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.32
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 28,
+            "snapshot_ns": 2800000000,
+            "ready_ns": 2850000000,
+            "choice": 7,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.36
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.6648248434066772,
+              2.8805043697357178,
+              0.5019776225090027,
+              3.259833335876465,
+              0.33766835927963257,
+              2.8201849460601807,
+              0.5517864227294922,
+              3.2668981552124023,
+              0.34159672260284424
+            ],
+            "predicted_peak_c": [
+              74.08125305175781,
+              74.13671112060547,
+              74.02474975585938,
+              74.13408660888672,
+              74.02748107910156,
+              74.13555145263672,
+              74.02623748779297,
+              74.14388275146484,
+              74.01819610595703
+            ],
+            "top_two_allowed_score_gap": 0.0070648193359375
+          },
+          "right": {
+            "request": 28,
+            "snapshot_ns": 2800000000,
+            "ready_ns": 2850000000,
+            "choice": 3,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.32
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.695573091506958,
+              2.887352228164673,
+              0.4778026044368744,
+              3.31209135055542,
+              0.3560832142829895,
+              2.8290915489196777,
+              0.5708101987838745,
+              3.3018007278442383,
+              0.3582032024860382
+            ],
+            "predicted_peak_c": [
+              74.08124542236328,
+              74.13670349121094,
+              74.02474212646484,
+              74.13407897949219,
+              74.02748107910156,
+              74.13555145263672,
+              74.02622985839844,
+              74.14387512207031,
+              74.0181884765625
+            ],
+            "top_two_allowed_score_gap": 0.01029062271118164
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 10.021700915392866,
+          "max_abs_k": 17.054224271673135,
+          "final_difference_k": -8.433906558786546
+        },
+        "max_temperature_c": {
+          "rmse_k": 14.682088429641908,
+          "max_abs_k": 17.545238950760435,
+          "final_difference_k": -16.105920130280893
+        }
+      },
+      "first_divergence_s": 2.8,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -3.285359568394597e-06,
+          "largest_abs_difference_through_request_k": 3.285359568394597e-06
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": -0.0002890087748141923,
+          "largest_abs_difference_through_request_k": 0.0002933074445223838
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 9.867727161073283,
+      "final_field_max_abs_difference_k": 16.417547573426333
+    },
+    "d50:5to2.5": {
+      "cost_change_percent": -7.608191535062549,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 154,
+        "command_disagreement_fraction": 0.25666666666666665,
+        "requested_command_rmse": 0.014899664425751344,
+        "safe_mask_disagreements": 11,
+        "fallback_path_disagreements": 0,
+        "application_event_disagreements": 155,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 2550000000,
+            "request": 25,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.24000000000000002
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 2550000000,
+            "request": 25,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.2
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 25,
+            "snapshot_ns": 2500000000,
+            "ready_ns": 2550000000,
+            "choice": 7,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.24000000000000002
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.7446744441986084,
+              2.8880069255828857,
+              0.5484238862991333,
+              3.2540762424468994,
+              0.4611593782901764,
+              2.8907101154327393,
+              0.629071831703186,
+              3.2919723987579346,
+              0.13755351305007935
+            ],
+            "predicted_peak_c": [
+              73.52479553222656,
+              73.59590148925781,
+              73.45466613769531,
+              73.58830261230469,
+              73.4613037109375,
+              73.59632873535156,
+              73.45380401611328,
+              73.58024597167969,
+              73.4703369140625
+            ],
+            "top_two_allowed_score_gap": 0.037896156311035156
+          },
+          "right": {
+            "request": 25,
+            "snapshot_ns": 2500000000,
+            "ready_ns": 2550000000,
+            "choice": 3,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.2
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.747859001159668,
+              2.888657808303833,
+              0.5505898594856262,
+              3.267371892929077,
+              0.46325674653053284,
+              2.8914906978607178,
+              0.588609516620636,
+              3.266944169998169,
+              0.1709691882133484
+            ],
+            "predicted_peak_c": [
+              73.5248031616211,
+              73.59590148925781,
+              73.45466613769531,
+              73.58830261230469,
+              73.4613037109375,
+              73.59632873535156,
+              73.45379638671875,
+              73.58025360107422,
+              73.4703369140625
+            ],
+            "top_two_allowed_score_gap": 0.0004277229309082031
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 0.5209930946807341,
+          "max_abs_k": 0.6318821565674853,
+          "final_difference_k": -0.5959147872338662
+        },
+        "max_temperature_c": {
+          "rmse_k": 0.5050046924024048,
+          "max_abs_k": 0.6079526561869955,
+          "final_difference_k": -0.5720442317090431
+        }
+      },
+      "first_divergence_s": 2.5,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -1.251013443948068e-06,
+          "largest_abs_difference_through_request_k": 1.251013443948068e-06
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": -0.00014265774184707425,
+          "largest_abs_difference_through_request_k": 0.00014265774184707425
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 0.597296699645267,
+      "final_field_max_abs_difference_k": 0.6922208461245134
+    },
+    "d50:10to2.5": {
+      "cost_change_percent": -74.96242018137067,
+      "trace": {
+        "alignment": "common snapshot timestamps; skipped requests are reported separately",
+        "requests_left": 600,
+        "requests_right": 600,
+        "left_only_request_times_ns": [],
+        "right_only_request_times_ns": [],
+        "aligned_requests": 600,
+        "command_disagreements": 376,
+        "command_disagreement_fraction": 0.6266666666666667,
+        "requested_command_rmse": 0.4422337240268619,
+        "safe_mask_disagreements": 357,
+        "fallback_path_disagreements": 3,
+        "application_event_disagreements": 378,
+        "first_different_application": {
+          "left": {
+            "event": "apply",
+            "time_ns": 2550000000,
+            "request": 25,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.24000000000000002
+            ],
+            "no_change": false
+          },
+          "right": {
+            "event": "apply",
+            "time_ns": 2550000000,
+            "request": 25,
+            "fallback": false,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.2
+            ],
+            "no_change": false
+          }
+        },
+        "first_different_requested_command": {
+          "left": {
+            "request": 25,
+            "snapshot_ns": 2500000000,
+            "ready_ns": 2550000000,
+            "choice": 7,
+            "command": [
+              0.32,
+              0.08,
+              0.36,
+              0.24000000000000002
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.7248756885528564,
+              2.895867109298706,
+              0.5866329669952393,
+              3.2796573638916016,
+              0.4572984576225281,
+              2.8905117511749268,
+              0.6202329397201538,
+              3.283754348754883,
+              0.10843663662672043
+            ],
+            "predicted_peak_c": [
+              73.5248031616211,
+              73.59590911865234,
+              73.45465850830078,
+              73.58830261230469,
+              73.46126556396484,
+              73.59632873535156,
+              73.45380401611328,
+              73.58025360107422,
+              73.4703369140625
+            ],
+            "top_two_allowed_score_gap": 0.00409698486328125
+          },
+          "right": {
+            "request": 25,
+            "snapshot_ns": 2500000000,
+            "ready_ns": 2550000000,
+            "choice": 3,
+            "command": [
+              0.32,
+              0.12,
+              0.36,
+              0.2
+            ],
+            "fallback_reason": null,
+            "filter_intervention": false,
+            "valid_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "predicted_safe_mask": [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "scores": [
+              1.747859001159668,
+              2.888657808303833,
+              0.5505898594856262,
+              3.267371892929077,
+              0.46325674653053284,
+              2.8914906978607178,
+              0.588609516620636,
+              3.266944169998169,
+              0.1709691882133484
+            ],
+            "predicted_peak_c": [
+              73.5248031616211,
+              73.59590148925781,
+              73.45466613769531,
+              73.58830261230469,
+              73.4613037109375,
+              73.59632873535156,
+              73.45379638671875,
+              73.58025360107422,
+              73.4703369140625
+            ],
+            "top_two_allowed_score_gap": 0.0004277229309082031
+          }
+        }
+      },
+      "temperature": {
+        "mean_temperature_c": {
+          "rmse_k": 10.01146379170199,
+          "max_abs_k": 16.502731403938768,
+          "final_difference_k": -9.029821346020412
+        },
+        "max_temperature_c": {
+          "rmse_k": 15.17318608495135,
+          "max_abs_k": 18.112236153537637,
+          "final_difference_k": -16.677964361989936
+        }
+      },
+      "first_divergence_s": 2.5,
+      "actual_temperature_before_decision_divergence": {
+        "mean_temperature_c": {
+          "right_minus_left_k": -3.7496980809237357e-06,
+          "largest_abs_difference_through_request_k": 3.7496980809237357e-06
+        },
+        "max_temperature_c": {
+          "right_minus_left_k": -0.00042848310509668863,
+          "largest_abs_difference_through_request_k": 0.00042848310509668863
+        }
+      },
+      "masks_equal_at_first_divergence": true,
+      "no_filter_at_first_divergence": true,
+      "final_field_rmse_k": 10.382964903310318,
+      "final_field_max_abs_difference_k": 16.961199074409095
+    }
+  },
+  "orderings": {
+    "10.0": {
+      "costs_in_13_38_50ms_order": [
+        0.03628939158773115,
+        0.009911605536688642,
+        0.036601913873235574
+      ],
+      "best_delay_ms": 38.0,
+      "ascending_cost_delay_order_ms": [
+        38.0,
+        13.0,
+        50.0
+      ],
+      "middle_cost_below_both_endpoints": true,
+      "middle_cost_above_both_endpoints": false
+    },
+    "5.0": {
+      "costs_in_13_38_50ms_order": [
+        0.03691408897656462,
+        0.03718208630274534,
+        0.009918880854718988
+      ],
+      "best_delay_ms": 50.0,
+      "ascending_cost_delay_order_ms": [
+        50.0,
+        13.0,
+        38.0
+      ],
+      "middle_cost_below_both_endpoints": false,
+      "middle_cost_above_both_endpoints": true
+    },
+    "2.5": {
+      "costs_in_13_38_50ms_order": [
+        0.009131363829077596,
+        0.036788837170149136,
+        0.009164233401157318
+      ],
+      "best_delay_ms": 13.0,
+      "ascending_cost_delay_order_ms": [
+        13.0,
+        50.0,
+        38.0
+      ],
+      "middle_cost_below_both_endpoints": false,
+      "middle_cost_above_both_endpoints": true
+    }
+  },
+  "verdict": "Execution and 10 ms reproduction passed. Delay ranking is integration-step sensitive; convergence of the selected closed-loop case is not established.",
+  "scope": "One frozen checkpoint, one selected episode, three delays and three steps; not nine independent episodes.",
+  "cost_reconstruction_limit": "Tracking RMSE is taken from metrics; it cannot be independently recovered from spatial mean/max temperature series alone. Terminal cost and command effort/slew/fallback integrals are checked against saved states/events.",
+  "mechanism_limit": "First command changes occur with equal admission masks and no filter intervention. This identifies score-ordering changes but does not isolate integrator error, BF16 effects, or policy discontinuity as the sole cause."
+}

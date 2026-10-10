@@ -1,15 +1,24 @@
-# Version 1.0.0
+# Version 1.1.0 — replay and deadline-policy evidence
 
-Research data and portable analysis accompanying *Inference-Delay-Aware Evaluation of Learning-Based Thermal Controllers: A Retrospective Simulation Study*.
+Companion data for *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*, manuscript revision of 10 October 2026.
 
-Includes original A/B/C/D evidence, 180,000 latency request records, and 741 numerical-validation runs. The extended validation contains 732 runs; the earlier C closed-loop batch contains nine.
+## Added
 
-The small repository supports paired episode statistics and figure regeneration. Two optional raw-data release assets support independent quadrature, field, journal, and baseline-event audits. SHA256 manifests and citation metadata accompany the package.
+- Compact outcomes for 1,128 completed cases: 240 original-condition reproductions, 720 additional-replay runs, and 168 FV hold runs, using the same 24 normal episodes.
+- All 57 paired replay/fallback contrasts, sequence summaries, method rankings, and fixed protocol records.
+- Cost-component and physical-effect checks, alpha-selection evidence, and representative hold temperature inputs.
+- First-deadline applied-command records, reconstructed increment penalties, and Figure S2.
+- Six main figures, two supplementary figures, the complete table/figure map, and a three-page S1 guide.
+- Byte-preserved scheduler, latency-matching, protocol, and metric-check source excerpts.
 
-Code: MIT. Data and research figures: CC BY 4.0.
+## Reproduce
 
-Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation
+Install `requirements.txt` and run `python -B scripts/reproduce_all.py`. Current outputs are in `supplement/outputs/`. The standalone ZIP contains equivalent inputs and can be run with `python -B Supplement_S1/scripts/reproduce_review.py` after extraction.
 
-Extract both raw-data assets into the repository root, then run `python scripts/verify.py --raw-dir raw_data` and `python scripts/audit_raw.py --raw-dir raw_data`. Check the archive hashes against the attached `SHA256SUMS` before extraction. The repository alone supports `python scripts/reproduce.py` for the small-data analysis and four figures.
+## Assets and scope
 
-Known scope limits: selected checkpoints and reused timing sequences; C has one selected episode; D refinement uses 24 normal test episodes; original model weights and full training inputs are not included. Earlier C tracking quadrature is unavailable.
+This release contains the small supplement ZIP and its guide PDF. Check both against the attached SHA256SUMS. The two large raw-data assets remain at v1.0.0; their bytes and tag are unchanged. The full raw replay/hold batch is not distributed in v1.1.0. Saved-result checks do not rerun training/inference, perform new measurements, or independently repeat the omitted raw-input audit.
+
+Additional replay/hold settings were tested at 10 ms only. Their settings reuse three archived timing repeats, not six independent hardware measurements. Intervals condition on fixed systems and timing sequences.
+
+Code/documentation: MIT. Data/figures: CC BY 4.0. Authors: Minsu Jo, Namhyun Yoo, Hoansuk Choi, Jinhong Yang. The associated manuscript is in preparation; no journal acceptance is claimed.

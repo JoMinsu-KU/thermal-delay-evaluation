@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite this dataset and identify the release version used. The associated manuscript is in preparation."
+type: dataset
+title: "Data and analysis for Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study"
+version: 1.1.0
+url: "https://github.com/JoMinsu-KU/thermal-delay-evaluation"
+repository-code: "https://github.com/JoMinsu-KU/thermal-delay-evaluation"
+authors:
+  - family-names: Jo
+    given-names: Minsu
+  - family-names: Yoo
+    given-names: Namhyun
+  - family-names: Choi
+    given-names: Hoansuk
+  - family-names: Yang
+    given-names: Jinhong
+license: CC-BY-4.0
+keywords:
+  - thermal control
+  - inference latency
+  - closed-loop evaluation
+  - numerical sensitivity
+  - reproducibility
+abstract: "Archived thermal-controller evaluation, numerical validation, and 1,128 replay/fallback runs, with portable saved-result analysis scripts. Statistical units remain one selected C episode and 24 normal D test episodes for the numerical comparisons. Data are CC BY 4.0; code is MIT."

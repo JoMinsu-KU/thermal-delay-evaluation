@@ -1,0 +1,473 @@
+{
+  "schema": "thermal-l2-resolved-v1",
+  "seed": 6060,
+  "profile": "pilot",
+  "poc": {
+    "schema_version": "ojpoc-v1",
+    "seed": 2026,
+    "profile": "core",
+    "resources": {
+      "visible_gpus": 1,
+      "full_h200_profile": true,
+      "minimum_gpu_gib_for_profile_check": 100,
+      "torch_threads": 2,
+      "torch_interop_threads": 1,
+      "dataloader_workers": 0,
+      "pin_memory": false,
+      "persistent_workers": false,
+      "episode_cache_count": 2,
+      "host_cache_mib": 512,
+      "ram_warn_fraction": 0.75,
+      "ram_stop_fraction": 0.88,
+      "ram_stop_consecutive_samples": 3,
+      "download_workers": 1,
+      "cpu_offload": false,
+      "simultaneous_training_processes": 1
+    },
+    "models": {
+      "base_2b": {
+        "repo": "Qwen/Qwen3.5-2B",
+        "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+      },
+      "openjev_2b": {
+        "repo": "ZefanCai/Open-Jev-2B",
+        "revision": "0c7aa498b1627be8da4acf34c863ff0ee0a92785"
+      },
+      "native": {
+        "max_candidate_tokens": 384,
+        "candidate_count": 9,
+        "candidate_chunk_size_inference": 9,
+        "prefix_cache": false,
+        "dtype": "bfloat16",
+        "head_dtype": "float32",
+        "attention": "sdpa"
+      },
+      "shared": {
+        "sensor_tokens": 8,
+        "thermal_tokens": 8,
+        "plc_tokens": 2,
+        "passport_recipe_tokens": 4,
+        "max_task_tokens": 16,
+        "summary_tokens": 1,
+        "max_padded_tokens": 64,
+        "observation_width": 128,
+        "context_width": 256,
+        "candidate_width": 64,
+        "physics_width": 64,
+        "use_native_qwen_vision": false
+      },
+      "lora": {
+        "rank": 8,
+        "alpha": 16,
+        "dropout": 0.0,
+        "reuse_checkpoint_targets": true,
+        "gradient_checkpointing": true,
+        "use_reentrant": false
+      },
+      "student": {
+        "enabled": false,
+        "width": 128,
+        "layers": 3,
+        "attention_heads": 4,
+        "replace_pino_at_first": false
+      },
+      "rgb": {
+        "enabled": false,
+        "height": 96,
+        "width": 96,
+        "rate_hz": 1,
+        "extra_tokens": 8,
+        "encoder": "small_cnn_newly_trained"
+      }
+    },
+    "physics": {
+      "task": "thermal_plate_poc_v1",
+      "domain_m": [
+        0.5,
+        0.5
+      ],
+      "fine_grid": 64,
+      "refinement_grid": 128,
+      "operator_grid": 32,
+      "boundary": "insulated_lateral",
+      "heater_basis": "four_quadrants_partition_of_unity",
+      "nominal": {
+        "heat_capacity_area": 12000.0,
+        "conductivity_area": 0.75,
+        "surface_loss": 25.0,
+        "ambient_temperature_c": 25.0,
+        "heater_flux_w_m2": 40000.0,
+        "actuator_tau_s": [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      },
+      "id_ranges": {
+        "heat_capacity_area": [
+          8000.0,
+          16000.0
+        ],
+        "conductivity_area": [
+          0.4,
+          1.2
+        ],
+        "surface_loss": [
+          10.0,
+          40.0
+        ],
+        "ambient_temperature_c": [
+          20.0,
+          30.0
+        ],
+        "actuator_tau_s": [
+          0.05,
+          0.2
+        ],
+        "initial_mean_temperature_c": [
+          40.0,
+          70.0
+        ],
+        "target_temperature_c": [
+          70.0,
+          95.0
+        ]
+      },
+      "dt_control_s": 0.1,
+      "episode_s": 60.0,
+      "max_substep_s": 0.01,
+      "explicit_stability_factor": 0.4,
+      "horizon_steps": 20,
+      "actuator_integration": "exact_exponential_with_interval_mean",
+      "command_min": 0.0,
+      "command_max": 1.0,
+      "slew_per_s": 0.4,
+      "nominal_delta": 0.04,
+      "diagnostic_temperature_limit_c": 120.0,
+      "real_equipment_limit": false,
+      "cost": {
+        "version": "thermal_poc_v1",
+        "temperature_scale_k": 100.0,
+        "tracking_weight": 1.0,
+        "terminal_weight": 0.5,
+        "action_weight": 0.002,
+        "delta_action_weight": 0.02
+      }
+    },
+    "observations": {
+      "sensor_hz": 100,
+      "sensor_window": 64,
+      "sensor_channels": 16,
+      "thermal_hz": 5,
+      "thermal_history": 2,
+      "thermal_shape": [
+        1,
+        16,
+        16
+      ],
+      "plc_dim": 12,
+      "passport_dim": 9,
+      "recipe_dim": 5,
+      "causal_capture_receive_ready_gate": true,
+      "sensor_max_age_s": 0.1,
+      "thermal_max_age_s": 0.5,
+      "training_truth_is_input": false
+    },
+    "operator": {
+      "name": "pino_balance",
+      "input_channels": 14,
+      "condition_dim": 90,
+      "output_horizons": 20,
+      "layers": 3,
+      "width": 32,
+      "modes": [
+        8,
+        8
+      ],
+      "reflection_padding": 8,
+      "conditioner_width": 64,
+      "fft_dtype": "float32",
+      "residual_dtype": "float32",
+      "multi_horizon_single_forward": true,
+      "goal_is_dynamics_input": false,
+      "residual_time_scheme": "trapezoidal",
+      "balance_projection": true,
+      "field_loss_scale_k": 10.0,
+      "delta_response_loss_scale_k": 0.25,
+      "residual_scale_w_m2": 40000.0,
+      "physics_features_dim": 16,
+      "scorer_calibration_feature_indices": [
+        13,
+        14
+      ],
+      "scorer_calibration_features_fixed_zero": true,
+      "calibrated_margin_used_only_in_independent_gate": true
+    },
+    "data": {
+      "storage": "npy_mmap_plus_jsonl",
+      "group_split_before_generation": true,
+      "profiles": {
+        "smoke": {
+          "train_episodes": 8,
+          "validation_episodes": 2,
+          "calibration_episodes": 2,
+          "test_episodes": 4,
+          "ood_episodes": 4
+        },
+        "pilot": {
+          "train_episodes": 40,
+          "validation_episodes": 8,
+          "calibration_episodes": 8,
+          "test_episodes": 8,
+          "ood_episodes": 16
+        },
+        "core": {
+          "train_episodes": 200,
+          "validation_episodes": 32,
+          "calibration_episodes": 40,
+          "test_episodes": 48,
+          "ood_episodes": 96
+        }
+      },
+      "core": {
+        "calibration_probability_episodes": 20,
+        "calibration_physics_margin_episodes": 20,
+        "ood_groups": 4,
+        "ood_episodes_per_group": 24,
+        "policy_anchors_per_train_episode": 60,
+        "pino_windows": 50000,
+        "paired_counterfactual_states": 2048,
+        "counterfactual_branches_per_pair": 2
+      },
+      "reference_labeler": "fv64_from_observer_state",
+      "privileged_oracle_only_diagnostic": true,
+      "store_all_candidate_future_fields": false
+    },
+    "training": {
+      "optimizer": "adamw",
+      "weight_decay": 0.01,
+      "gradient_clip": 1.0,
+      "warmup_fraction": 0.05,
+      "validation_every_steps": 100,
+      "full_validation_every_steps": 500,
+      "save_every_steps": 250,
+      "stages": {
+        "observer": {
+          "microbatch": 32,
+          "accumulation": 1,
+          "max_steps": 2000,
+          "learning_rate": 0.0003
+        },
+        "operator": {
+          "microbatch": 16,
+          "accumulation": 4,
+          "max_steps": 5000,
+          "learning_rate": 0.0005,
+          "pde_weight": 0.1,
+          "pde_ramp_steps": 500,
+          "delta_response_weight": 0.2
+        },
+        "operator_pairs": {
+          "microbatch_pairs": 8,
+          "accumulation": 2,
+          "max_steps": 1000,
+          "learning_rate": 0.0001
+        },
+        "native_warmup": {
+          "microbatch": 1,
+          "accumulation": 16,
+          "max_steps": 250,
+          "learning_rate_head": 0.0001
+        },
+        "native_adapt": {
+          "microbatch": 1,
+          "accumulation": 16,
+          "max_steps": 1500,
+          "learning_rate_lora": 5e-05,
+          "learning_rate_head": 0.0001
+        },
+        "shared_warmup": {
+          "microbatch": 1,
+          "accumulation": 16,
+          "max_steps": 500,
+          "learning_rate_new": 0.0003
+        },
+        "shared_adapt": {
+          "microbatch": 1,
+          "accumulation": 16,
+          "max_steps": 2000,
+          "learning_rate_lora": 3e-05,
+          "learning_rate_new": 0.0001
+        },
+        "student": {
+          "microbatch": 32,
+          "accumulation": 2,
+          "max_steps": 3000,
+          "learning_rate": 0.0003,
+          "kd_weight": 0.5,
+          "kd_temperature": 2.0
+        }
+      },
+      "policy_rank_weight": 0.2,
+      "train_operator_jointly_with_qwen": false
+    },
+    "runtime": {
+      "actuation_enabled": false,
+      "mode": "simulation_only",
+      "control_rate_hz": 10,
+      "primary_deadline_ms": 100,
+      "optional_student_deadline_ms": 20,
+      "request_batch": 1,
+      "allow_network_in_control_timing_claim": false,
+      "expired_command_policy": "discard_then_fallback",
+      "all_candidates_invalid_policy": "fallback_without_softmax"
+    },
+    "evaluation": {
+      "warmup_requests": 200,
+      "latency_requests_main": 10000,
+      "latency_requests_optional_tail": 100000,
+      "primary_tail_quantile": 0.99,
+      "paired_bootstrap_resamples": 2000,
+      "optional_seeds": [
+        2026,
+        2027,
+        2028
+      ],
+      "noninferiority_margin_fraction": 0.05,
+      "test_tuning_allowed": false
+    },
+    "checkpoint": {
+      "include_base_weights": false,
+      "keep_last": 2,
+      "keep_best": 1,
+      "atomic_write": true,
+      "save_rng_and_sampler_state": true
+    }
+  },
+  "config_source": "configs/l2_residual.yaml",
+  "acceptance": {
+    "schema_version": "thermal-l1-acceptance-v1",
+    "solver": {
+      "cooling_abs_k": 0.0001,
+      "conservation_abs_k": 1e-08,
+      "refinement_rmse_k": 0.1,
+      "refinement_peak_k": 0.2,
+      "refinement_order_accuracy": 0.95,
+      "significant_cost_gap": 1e-06
+    },
+    "operator": {
+      "horizon_rmse_k": 0.5,
+      "candidate_delta_rmse_k": 0.1,
+      "significant_order_accuracy": 0.9,
+      "peak_abs_error_k": 1.0
+    },
+    "policy": {
+      "regret_improvement_min": 0.0
+    },
+    "reload": {
+      "score_atol": 0.03,
+      "score_rtol": 0.01,
+      "probability_atol": 0.001,
+      "probability_rtol": 0.01
+    }
+  },
+  "l2": {
+    "schema_version": "thermal-l2-v1",
+    "default_profile": "core",
+    "seed": 6060,
+    "parent_run": "l1_pilot_s2026_20260923T154422Z_e829d6",
+    "recheck_run": "l1_recheck_pilot_s2027_20260924T080855Z_ccae6c",
+    "memory_guard": false,
+    "deadline_ms": 100.0,
+    "bootstrap_resamples": 2000,
+    "probability_bins": 10,
+    "physics_margin_quantile": 0.95,
+    "noninferiority_fraction": 0.05,
+    "thermal_age_tolerance_s": 1e-08,
+    "violation_time_tolerance_s": 1e-08,
+    "operator_policy": "frozen_parent_validation_best",
+    "selection": "validation_regret_plus_failure_penalty",
+    "selection_failure_penalty": 1.0,
+    "methods": [
+      "pi",
+      "fv_mpc",
+      "pino_mpc",
+      "shared_physics",
+      "small_physics"
+    ],
+    "train_methods": [
+      "shared_physics",
+      "small_physics"
+    ],
+    "ablation_methods": [],
+    "episode_code_offset": 240000,
+    "physics_feature_version": "candidate_relative_v3",
+    "shared_microbatch": 16,
+    "inference_backend": "cuda_graph",
+    "require_quality_default": true,
+    "protocol_revision": "20260928-paired-cost-residual-v1",
+    "validation_control_audit": false,
+    "rollout_learning": {
+      "enabled": false
+    },
+    "residual_learning": {
+      "enabled": true,
+      "alphas": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "bound": 4.0,
+      "minimum_improvement_fraction": 0.05,
+      "label_mode": "fv_hold_2s",
+      "selection_delays": [
+        "zero",
+        "38ms"
+      ],
+      "profiles": {
+        "smoke": {
+          "train_episodes": 2,
+          "anchors": 2
+        },
+        "pilot": {
+          "train_episodes": 8,
+          "anchors": 24
+        },
+        "core": {
+          "train_episodes": 32,
+          "anchors": 48
+        }
+      }
+    }
+  },
+  "budget": {
+    "counts": {
+      "train": 40,
+      "validation": 16,
+      "calibration": 8,
+      "test": 32,
+      "ood": 16
+    },
+    "duration_s": 60.0,
+    "anchors": 12,
+    "observer_steps": 200,
+    "shared_warmup": 50,
+    "shared_adapt": 400,
+    "native_warmup": 25,
+    "native_adapt": 150,
+    "small_steps": 300,
+    "accumulation": 16,
+    "small_batch": 32,
+    "validation_every": 100,
+    "latency_repeats": 3,
+    "latency_requests": 10000,
+    "fallback_requests": 1000,
+    "warmup": 200,
+    "fallback_warmup": 20,
+    "ring_size": 128,
+    "fallback_ring_size": 8,
+    "ablation_loop_per_split": 2,
+    "original_loop_per_split": 2
+  }
+}

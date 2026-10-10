@@ -1,0 +1,14 @@
+{
+  "files": {
+    "scheduler.py": "a3b601858c8f640b898d6284d90529b2538fc96859d3d80acf7941a0f3ef1d29",
+    "latency_replay.py": "fda8aa156fabd58326c382243be6a527195b59e4ca50a8c506fc7fd68028c2b9",
+    "legacy_scheduler_reference.py": "9602fcefafb66add71bf670ec45e2455fd486671967bd192dab1ec2caff42149",
+    "plan.py": "6f5ebc20ac1500446d9fefb37f458df34ec8dc153a2bfaa187a0ed3057be4e92",
+    "metric_audit.py": "a803f301253eb69c55a48193692cb2c4186ad54e48d11b56a81a7ee922dcf426",
+    "validation_io.py": "6ce7d724614c131b442efbe4b0c2ccbb47816a976174363cc4c67809f186bbf0",
+    "reference.json": "22a47a8813c04f490bf3e790b9bd8296b5e151a8aaabbb7ecdf9b3049dadc30c"
+  },
+  "source": "Completed replay/fallback validation harness",
+  "byte_preserved": true,
+  "standalone_simulation_package": false
+}

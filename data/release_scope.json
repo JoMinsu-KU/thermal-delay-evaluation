@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "prepared_date": "2026-10-08",
+  "version": "1.1.0",
+  "prepared_date": "2026-10-10",
   "primary_D_archived_rows": 480,
   "primary_D_test_episodes": 32,
   "primary_D_normal_test_episodes": 24,
@@ -22,5 +22,14 @@
     "Downloaded literature PDFs",
     "Author biographies/photos and internal review conversations",
     "Machine identities, private paths, and session logs"
-  ]
+  ],
+  "replay_fallback_cases": 1128,
+  "replay_fallback_independent_episodes": 24,
+  "replay_fallback_plant_cap_ms": 10,
+  "paired_replay_contrasts": 57,
+  "main_figures": 6,
+  "supplementary_figures": 2,
+  "new_replay_raw_records_released": false,
+  "previous_raw_release": "v1.0.0",
+  "publication_status_at_packaging": "Prepared for user-run publication; not published by this script."
 }

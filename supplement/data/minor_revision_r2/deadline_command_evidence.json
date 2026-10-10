@@ -1,0 +1,76 @@
+{
+  "episode": "l2_240070",
+  "selection": "Unchanged lower-median zero-delay FV-cost episode used in main Figure 5.",
+  "sequence": "original interleaved replay",
+  "plant_cap_ms": 10,
+  "clock_schedules_match": true,
+  "policies": {
+    "zero": {
+      "case": "baseline_fv_mpc_delayed_legacy_zero_l2_240070",
+      "raw_manifest_sha256": "4ff5ec79743ff2c1bac4832080d26072dcc3d55ae7d07e2c179a44f061e3bbf1",
+      "trace_sha256": "07c45f27260dc810ceb8a642d15ca7cf9ccb645fb6830b08b064f465b044f827",
+      "seal_verified": true,
+      "request_count": 592,
+      "application_event_count": 592,
+      "effective_apply_calls": 314,
+      "nominal_slots": 600,
+      "reconstructed_J_increment": 1.8720000000000004e-05,
+      "first_expiration_ns": 6800000000,
+      "previous_command": [
+        0.64,
+        0.68,
+        0.64,
+        0.68
+      ],
+      "expiration_command": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "first_following_nonfallback_ns": 7177863943,
+      "first_following_nonfallback_command": [
+        0.04,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "hold": {
+      "case": "fallback_fv_mpc_delayed_legacy_hold_l2_240070",
+      "raw_manifest_sha256": "7eb0ac0d5aa1cf95c6df7eeac659dbfddd3da59c64cc7f62971ddfc3b580e2bc",
+      "trace_sha256": "0433ebc3c4ef388045ac92b4839da7fea0f43969be3fee81fae45657bfe42bb3",
+      "seal_verified": true,
+      "request_count": 592,
+      "application_event_count": 592,
+      "effective_apply_calls": 213,
+      "nominal_slots": 600,
+      "reconstructed_J_increment": 2.666666666666667e-06,
+      "first_expiration_ns": 6800000000,
+      "previous_command": [
+        0.64,
+        0.68,
+        0.64,
+        0.68
+      ],
+      "expiration_command": [
+        0.64,
+        0.68,
+        0.64,
+        0.68
+      ],
+      "first_following_nonfallback_ns": 7177863943,
+      "first_following_nonfallback_command": [
+        0.68,
+        0.68,
+        0.64,
+        0.68
+      ]
+    }
+  },
+  "plot_window_s": [
+    6.4,
+    9.0
+  ],
+  "new_simulation_or_inference": false
+}

@@ -1,3 +1,11 @@
+# Version 1.1.0 extension
+
+For the 10 October 2026 manuscript, use `python -B scripts/reproduce_all.py`; current results appear in `supplement/outputs/`. See [the complete map](../supplement/TABLE_FIGURE_MAP.md), [methods](../supplement/METHODS.md), and [supplement README](../supplement/README.md). The new 1,128-case batch reuses 24 episodes. Its full raw records are not included. Original raw assets at v1.0.0 cover the earlier primary/numerical evidence only.
+
+The material below documents the original v1.0.0 data and tools, which are retained for compatibility.
+
+---
+
 # Provenance and publication scope
 
 Prepared version: 1.0.0, 8 October 2026.

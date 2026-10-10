@@ -1,0 +1,125 @@
+{
+  "delay_values": {
+    "original_normal_cases": 240,
+    "returned_cases": 1128,
+    "injected_compute_ms_values": [
+      0.0
+    ],
+    "injected_apply_ms_values": [
+      0.0
+    ],
+    "scope": "24 normal test episodes and all 1128 returned cases; excludes separate OOD delay-injection cases."
+  },
+  "alpha_selection": {
+    "08_shared_physics": {
+      "selected_alpha": 1.0,
+      "recomputed_keys_match": true,
+      "candidates": [
+        {
+          "alpha": 0.0,
+          "key": [
+            0,
+            1.0773476725866342,
+            1.0239181361445575
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "key": [
+            0,
+            1.0734808313127335,
+            1.0212404493674425
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "key": [
+            0,
+            1.0711775198013906,
+            1.0183762017787374
+          ]
+        }
+      ],
+      "validation_episode_count": 16,
+      "normal_episode_count": 12,
+      "synthetic_delays": [
+        "38ms",
+        "zero"
+      ],
+      "source_sha256": "43d5038430604686add23571815fc4ca627fc13f857333dcb6d4ff3929893ee9"
+    },
+    "09_small_physics": {
+      "selected_alpha": 0.5,
+      "recomputed_keys_match": true,
+      "candidates": [
+        {
+          "alpha": 0.0,
+          "key": [
+            0,
+            1.0773476725866342,
+            1.0239181361445575
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "key": [
+            0,
+            1.0709935269957493,
+            1.01945786465381
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "key": [
+            0,
+            1.0757032375831204,
+            1.021375160858118
+          ]
+        }
+      ],
+      "validation_episode_count": 16,
+      "normal_episode_count": 12,
+      "synthetic_delays": [
+        "38ms",
+        "zero"
+      ],
+      "source_sha256": "148814e9766b6938d50c525d46adaf12fcebbb0adcbaafd2ba56ae2ec1d95905"
+    }
+  },
+  "hold_temperature": {
+    "case": "fallback_fv_mpc_delayed_legacy_hold_l2_240070",
+    "episode": "l2_240070",
+    "sequence": "legacy",
+    "fallback_policy": "hold",
+    "plant_max_step_ms": 10,
+    "truth_samples": 601,
+    "truth_logging_hz": 10,
+    "seal_verified": true,
+    "same_request_and_deadline_schedule_as_original_zero_fallback": true,
+    "raw_files_sha256": {
+      "condition.json": "35cd4c2c7a28e48c2cf41fb27f0d5d27eced8a642ddda172a71f506c6fa88bb4",
+      "environment.json": "d06b7069040d0f13ff207a7d2035e25bacbae6a06c65c2f27943bbe7cc2cbcda",
+      "final_T64.npy": "95a2fba4610373409e15d99a7a73f4d6e055aed197808e36bd5c0d2cd878446d",
+      "imports.json": "e4793977003da71796d0bbb580635a6d056e9c1a12c7ec743a99cbffe85e1f54",
+      "metrics.json": "9dcf0528e6815a0535add74daeea4792df466a549480d7106d693a4bfe68f0f3",
+      "quadrature.npz": "4d9b60f386969c9f6bc586f2259872e4ef38e7e5cc1bb42f234f5c686cf49dec",
+      "replay_rows.json.gz": "327ff0115aea6d21cf0cbb1b3397171e90210e733f65680fb2ae5f01b21f10e3",
+      "status.json": "d9d31f8391bbeb3fef88b91287c05be3bf01c1fa36c1412c8db95291ea1802b6",
+      "trace.jsonl.gz": "0433ebc3c4ef388045ac92b4839da7fea0f43969be3fee81fae45657bfe42bb3",
+      "truth.csv.gz": "60157f2b089bf9613573fcd3d97ea5cd4a09ecb1412baa10b5697cec2b8bcd05"
+    },
+    "metrics": {
+      "episode_cost": 0.008120328076926423,
+      "tracking_rmse_k": 8.86997585551411,
+      "max_temperature_c": 83.22556663402553,
+      "missed_deadlines": 8,
+      "busy_skipped_ticks": 8
+    }
+  },
+  "source_sha256": {
+    "control.py": "e837939490fa703e669fbdfba2760a47d6f8dd4a3d9f227f875c7b8253aae9c7",
+    "rollout.py": "1f8fbd443f3361739af6569f881c521a5d199a40052023fcf4b32ac05e9eac2a",
+    "residual.py": "36155b921dbd5a16544e799ccc316cf39e5fdfd11ef5b357826a27d896f8d0a2"
+  },
+  "new_simulations_or_inference": false
+}

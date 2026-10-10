@@ -1,24 +1,21 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "release_tag": "v1.1.0",
+  "repository": "https://github.com/JoMinsu-KU/thermal-delay-evaluation",
   "assets": [
     {
-      "name": "thermal-delay-primary-raw-v1.zip",
-      "bytes": 118542368,
-      "sha256": "233ff38201dd7291d1df446d101197b3065a153de38854e8e5c158f916da43a0",
-      "zip_crc_verified": true,
-      "data_files_in_manifest": 999,
-      "download_url": "https://github.com/JoMinsu-KU/thermal-delay-evaluation/releases/download/v1.0.0/thermal-delay-primary-raw-v1.zip"
+      "name": "Supplement_S1_guide.pdf",
+      "bytes": 179974,
+      "sha256": "adcf5440cb86e10ca0e4635a97ef67a9645678fc375c5301a2e739d310b17a92",
+      "download_url": "https://github.com/JoMinsu-KU/thermal-delay-evaluation/releases/download/v1.1.0/Supplement_S1_guide.pdf"
     },
     {
-      "name": "thermal-delay-numerical-raw-v1.zip",
-      "bytes": 275680762,
-      "sha256": "0d556663fc94b859de6cb188d8eb7e2a20ee03cd334549e6ee61fd4e38ce49a3",
-      "zip_crc_verified": true,
-      "data_files_in_manifest": 4686,
-      "download_url": "https://github.com/JoMinsu-KU/thermal-delay-evaluation/releases/download/v1.0.0/thermal-delay-numerical-raw-v1.zip"
+      "name": "thermal-delay-supplement-v1.1.0.zip",
+      "bytes": 1729829,
+      "sha256": "3fd56d31231a8b0837617f3ead8503fb21b2b0e9d91b24ef84122b446777af0d",
+      "download_url": "https://github.com/JoMinsu-KU/thermal-delay-evaluation/releases/download/v1.1.0/thermal-delay-supplement-v1.1.0.zip"
     }
   ],
-  "repository": "https://github.com/JoMinsu-KU/thermal-delay-evaluation",
-  "release_tag": "v1.0.0",
-  "publication_status_at_packaging": "Prepared for user-run publication; not yet uploaded by the packaging process."
+  "previous_raw_assets": "data/release_assets_v1.0.0.json",
+  "publication_status_at_packaging": "Prepared; user-run publication pending."
 }
