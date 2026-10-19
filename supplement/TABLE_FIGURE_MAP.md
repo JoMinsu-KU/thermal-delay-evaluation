@@ -18,6 +18,8 @@ Paths are relative to Supplement_S1; generated results are under `outputs/`. Run
 | 10 FV thermal responses | `data/revision_20261013/mechanism/truth_curves.csv.gz` and metadata | Same script → `mechanism/physical_summary.csv`, `physical_episode_metrics.csv` |
 | 11 Step sensitivity | `data/numerical/extended_metrics.csv`, `contrasts.csv` | `scripts/reproduce.py` → `table8_numerical_sensitivity.csv` |
 | 12 Small initialization | `data/small_seed/` | `scripts/reproduce_small_seed.py` → `small_seed/paired_contrasts.csv`, training and selection checks |
+| 13 Monte Carlo cost distributions | `data/monte_carlo/episode_metrics.csv` | `scripts/reproduce_monte_carlo.py` → `monte_carlo/cost_effect_distribution.csv` |
+| 14 Monte Carlo ranking events | Same saved metrics | Same script → `monte_carlo/ranking_probabilities.csv` |
 
 Historical `table5`–`table8` output names correspond to current Tables 4, 5, 6, and 11. Table 10 reports original conditions only; all eleven original method/condition summaries are retained in the supplement. Tables 7 and 9 use dependent requests/events descriptively, not as independent inferential samples.
 
@@ -29,6 +31,7 @@ Historical `table5`–`table8` output names correspond to current Tables 4, 5, 6
 | Main 2 | `paired_test_results` | `data/revision/cost_components.csv`; same script; panel (c) uses 10^-5 units as Table 6 |
 | Main 3 | `replay_fallback_sensitivity` | `data/replay/replay_results.json`; `scripts/make_replay_figure.py` |
 | Main 4 | `temperature_response` | Representative temperature and hold curves; `scripts/make_review_figures.py` |
+| Main 5 | `monte_carlo_policy_effect` | `data/monte_carlo/replicate_summary.csv`; `scripts/make_monte_carlo_figure.py` |
 | S1 | `first_command_divergence` | `data/selected_C/applied_commands.csv`; `scripts/plot_results.py` via `reproduce.py` |
 | S2 | `deadline_command_response` | `data/minor_revision_r2/deadline_commands.csv`; `scripts/make_deadline_figure.py` |
 | S3 | `residual_architecture` | Frozen model dimensions; `scripts/make_review_figures.py` |
@@ -36,7 +39,7 @@ Historical `table5`–`table8` output names correspond to current Tables 4, 5, 6
 | S5 | `deadline_schedule_cost` | Compact mechanism setting summaries and schedule audit; `make_mechanism_figure.py` in that directory |
 | S6 | `small_seed_cost_comparison` | `data/small_seed/`; `scripts/reproduce_small_seed.py`, `make_small_seed_figure.py` |
 
-All ten are regenerated as PNG/PDF under `outputs/figures/`. Main Figure 4 and Figure S2 use the unchanged lower-median episode by zero-delay FV cost. Captions and limitations are in `SUPPLEMENTARY_FIGURES.md` and the guide PDF.
+All eleven are regenerated as PNG/PDF under `outputs/figures/`. Main Figure 4 and Figure S2 use the unchanged lower-median episode by zero-delay FV cost. Captions and limitations are in `SUPPLEMENTARY_FIGURES.md` and the guide PDF.
 
 ## Moved details
 

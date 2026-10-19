@@ -1,0 +1,218 @@
+{
+  "status": "PASSED_WITH_SCOPE_LIMITS",
+  "archive_sha256": "1f3336baef5be7c4725dd0dbc4fdb677bbb4f429a05d9b6e8ad438d7663d52e5",
+  "cases_reconstructed": 9456,
+  "baseline_cases": 240,
+  "new_monte_carlo_cases": 9216,
+  "complete_replicates": 64,
+  "unique_episodes": 24,
+  "max_cost_absolute_error": 6.661338147750939e-16,
+  "requests_checked": 5654735,
+  "fv_pairs_with_equal_clocks_and_plan": 1536,
+  "independently_resampled_cases": 384,
+  "independently_resampled_requests": 229676,
+  "cost_summary": [
+    {
+      "method": "pi",
+      "fallback_policy": "zero",
+      "replicates": 64,
+      "baseline_mean_cost": 0.014396471560544868,
+      "mean_cost": 0.014442533705357028,
+      "mean_change_pct": 0.31995440423331845,
+      "median_change_pct": 0.11104181334504748,
+      "q025_change_pct": 0.09048133464691133,
+      "q975_change_pct": 2.7567777013189274,
+      "min_change_pct": 0.07508024008486824,
+      "max_change_pct": 3.061324051288916
+    },
+    {
+      "method": "fv_mpc",
+      "fallback_policy": "zero",
+      "replicates": 64,
+      "baseline_mean_cost": 0.013183088654286685,
+      "mean_cost": 0.016612334060766985,
+      "mean_change_pct": 26.0124580544729,
+      "median_change_pct": 24.124704939872487,
+      "q025_change_pct": 10.185471893053831,
+      "q975_change_pct": 49.39969385389539,
+      "min_change_pct": 4.399019005930249,
+      "max_change_pct": 53.49677926756718
+    },
+    {
+      "method": "fv_mpc",
+      "fallback_policy": "hold",
+      "replicates": 64,
+      "baseline_mean_cost": 0.013183088654286685,
+      "mean_cost": 0.013673800363284977,
+      "mean_change_pct": 3.722281795008101,
+      "median_change_pct": 3.7659763750099384,
+      "q025_change_pct": 2.8417284758003194,
+      "q975_change_pct": 4.711815187771838,
+      "min_change_pct": 2.602074214197736,
+      "max_change_pct": 5.373175169918265
+    },
+    {
+      "method": "pino_mpc",
+      "fallback_policy": "zero",
+      "replicates": 64,
+      "baseline_mean_cost": 0.014059454223941942,
+      "mean_cost": 0.014120814905107942,
+      "mean_change_pct": 0.43643714890089885,
+      "median_change_pct": 0.23552557652611883,
+      "q025_change_pct": 0.22303830352325638,
+      "q975_change_pct": 3.1406917828493786,
+      "min_change_pct": 0.22145206603889633,
+      "max_change_pct": 4.324779413842461
+    },
+    {
+      "method": "shared_physics",
+      "fallback_policy": "zero",
+      "replicates": 64,
+      "baseline_mean_cost": 0.013889173611934378,
+      "mean_cost": 0.014011077169663495,
+      "mean_change_pct": 0.8776876230013639,
+      "median_change_pct": 0.8883248817228129,
+      "q025_change_pct": 0.7385318353065873,
+      "q975_change_pct": 0.911436581723884,
+      "min_change_pct": 0.7351463411966241,
+      "max_change_pct": 0.9150466842022587
+    },
+    {
+      "method": "small_physics",
+      "fallback_policy": "zero",
+      "replicates": 64,
+      "baseline_mean_cost": 0.01392741288937252,
+      "mean_cost": 0.013962168446776358,
+      "mean_change_pct": 0.2495478354803241,
+      "median_change_pct": 0.24482551384185092,
+      "q025_change_pct": 0.23036502903522438,
+      "q975_change_pct": 0.28085095164915863,
+      "min_change_pct": 0.22917704144471696,
+      "max_change_pct": 0.28822285901566325
+    }
+  ],
+  "key_probabilities": [
+    {
+      "fv_fallback": "zero",
+      "event": "FV_strictly_highest",
+      "successes": 61,
+      "replicates": 64,
+      "proportion": 0.953125,
+      "wilson95_low": 0.8710034625990631,
+      "wilson95_high": 0.983930983213707
+    },
+    {
+      "fv_fallback": "hold",
+      "event": "fv_mpc_rank1_including_ties",
+      "successes": 64,
+      "replicates": 64,
+      "proportion": 1.0,
+      "wilson95_low": 0.9433759402071946,
+      "wilson95_high": 1
+    },
+    {
+      "fv_fallback": "zero",
+      "event": "Shared_strictly_worse_than_Small",
+      "successes": 64,
+      "replicates": 64,
+      "proportion": 1.0,
+      "wilson95_low": 0.9433759402071946,
+      "wilson95_high": 1
+    },
+    {
+      "fv_fallback": "paired",
+      "event": "FV_hold_lower_cost",
+      "successes": 64,
+      "replicates": 64,
+      "proportion": 1.0,
+      "wilson95_low": 0.9433759402071946,
+      "wilson95_high": 1
+    }
+  ],
+  "paired_fv": {
+    "mean_relative_hold_vs_zero_pct": -17.258339687812057,
+    "pooled_mean_relative_hold_vs_zero_pct": -17.688867119653484,
+    "episode_pair_wins": 1034,
+    "episode_pair_ties": 114,
+    "episode_pair_losses": 388
+  },
+  "physical_summary": [
+    {
+      "method": "pi",
+      "fallback_policy": "zero",
+      "cases": 1536,
+      "mean_tracking_rmse_k": 10.323934873835139,
+      "mean_overshoot_k": 5.949443805847088,
+      "maximum_temperature_c": 105.0595755934173,
+      "violation_cases": 0,
+      "missed_deadlines": 79,
+      "requests": 921521
+    },
+    {
+      "method": "fv_mpc",
+      "fallback_policy": "zero",
+      "cases": 1536,
+      "mean_tracking_rmse_k": 10.924157412961824,
+      "mean_overshoot_k": 2.9990943776235093,
+      "maximum_temperature_c": 104.44583519862617,
+      "violation_cases": 0,
+      "missed_deadlines": 9091,
+      "requests": 912314
+    },
+    {
+      "method": "fv_mpc",
+      "fallback_policy": "hold",
+      "cases": 1536,
+      "mean_tracking_rmse_k": 10.048537353647733,
+      "mean_overshoot_k": 6.087603480122894,
+      "maximum_temperature_c": 106.0604836079565,
+      "violation_cases": 0,
+      "missed_deadlines": 9091,
+      "requests": 912314
+    },
+    {
+      "method": "pino_mpc",
+      "fallback_policy": "zero",
+      "cases": 1536,
+      "mean_tracking_rmse_k": 10.138243718341117,
+      "mean_overshoot_k": 9.087623265104684,
+      "maximum_temperature_c": 109.96854296865172,
+      "violation_cases": 0,
+      "missed_deadlines": 22,
+      "requests": 921578
+    },
+    {
+      "method": "shared_physics",
+      "fallback_policy": "zero",
+      "cases": 1536,
+      "mean_tracking_rmse_k": 10.108482677953807,
+      "mean_overshoot_k": 8.449966513166851,
+      "maximum_temperature_c": 107.25344771568827,
+      "violation_cases": 0,
+      "missed_deadlines": 0,
+      "requests": 921600
+    },
+    {
+      "method": "small_physics",
+      "fallback_policy": "zero",
+      "cases": 1536,
+      "mean_tracking_rmse_k": 10.086738889932478,
+      "mean_overshoot_k": 8.508565926356063,
+      "maximum_temperature_c": 107.83162833898149,
+      "violation_cases": 0,
+      "missed_deadlines": 0,
+      "requests": 921600
+    }
+  ],
+  "elapsed_seconds": 357.280999999959,
+  "completed_utc": "2026-10-19T04:57:11.293456+00:00",
+  "limitations": [
+    "64 replicates reuse 24 fixed episodes and frozen models; no training-seed population inference.",
+    "IID sampling is conditional on archived empirical timing pools; temporal correlation and fresh hardware uncertainty are not covered.",
+    "2.5th/97.5th percentiles describe replicate spread, not a confidence interval.",
+    "inference_failures remains an unincremented scheduler counter; completed execution is verified, a separate fault rate is not.",
+    "Source hashes and raw metrics were checked for all cases; deterministic resampling independently recomputed for 384 selected cases.",
+    "Original H200 input inventory is an archived receipt, not a new hash check of remote originals.",
+    "No manuscript or GitHub changes performed by this audit."
+  ]
+}

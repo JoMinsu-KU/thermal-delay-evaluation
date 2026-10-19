@@ -1,0 +1,7 @@
+{
+  "archive": "latency_monte_carlo_20261013T060637Z_results.zip",
+  "archive_sha256": "1f3336baef5be7c4725dd0dbc4fdb677bbb4f429a05d9b6e8ad438d7663d52e5",
+  "raw_metric_hashes": "raw_metric_hashes.json",
+  "compact_scope": "Saved per-episode costs/components and Monte Carlo summaries. Full raw traces, quadrature, final fields and timing pools are omitted.",
+  "receipt_scope": "All raw case costs and archive seals were checked by the authors; deterministic resampling was independently checked on 384 selected cases. These raw checks cannot be repeated from this compact package."
+}

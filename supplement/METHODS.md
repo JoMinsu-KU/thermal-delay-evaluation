@@ -190,3 +190,25 @@ The new models reuse the original Small timing sequence under zero fallback at a
 All three new models select warmup step 50; alpha 1/.5/1. Quality requires lower cached validation mean FV candidate-cost difference than the initial reference with zero infeasible selections/unexpected fallbacks. Seed 6062 has 6.3397561e-7 versus 6.2609296e-7 and fails. Its closed-loop-selected alpha=.5 differs from the alpha=1 checkpoint-validation setting. All technically complete seeds are retained. The failed flag is neither excluded nor equated with a new test thermal violation.
 
 `author_raw_audit.json` records reconstruction of 192 test costs from full quadrature, final fields and applied commands (maximum error 2.78e-16); source seals and original input hashes were also checked. This compact distribution permits saved-metric, training-history and alpha-selection recomputation, not those omitted raw audits. The recorded inference_failures counter is not incremented by the scheduler; it is not an independent fault-tolerance measure.
+
+
+## Independent latency Monte Carlo (19 October update)
+
+`data/monte_carlo/episode_metrics.csv` contains **9,456 cases: 240 baseline reproductions and 9,216 new runs**, comprising 64 repetitions of six conditions on the same 24 nominal episodes. Five original frozen methods use zero fallback; FV-MPC additionally uses hold. The original Small checkpoint (seed 6060) is used. The three additional Small seeds are not crossed with Monte Carlo timing.
+
+```bash
+python -B scripts/reproduce_monte_carlo.py
+python -B scripts/make_monte_carlo_figure.py
+```
+
+The combined driver runs both. The first recomputes 384 group means, 18 distributions, all 39 rank-event probabilities and Wilson intervals, 64 paired FV effects, completion/thermal/deadline counts, and the sum of saved cost components. It checks every summary against the archived outputs. Figure 5 displays all 64 FV repetition means and their paired policy effect. Tables 13–14 use these outputs. There are **24 unique episodes and 64 independent timing repetitions conditional on the empirical pools**, not 9,216 independent physical scenarios.
+
+Delays are sampled IID with replacement from method/path/token-matched pools made from three archived H200 repeats. The fixed 64-repetition design, seeded deterministic keys, and potential draw plans are in `design.json`. FV zero/hold share potential plans; the authors' raw audit confirms identical realized request/deadline schedules in all 1,536 pairs. Serial timing correlation, new hardware measurements, new training, and new plant-step refinements are absent. The empirical 2.5th–97.5th percentiles describe repetition spread; they are not confidence intervals for a mean. Wilson intervals describe conditional rank-event probabilities, not uncertainty over hardware, trained models or episode populations.
+
+FV mean cost increases by 26.012% under zero and 3.722% under hold. The corresponding percentile ranges are 10.185–49.400% and 2.842–4.712%. FV is strictly highest-cost in 61/64 repetitions under zero and rank 1 in 64/64 under hold, comparing against the other four zero-fallback methods. Hold has lower aggregate cost in all repetitions, but episode-level pairs include 1,034 wins, 114 ties and 388 losses (tolerance 1e-10). The mean of the 64 within-repetition hold-versus-zero changes is -17.258%; this differs from the ratio of pooled means.
+
+All 9,216 new runs complete without recorded thermal-limit violations. Missed deadlines total 79 (PI), 22 (PINO), 9,091 for each FV policy, and zero for Shared/Small. The initialized `inference_failures` field is not incremented by this execution harness; its zeros do not measure inference reliability. Raw `overshoot_k` is a spatial-peak metric on 10-ms/event endpoints and must not be conflated with the manuscript's 10-Hz spatial-mean overshoot diagnostic.
+
+`independent_verification.json`, `archive_integrity.json` and `raw_metric_hashes.json` document the author's full-archive audit: all 9,456 raw costs reconstructed (maximum discrepancy 6.67e-16), archive CRC/seals verified, all 1,536 FV schedules paired, and deterministic sampling checked on 384 selected cases. These receipts do not make omitted quadrature, fields, timing pools or schedules executable in the compact package. `outputs/monte_carlo/checks.json` is a fresh saved-metric check with this narrower scope.
+
+Quantiles use NumPy linear interpolation between adjacent ordered repetition values (the default `quantile` method); standard deviations use `ddof=1`. Rank events and episode-level FV win/tie/loss counts use the protocol absolute cost tolerance of 1e-10.

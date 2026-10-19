@@ -1,15 +1,15 @@
 {
-  "version": "v1.2.0",
+  "version": "v1.3.0",
   "assets": [
     {
       "name": "Supplement_S1_guide.pdf",
-      "bytes": 706795,
-      "sha256": "f317363b021b62a81df580edad0b6c522c4fdcfaaecf006455c9a17395354e08"
+      "bytes": 790697,
+      "sha256": "a36aca9f4fd79ebc7ea785e18d69268d0ae09ae0f944665fce4effe4b94d4711"
     },
     {
-      "name": "thermal-delay-supplement-v1.2.0.zip",
-      "bytes": 13147298,
-      "sha256": "745a59f5b4e9ce04dac2893f5d9fde82c27cae42bbba7a72edbc5238ef3239f4"
+      "name": "thermal-delay-supplement-v1.3.0.zip",
+      "bytes": 15142612,
+      "sha256": "021db2d8dc1d5205d606199258f00c89fc79e2c4d1421401db3921ff965bec6c"
     }
   ]
 }

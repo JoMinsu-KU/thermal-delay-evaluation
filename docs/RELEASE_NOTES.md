@@ -1,21 +1,18 @@
-# Version 1.2.0: Small initialization and saved-trajectory evidence
+# v1.3.0: Empirical latency Monte Carlo
 
-Companion to the manuscript revision prepared 19 October 2026.
+Prepared 19 October 2026. Adds all 64 timing repetitions: 240 baseline reproductions and 9,216 new runs using five frozen methods plus FV hold on 24 fixed episodes. No outcomes are excluded.
 
 ## Added
 
-- All 192 Small test outcomes: 48 original-checkpoint reproductions and 144 tests from three new initializations.
-- All three training histories, 288 validation-selection outcomes, selected-alpha evidence, quality flags, and per-seed paired intervals. Seed 6062 fails the validation improvement criterion and is retained.
-- The October 13 saved-record analyses of 57,504 scored requests, 336 FV traces, command restoration and thermal responses.
-- A nine-page S1 guide, four main figures, six supplementary figures and complete evidence map.
-- Portable seed and combined reproduction commands; SHA-256 integrity manifests.
+- Episode metrics/components, full repetition summaries, distributions, rankings, paired effects, sampler design and scoped author audit receipts.
+- Portable checks for 9,456 saved costs, 384 means, 18 distributions, 39 ranking events and 64 paired policy effects.
+- Main Figure 5 with all 64 outcomes; expanded S1 guide and source map for fourteen main tables and eleven figures.
+- Updated README, methods and interpretation of empirical percentile ranges versus Wilson intervals.
 
-## Interpretation
+FV mean increases are 26.01% under zero and 3.72% under hold. FV is highest-cost in 61/64 zero-policy repetitions and rank 1 in 64/64 hold repetitions. Hold loses 388 individual episode pairs despite improving every repetition mean. Results condition on fixed models, episodes, empirical pools and IID sampling; they do not establish deployment safety or a general architecture ranking. Small seed repetitions and timing repetitions are separate experiments.
 
-All three added Small seeds have lower replay mean cost than the fixed Shared checkpoint; zero-delay ordering varies and only one new seed reverses ordering. These are 24 reused episodes, with fixed upstream components, calibration and archived timing. Shared is not retrained. No independently sampled latency Monte Carlo result or general architecture/pretraining claim is included.
+## Assets and scope
 
-## Assets
+Extract `thermal-delay-supplement-v1.3.0.zip`, install its requirements and run `python -B Supplement_S1/scripts/reproduce_review.py`. `Supplement_S1_guide.pdf` summarizes the evidence. Check assets against SHA256SUMS. Code/documentation: MIT; data/research figures: CC BY 4.0.
 
-`thermal-delay-supplement-v1.2.0.zip` contains the compact public supplement. Extract it and run `python -B Supplement_S1/scripts/reproduce_review.py` after installing its requirements. `Supplement_S1_guide.pdf` summarizes the evidence. Check both against SHA256SUMS.
-
-The original v1.0.0 raw-data assets and v1.1.0 release remain unchanged. New Small raw trajectories, weights and full training inputs are omitted. Raw-quadrature and remote-input checks are author audit receipts; compact saved-metric analyses are executable here. Code/documentation: MIT; data/research figures: CC BY 4.0.
+The 5.1-GB raw Monte Carlo archive, full timing pools and weights are omitted. Author raw-audit receipts are distinct from executable saved-metric verification. Earlier releases remain unchanged. No new simulation or publication is performed by the reproduction commands.

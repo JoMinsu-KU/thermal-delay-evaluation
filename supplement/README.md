@@ -2,7 +2,7 @@
 
 Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*. Revision: 2026-10-19.
 
-This public data package contains compact scientific records, implementation details, and scripts to regenerate **four main figures and six supplementary figures**. Version 1.2.0, prepared 19 October 2026, by Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang. Code/documentation: MIT; data/research figures: CC BY 4.0. See LICENSE, DATA_LICENSE and CITATION.cff. External dependencies are not bundled. Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation.
+This public data package contains compact scientific records, implementation details, and scripts to regenerate **five main figures and six supplementary figures**. Version 1.3.0, prepared 19 October 2026, by Minsu Jo, Namhyun Yoo, Hoansuk Choi and Jinhong Yang. Code/documentation: MIT; data/research figures: CC BY 4.0. See LICENSE, DATA_LICENSE and CITATION.cff. External dependencies are not bundled. Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation.
 
 ## Reproduce
 
@@ -17,7 +17,7 @@ The command verifies SHA-256 hashes, recalculates paired episode contrasts and n
 
 ## Navigation
 
-The included [Supplement_S1_guide.pdf](Supplement_S1_guide.pdf) presents the supplementary figures and key moved results. [TABLE_FIGURE_MAP.md](TABLE_FIGURE_MAP.md) maps all twelve main tables, four main figures, and six supplementary figures. Historical table numbers in output filenames are preserved for provenance.
+The included [Supplement_S1_guide.pdf](Supplement_S1_guide.pdf) presents the supplementary figures and key moved results. [TABLE_FIGURE_MAP.md](TABLE_FIGURE_MAP.md) maps all fourteen main tables, five main figures, and six supplementary figures. Historical table numbers in output filenames are preserved for provenance.
 
 | Evidence | Input directory | Reproduction |
 |---|---|---|
@@ -35,7 +35,7 @@ The main driver runs each required script with explicit output directories. Indi
 - **Numerical validation:** `data/numerical/` contains nine earlier C closed-loop runs, twelve fixed-command C runs, and 720 D runs at 10/5/2.5 ms. Repeated conditions do not add independent episodes.
 - **Replay/fallback batch:** `data/replay/` contains 240 baseline reproductions, 720 alternative replay runs, and 168 FV hold runs. All use the same 24 nominal episodes at a 10-ms plant cap. R1B1–R3B2 reuse three recorded timing repeats; they are not new independent measurements.
 - **Physical and method checks:** `data/revision/`, `data/minor_revision/`, and `data/minor_revision_r2/` retain cost decompositions, the unchanged representative episode, alpha-validation outcomes, injected-delay checks, and the selected deadline-command comparison.
-- **Current saved-data analyses:** `data/revision_20261013/` adds scored candidate vectors, compact application logs, 10-Hz mean-temperature curves, exact definitions, derived event/episode summaries, and source audit receipts. These support new analyses of existing experiments; these October 13 inputs contain no new experiments. The subsequently completed Small repetitions are supplied separately under `data/small_seed/`; no independent random-latency Monte Carlo result is included.
+- **Current saved-data analyses:** `data/revision_20261013/` adds scored candidate vectors, compact application logs, 10-Hz mean-temperature curves, exact definitions, derived event/episode summaries, and source audit receipts. These support new analyses of existing experiments; these October 13 inputs contain no new experiments. The subsequently completed Small repetitions are supplied separately under `data/small_seed/`; 64 independent latency Monte Carlo repetitions are supplied under `data/monte_carlo/`.
 - `METHODS.md` specifies implemented models and measures. `methods/` retains LaTeX fragments for A/B/C, architecture/training details, the original cohort/procedure tables, and cost components moved from the main manuscript. The fragments are supporting source, not standalone TeX documents.
 
 ## Interpretation limits
@@ -51,3 +51,24 @@ The supplement supports saved-result reanalysis. It omits model weights, complet
 `data/small_seed/` contains 192 test outcomes (48 original-Small reproductions and 144 new tests), complete recorded training histories, 288 validation-selection outcomes, a fixed Shared reference, and author audit receipts. Run `python -B scripts/reproduce_small_seed.py` for the table/statistics and `python -B scripts/make_small_seed_figure.py` for Figure S6; the main driver runs both.
 
 All three new seeds have lower mean replay cost than the fixed Shared checkpoint, but only one exhibits the original ordering reversal. Seed 6062 fails the original validation improvement criterion and is retained. There are 24 unique test episodes, not 72 independent observations per mode. Timing and calibration are reused; Shared is not retrained. Raw-field/quadrature and source-hash audits are receipts, not independently reproducible from this compact subset. Selected weights and complete training inputs are omitted.
+
+## Independent latency Monte Carlo (19 October update)
+
+`data/monte_carlo/episode_metrics.csv` contains **9,456 cases: 240 baseline reproductions and 9,216 new runs**, comprising 64 repetitions of six conditions on the same 24 nominal episodes. Five original frozen methods use zero fallback; FV-MPC additionally uses hold. The original Small checkpoint (seed 6060) is used. The three additional Small seeds are not crossed with Monte Carlo timing.
+
+```bash
+python -B scripts/reproduce_monte_carlo.py
+python -B scripts/make_monte_carlo_figure.py
+```
+
+The combined driver runs both. The first recomputes 384 group means, 18 distributions, all 39 rank-event probabilities and Wilson intervals, 64 paired FV effects, completion/thermal/deadline counts, and the sum of saved cost components. It checks every summary against the archived outputs. Figure 5 displays all 64 FV repetition means and their paired policy effect. Tables 13–14 use these outputs. There are **24 unique episodes and 64 independent timing repetitions conditional on the empirical pools**, not 9,216 independent physical scenarios.
+
+Delays are sampled IID with replacement from method/path/token-matched pools made from three archived H200 repeats. The fixed 64-repetition design, seeded deterministic keys, and potential draw plans are in `design.json`. FV zero/hold share potential plans; the authors' raw audit confirms identical realized request/deadline schedules in all 1,536 pairs. Serial timing correlation, new hardware measurements, new training, and new plant-step refinements are absent. The empirical 2.5th–97.5th percentiles describe repetition spread; they are not confidence intervals for a mean. Wilson intervals describe conditional rank-event probabilities, not uncertainty over hardware, trained models or episode populations.
+
+FV mean cost increases by 26.012% under zero and 3.722% under hold. The corresponding percentile ranges are 10.185–49.400% and 2.842–4.712%. FV is strictly highest-cost in 61/64 repetitions under zero and rank 1 in 64/64 under hold, comparing against the other four zero-fallback methods. Hold has lower aggregate cost in all repetitions, but episode-level pairs include 1,034 wins, 114 ties and 388 losses (tolerance 1e-10). The mean of the 64 within-repetition hold-versus-zero changes is -17.258%; this differs from the ratio of pooled means.
+
+All 9,216 new runs complete without recorded thermal-limit violations. Missed deadlines total 79 (PI), 22 (PINO), 9,091 for each FV policy, and zero for Shared/Small. The initialized `inference_failures` field is not incremented by this execution harness; its zeros do not measure inference reliability. Raw `overshoot_k` is a spatial-peak metric on 10-ms/event endpoints and must not be conflated with the manuscript's 10-Hz spatial-mean overshoot diagnostic.
+
+`independent_verification.json`, `archive_integrity.json` and `raw_metric_hashes.json` document the author's full-archive audit: all 9,456 raw costs reconstructed (maximum discrepancy 6.67e-16), archive CRC/seals verified, all 1,536 FV schedules paired, and deterministic sampling checked on 384 selected cases. These receipts do not make omitted quadrature, fields, timing pools or schedules executable in the compact package. `outputs/monte_carlo/checks.json` is a fresh saved-metric check with this narrower scope.
+
+Quantiles use NumPy linear interpolation between adjacent ordered repetition values (the default `quantile` method); standard deviations use `ddof=1`. Rank events and episode-level FV win/tie/loss counts use the protocol absolute cost tolerance of 1e-10.

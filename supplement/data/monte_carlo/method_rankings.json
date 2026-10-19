@@ -1,0 +1,3356 @@
+{
+  "baseline": {
+    "ascending_mean_cost": [
+      "fv_mpc",
+      "shared_physics",
+      "small_physics",
+      "pino_mpc",
+      "pi"
+    ],
+    "ranks": {
+      "pi": 5,
+      "fv_mpc": 1,
+      "pino_mpc": 4,
+      "shared_physics": 2,
+      "small_physics": 3
+    },
+    "ties": [],
+    "means": {
+      "pi": 0.014396471560544868,
+      "fv_mpc": 0.013183088654286685,
+      "pino_mpc": 0.014059454223941942,
+      "shared_physics": 0.013889173611934378,
+      "small_physics": 0.01392741288937252
+    }
+  },
+  "replicates": [
+    {
+      "replicate": 0,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412419826581507,
+        "fv_mpc": 0.016657106781276364,
+        "pino_mpc": 0.014093098923037825,
+        "shared_physics": 0.014011266662441806,
+        "small_physics": 0.013961135992815408
+      }
+    },
+    {
+      "replicate": 0,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412419826581507,
+        "fv_mpc": 0.013773817097883542,
+        "pino_mpc": 0.014093098923037825,
+        "shared_physics": 0.014011266662441806,
+        "small_physics": 0.013961135992815408
+      }
+    },
+    {
+      "replicate": 1,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014766726149950374,
+        "fv_mpc": 0.015673251718600026,
+        "pino_mpc": 0.014094039646206783,
+        "shared_physics": 0.01401147066951867,
+        "small_physics": 0.013959863455768056
+      }
+    },
+    {
+      "replicate": 1,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014766726149950374,
+        "fv_mpc": 0.013688363968550908,
+        "pino_mpc": 0.014094039646206783,
+        "shared_physics": 0.01401147066951867,
+        "small_physics": 0.013959863455768056
+      }
+    },
+    {
+      "replicate": 2,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.0144116467806995,
+        "fv_mpc": 0.01705842305117459,
+        "pino_mpc": 0.014091421769930524,
+        "shared_physics": 0.014012211124804476,
+        "small_physics": 0.013960287350743103
+      }
+    },
+    {
+      "replicate": 2,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.0144116467806995,
+        "fv_mpc": 0.013706208226212718,
+        "pino_mpc": 0.014091421769930524,
+        "shared_physics": 0.014012211124804476,
+        "small_physics": 0.013960287350743103
+      }
+    },
+    {
+      "replicate": 3,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412015197568177,
+        "fv_mpc": 0.016121302928353114,
+        "pino_mpc": 0.014092188030235481,
+        "shared_physics": 0.014013476435694219,
+        "small_physics": 0.013964914724307087
+      }
+    },
+    {
+      "replicate": 3,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412015197568177,
+        "fv_mpc": 0.013714308330507559,
+        "pino_mpc": 0.014092188030235481,
+        "shared_physics": 0.014013476435694219,
+        "small_physics": 0.013964914724307087
+      }
+    },
+    {
+      "replicate": 4,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441503065358056,
+        "fv_mpc": 0.017428193355993517,
+        "pino_mpc": 0.014092231226827947,
+        "shared_physics": 0.014010074031824226,
+        "small_physics": 0.013959564318286023
+      }
+    },
+    {
+      "replicate": 4,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441503065358056,
+        "fv_mpc": 0.013707976323551552,
+        "pino_mpc": 0.014092231226827947,
+        "shared_physics": 0.014010074031824226,
+        "small_physics": 0.013959564318286023
+      }
+    },
+    {
+      "replicate": 5,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412502326372978,
+        "fv_mpc": 0.017630664767666285,
+        "pino_mpc": 0.014092812696262622,
+        "shared_physics": 0.014015466222431832,
+        "small_physics": 0.013965240304955258
+      }
+    },
+    {
+      "replicate": 5,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412502326372978,
+        "fv_mpc": 0.01389143910048713,
+        "pino_mpc": 0.014092812696262622,
+        "shared_physics": 0.014015466222431832,
+        "small_physics": 0.013965240304955258
+      }
+    },
+    {
+      "replicate": 6,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014413093335222116,
+        "fv_mpc": 0.015633673441276814,
+        "pino_mpc": 0.014091177843763939,
+        "shared_physics": 0.014013128143649899,
+        "small_physics": 0.013964841130814464
+      }
+    },
+    {
+      "replicate": 6,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014413093335222116,
+        "fv_mpc": 0.013678871429442236,
+        "pino_mpc": 0.014091177843763939,
+        "shared_physics": 0.014013128143649899,
+        "small_physics": 0.013964841130814464
+      }
+    },
+    {
+      "replicate": 7,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411657008404221,
+        "fv_mpc": 0.015804063236039764,
+        "pino_mpc": 0.014091266276937043,
+        "shared_physics": 0.014013752890949594,
+        "small_physics": 0.01395940540024592
+      }
+    },
+    {
+      "replicate": 7,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411657008404221,
+        "fv_mpc": 0.01362908806570749,
+        "pino_mpc": 0.014091266276937043,
+        "shared_physics": 0.014013752890949594,
+        "small_physics": 0.01395940540024592
+      }
+    },
+    {
+      "replicate": 8,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411924821826976,
+        "fv_mpc": 0.015413382365615999,
+        "pino_mpc": 0.014093361556835616,
+        "shared_physics": 0.014013836343500946,
+        "small_physics": 0.013967554876989184
+      }
+    },
+    {
+      "replicate": 8,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411924821826976,
+        "fv_mpc": 0.013724616202153544,
+        "pino_mpc": 0.014093361556835616,
+        "shared_physics": 0.014013836343500946,
+        "small_physics": 0.013967554876989184
+      }
+    },
+    {
+      "replicate": 9,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014466333729079713,
+        "fv_mpc": 0.01628029512396429,
+        "pino_mpc": 0.01409323834715886,
+        "shared_physics": 0.014015415919700217,
+        "small_physics": 0.013961635446870355
+      }
+    },
+    {
+      "replicate": 9,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014466333729079713,
+        "fv_mpc": 0.01366733266623991,
+        "pino_mpc": 0.01409323834715886,
+        "shared_physics": 0.014015415919700217,
+        "small_physics": 0.013961635446870355
+      }
+    },
+    {
+      "replicate": 10,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412332926447599,
+        "fv_mpc": 0.017496720049811728,
+        "pino_mpc": 0.014092845083656302,
+        "shared_physics": 0.014015297243056446,
+        "small_physics": 0.013962347865027973
+      }
+    },
+    {
+      "replicate": 10,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412332926447599,
+        "fv_mpc": 0.013798604134273583,
+        "pino_mpc": 0.014092845083656302,
+        "shared_physics": 0.014015297243056446,
+        "small_physics": 0.013962347865027973
+      }
+    },
+    {
+      "replicate": 11,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441215660617362,
+        "fv_mpc": 0.016032813549870427,
+        "pino_mpc": 0.01409254996611029,
+        "shared_physics": 0.014014644714333538,
+        "small_physics": 0.013965252986952703
+      }
+    },
+    {
+      "replicate": 11,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441215660617362,
+        "fv_mpc": 0.013617336099444377,
+        "pino_mpc": 0.01409254996611029,
+        "shared_physics": 0.014014644714333538,
+        "small_physics": 0.013965252986952703
+      }
+    },
+    {
+      "replicate": 12,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014419019567813917,
+        "fv_mpc": 0.015534247117600562,
+        "pino_mpc": 0.014093627982333726,
+        "shared_physics": 0.014009911457774324,
+        "small_physics": 0.013965377366541626
+      }
+    },
+    {
+      "replicate": 12,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014419019567813917,
+        "fv_mpc": 0.013593730329976446,
+        "pino_mpc": 0.014093627982333726,
+        "shared_physics": 0.014009911457774324,
+        "small_physics": 0.013965377366541626
+      }
+    },
+    {
+      "replicate": 13,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01440917630215334,
+        "fv_mpc": 0.01736170494206239,
+        "pino_mpc": 0.014090823346062611,
+        "shared_physics": 0.014012419593257145,
+        "small_physics": 0.013961897416068627
+      }
+    },
+    {
+      "replicate": 13,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01440917630215334,
+        "fv_mpc": 0.013669170067166185,
+        "pino_mpc": 0.014090823346062611,
+        "shared_physics": 0.014012419593257145,
+        "small_physics": 0.013961897416068627
+      }
+    },
+    {
+      "replicate": 14,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014638266055301807,
+        "fv_mpc": 0.0168065040472349,
+        "pino_mpc": 0.014093642510128306,
+        "shared_physics": 0.014014295544126828,
+        "small_physics": 0.013959691202797437
+      }
+    },
+    {
+      "replicate": 14,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014638266055301807,
+        "fv_mpc": 0.013737388194519229,
+        "pino_mpc": 0.014093642510128306,
+        "shared_physics": 0.014014295544126828,
+        "small_physics": 0.013959691202797437
+      }
+    },
+    {
+      "replicate": 15,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412653656714567,
+        "fv_mpc": 0.015976913962342108,
+        "pino_mpc": 0.014093096526714454,
+        "shared_physics": 0.01400949704609262,
+        "small_physics": 0.013961005857616613
+      }
+    },
+    {
+      "replicate": 15,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412653656714567,
+        "fv_mpc": 0.01364892282426837,
+        "pino_mpc": 0.014093096526714454,
+        "shared_physics": 0.01400949704609262,
+        "small_physics": 0.013961005857616613
+      }
+    },
+    {
+      "replicate": 16,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412209157333142,
+        "fv_mpc": 0.018426063234586464,
+        "pino_mpc": 0.014092396369361243,
+        "shared_physics": 0.014010625814868874,
+        "small_physics": 0.013964780432840948
+      }
+    },
+    {
+      "replicate": 16,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412209157333142,
+        "fv_mpc": 0.013795527130896948,
+        "pino_mpc": 0.014092396369361243,
+        "shared_physics": 0.014010625814868874,
+        "small_physics": 0.013964780432840948
+      }
+    },
+    {
+      "replicate": 17,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412591666590405,
+        "fv_mpc": 0.020235616492318125,
+        "pino_mpc": 0.01409232354918293,
+        "shared_physics": 0.014016266034533478,
+        "small_physics": 0.013962448048424577
+      }
+    },
+    {
+      "replicate": 17,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412591666590405,
+        "fv_mpc": 0.013679515808078654,
+        "pino_mpc": 0.01409232354918293,
+        "shared_physics": 0.014016266034533478,
+        "small_physics": 0.013962448048424577
+      }
+    },
+    {
+      "replicate": 18,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pi",
+        "pino_mpc",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 3,
+        "fv_mpc": 5,
+        "pino_mpc": 4,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014407280465956277,
+        "fv_mpc": 0.015856386569740654,
+        "pino_mpc": 0.014584918760071638,
+        "shared_physics": 0.01401114142354474,
+        "small_physics": 0.013964257766294395
+      }
+    },
+    {
+      "replicate": 18,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pi",
+        "pino_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 1,
+        "pino_mpc": 5,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014407280465956277,
+        "fv_mpc": 0.01362093228175842,
+        "pino_mpc": 0.014584918760071638,
+        "shared_physics": 0.01401114142354474,
+        "small_physics": 0.013964257766294395
+      }
+    },
+    {
+      "replicate": 19,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014437659876870228,
+        "fv_mpc": 0.016082089145319372,
+        "pino_mpc": 0.014092193908545972,
+        "shared_physics": 0.014009865904825594,
+        "small_physics": 0.01396009078153214
+      }
+    },
+    {
+      "replicate": 19,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014437659876870228,
+        "fv_mpc": 0.013708627055852027,
+        "pino_mpc": 0.014092193908545972,
+        "shared_physics": 0.014009865904825594,
+        "small_physics": 0.01396009078153214
+      }
+    },
+    {
+      "replicate": 20,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014420608672461468,
+        "fv_mpc": 0.015007183321150119,
+        "pino_mpc": 0.01409235944779437,
+        "shared_physics": 0.014014244591601588,
+        "small_physics": 0.013960653826913258
+      }
+    },
+    {
+      "replicate": 20,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014420608672461468,
+        "fv_mpc": 0.013616121992270564,
+        "pino_mpc": 0.01409235944779437,
+        "shared_physics": 0.014014244591601588,
+        "small_physics": 0.013960653826913258
+      }
+    },
+    {
+      "replicate": 21,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "fv_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 4,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412261953487803,
+        "fv_mpc": 0.014246056189412043,
+        "pino_mpc": 0.014092567714864453,
+        "shared_physics": 0.0140080785079916,
+        "small_physics": 0.013960296941662833
+      }
+    },
+    {
+      "replicate": 21,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412261953487803,
+        "fv_mpc": 0.013641219537364848,
+        "pino_mpc": 0.014092567714864453,
+        "shared_physics": 0.0140080785079916,
+        "small_physics": 0.013960296941662833
+      }
+    },
+    {
+      "replicate": 22,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411607272123548,
+        "fv_mpc": 0.016731131459811296,
+        "pino_mpc": 0.01410145910902477,
+        "shared_physics": 0.014014327933633988,
+        "small_physics": 0.013960731853231349
+      }
+    },
+    {
+      "replicate": 22,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411607272123548,
+        "fv_mpc": 0.013679834488105455,
+        "pino_mpc": 0.01410145910902477,
+        "shared_physics": 0.014014327933633988,
+        "small_physics": 0.013960731853231349
+      }
+    },
+    {
+      "replicate": 23,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014419354104148583,
+        "fv_mpc": 0.016049128804151724,
+        "pino_mpc": 0.014093321754539057,
+        "shared_physics": 0.014015624045812624,
+        "small_physics": 0.013961156617843772
+      }
+    },
+    {
+      "replicate": 23,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014419354104148583,
+        "fv_mpc": 0.013659508104153098,
+        "pino_mpc": 0.014093321754539057,
+        "shared_physics": 0.014015624045812624,
+        "small_physics": 0.013961156617843772
+      }
+    },
+    {
+      "replicate": 24,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014424776114616067,
+        "fv_mpc": 0.017396072690433986,
+        "pino_mpc": 0.014092506827420024,
+        "shared_physics": 0.014014626802340563,
+        "small_physics": 0.013960946726269087
+      }
+    },
+    {
+      "replicate": 24,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014424776114616067,
+        "fv_mpc": 0.013606912201292358,
+        "pino_mpc": 0.014092506827420024,
+        "shared_physics": 0.014014626802340563,
+        "small_physics": 0.013960946726269087
+      }
+    },
+    {
+      "replicate": 25,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441192758321481,
+        "fv_mpc": 0.01835636061680852,
+        "pino_mpc": 0.014092648055631526,
+        "shared_physics": 0.014013331331479556,
+        "small_physics": 0.013964174360468656
+      }
+    },
+    {
+      "replicate": 25,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441192758321481,
+        "fv_mpc": 0.013743119909123558,
+        "pino_mpc": 0.014092648055631526,
+        "shared_physics": 0.014013331331479556,
+        "small_physics": 0.013964174360468656
+      }
+    },
+    {
+      "replicate": 26,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "fv_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 4,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014837194206964796,
+        "fv_mpc": 0.014732651414444008,
+        "pino_mpc": 0.014090797101509761,
+        "shared_physics": 0.01401063492388556,
+        "small_physics": 0.013961020389865427
+      }
+    },
+    {
+      "replicate": 26,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014837194206964796,
+        "fv_mpc": 0.013546960056028368,
+        "pino_mpc": 0.014090797101509761,
+        "shared_physics": 0.01401063492388556,
+        "small_physics": 0.013961020389865427
+      }
+    },
+    {
+      "replicate": 27,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441221567348964,
+        "fv_mpc": 0.01638983749397441,
+        "pino_mpc": 0.014092295034652305,
+        "shared_physics": 0.014011263221466272,
+        "small_physics": 0.01396316285416007
+      }
+    },
+    {
+      "replicate": 27,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441221567348964,
+        "fv_mpc": 0.013565666460440861,
+        "pino_mpc": 0.014092295034652305,
+        "shared_physics": 0.014011263221466272,
+        "small_physics": 0.01396316285416007
+      }
+    },
+    {
+      "replicate": 28,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014638918794610845,
+        "fv_mpc": 0.015646210285135603,
+        "pino_mpc": 0.014091487851457274,
+        "shared_physics": 0.014013886138707576,
+        "small_physics": 0.013964860859808718
+      }
+    },
+    {
+      "replicate": 28,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014638918794610845,
+        "fv_mpc": 0.013695095005540612,
+        "pino_mpc": 0.014091487851457274,
+        "shared_physics": 0.014013886138707576,
+        "small_physics": 0.013964860859808718
+      }
+    },
+    {
+      "replicate": 29,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411626740177064,
+        "fv_mpc": 0.020208656001429695,
+        "pino_mpc": 0.014093211241129356,
+        "shared_physics": 0.014014608467161661,
+        "small_physics": 0.013965386685722692
+      }
+    },
+    {
+      "replicate": 29,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411626740177064,
+        "fv_mpc": 0.01381189188355172,
+        "pino_mpc": 0.014093211241129356,
+        "shared_physics": 0.014014608467161661,
+        "small_physics": 0.013965386685722692
+      }
+    },
+    {
+      "replicate": 30,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411689694798757,
+        "fv_mpc": 0.017165665118226443,
+        "pino_mpc": 0.014092514394732206,
+        "shared_physics": 0.014015954811271597,
+        "small_physics": 0.013960378289090565
+      }
+    },
+    {
+      "replicate": 30,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411689694798757,
+        "fv_mpc": 0.013784335993526515,
+        "pino_mpc": 0.014092514394732206,
+        "shared_physics": 0.014015954811271597,
+        "small_physics": 0.013960378289090565
+      }
+    },
+    {
+      "replicate": 31,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412329072994714,
+        "fv_mpc": 0.01584274847870248,
+        "pino_mpc": 0.014093327923666068,
+        "shared_physics": 0.014010659228754838,
+        "small_physics": 0.013959873646925162
+      }
+    },
+    {
+      "replicate": 31,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412329072994714,
+        "fv_mpc": 0.013573699616643389,
+        "pino_mpc": 0.014093327923666068,
+        "shared_physics": 0.014010659228754838,
+        "small_physics": 0.013959873646925162
+      }
+    },
+    {
+      "replicate": 32,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441231529470712,
+        "fv_mpc": 0.01622711792817691,
+        "pino_mpc": 0.014091430243258915,
+        "shared_physics": 0.014014101177392997,
+        "small_physics": 0.01395987367002651
+      }
+    },
+    {
+      "replicate": 32,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441231529470712,
+        "fv_mpc": 0.01369114747525732,
+        "pino_mpc": 0.014091430243258915,
+        "shared_physics": 0.014014101177392997,
+        "small_physics": 0.01395987367002651
+      }
+    },
+    {
+      "replicate": 33,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014439656472321627,
+        "fv_mpc": 0.01796773167659246,
+        "pino_mpc": 0.01409300693987361,
+        "shared_physics": 0.014010054756506143,
+        "small_physics": 0.013960822955009179
+      }
+    },
+    {
+      "replicate": 33,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014439656472321627,
+        "fv_mpc": 0.013629027021574064,
+        "pino_mpc": 0.01409300693987361,
+        "shared_physics": 0.014010054756506143,
+        "small_physics": 0.013960822955009179
+      }
+    },
+    {
+      "replicate": 34,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441235660049713,
+        "fv_mpc": 0.015576295800664832,
+        "pino_mpc": 0.01409242683844588,
+        "shared_physics": 0.014012689600732592,
+        "small_physics": 0.013961383160361121
+      }
+    },
+    {
+      "replicate": 34,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441235660049713,
+        "fv_mpc": 0.013696166712859517,
+        "pino_mpc": 0.01409242683844588,
+        "shared_physics": 0.014012689600732592,
+        "small_physics": 0.013961383160361121
+      }
+    },
+    {
+      "replicate": 35,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441292043368197,
+        "fv_mpc": 0.015503799700169204,
+        "pino_mpc": 0.014119705061862992,
+        "shared_physics": 0.01400980392087812,
+        "small_physics": 0.013961811099951885
+      }
+    },
+    {
+      "replicate": 35,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441292043368197,
+        "fv_mpc": 0.013704573649436341,
+        "pino_mpc": 0.014119705061862992,
+        "shared_physics": 0.01400980392087812,
+        "small_physics": 0.013961811099951885
+      }
+    },
+    {
+      "replicate": 36,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412463336744985,
+        "fv_mpc": 0.015801127396835975,
+        "pino_mpc": 0.014300374556108664,
+        "shared_physics": 0.014015395801359137,
+        "small_physics": 0.013960392925792054
+      }
+    },
+    {
+      "replicate": 36,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412463336744985,
+        "fv_mpc": 0.013526122404794704,
+        "pino_mpc": 0.014300374556108664,
+        "shared_physics": 0.014015395801359137,
+        "small_physics": 0.013960392925792054
+      }
+    },
+    {
+      "replicate": 37,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014421093005516757,
+        "fv_mpc": 0.017570912413519227,
+        "pino_mpc": 0.014092084084799247,
+        "shared_physics": 0.014010729500618803,
+        "small_physics": 0.013964249903599207
+      }
+    },
+    {
+      "replicate": 37,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014421093005516757,
+        "fv_mpc": 0.013729378359107827,
+        "pino_mpc": 0.014092084084799247,
+        "shared_physics": 0.014010729500618803,
+        "small_physics": 0.013964249903599207
+      }
+    },
+    {
+      "replicate": 38,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412768665536277,
+        "fv_mpc": 0.019316200503277054,
+        "pino_mpc": 0.014092638953142328,
+        "shared_physics": 0.014011597139901646,
+        "small_physics": 0.013959863084616343
+      }
+    },
+    {
+      "replicate": 38,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412768665536277,
+        "fv_mpc": 0.013719617785321575,
+        "pino_mpc": 0.014092638953142328,
+        "shared_physics": 0.014011597139901646,
+        "small_physics": 0.013959863084616343
+      }
+    },
+    {
+      "replicate": 39,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441398324612093,
+        "fv_mpc": 0.01376301522975739,
+        "pino_mpc": 0.014092388906845355,
+        "shared_physics": 0.014009726068581882,
+        "small_physics": 0.013961875867334174
+      }
+    },
+    {
+      "replicate": 39,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441398324612093,
+        "fv_mpc": 0.013585354681110079,
+        "pino_mpc": 0.014092388906845355,
+        "shared_physics": 0.014009726068581882,
+        "small_physics": 0.013961875867334174
+      }
+    },
+    {
+      "replicate": 40,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411561003311377,
+        "fv_mpc": 0.015788199559275254,
+        "pino_mpc": 0.014092218379898306,
+        "shared_physics": 0.01401113674978513,
+        "small_physics": 0.013966370849494822
+      }
+    },
+    {
+      "replicate": 40,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411561003311377,
+        "fv_mpc": 0.013711379887444211,
+        "pino_mpc": 0.014092218379898306,
+        "shared_physics": 0.01401113674978513,
+        "small_physics": 0.013966370849494822
+      }
+    },
+    {
+      "replicate": 41,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014472086734906964,
+        "fv_mpc": 0.01688071678449589,
+        "pino_mpc": 0.014092567954254162,
+        "shared_physics": 0.013996566249365489,
+        "small_physics": 0.013961009158360196
+      }
+    },
+    {
+      "replicate": 41,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014472086734906964,
+        "fv_mpc": 0.013624239689239403,
+        "pino_mpc": 0.014092567954254162,
+        "shared_physics": 0.013996566249365489,
+        "small_physics": 0.013961009158360196
+      }
+    },
+    {
+      "replicate": 42,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pi",
+        "pino_mpc",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 3,
+        "fv_mpc": 5,
+        "pino_mpc": 4,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014444650324114905,
+        "fv_mpc": 0.016337102294215897,
+        "pino_mpc": 0.014667494605917588,
+        "shared_physics": 0.014013784207978613,
+        "small_physics": 0.013963415209590718
+      }
+    },
+    {
+      "replicate": 42,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pi",
+        "pino_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 1,
+        "pino_mpc": 5,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014444650324114905,
+        "fv_mpc": 0.01361585454060494,
+        "pino_mpc": 0.014667494605917588,
+        "shared_physics": 0.014013784207978613,
+        "small_physics": 0.013963415209590718
+      }
+    },
+    {
+      "replicate": 43,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412294046451677,
+        "fv_mpc": 0.01697889787611244,
+        "pino_mpc": 0.014092554952628058,
+        "shared_physics": 0.014009158347549755,
+        "small_physics": 0.01396138605221725
+      }
+    },
+    {
+      "replicate": 43,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412294046451677,
+        "fv_mpc": 0.013596900498335495,
+        "pino_mpc": 0.014092554952628058,
+        "shared_physics": 0.014009158347549755,
+        "small_physics": 0.01396138605221725
+      }
+    },
+    {
+      "replicate": 44,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411615831778822,
+        "fv_mpc": 0.01563121087751916,
+        "pino_mpc": 0.01409272474852128,
+        "shared_physics": 0.014009771883889082,
+        "small_physics": 0.013964241283142527
+      }
+    },
+    {
+      "replicate": 44,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411615831778822,
+        "fv_mpc": 0.013611010413493316,
+        "pino_mpc": 0.01409272474852128,
+        "shared_physics": 0.014009771883889082,
+        "small_physics": 0.013964241283142527
+      }
+    },
+    {
+      "replicate": 45,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412640483436073,
+        "fv_mpc": 0.014776733676688157,
+        "pino_mpc": 0.014093113193362311,
+        "shared_physics": 0.014014976943500521,
+        "small_physics": 0.013961722488952194
+      }
+    },
+    {
+      "replicate": 45,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412640483436073,
+        "fv_mpc": 0.013615230763738497,
+        "pino_mpc": 0.014093113193362311,
+        "shared_physics": 0.014014976943500521,
+        "small_physics": 0.013961722488952194
+      }
+    },
+    {
+      "replicate": 46,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411720583627963,
+        "fv_mpc": 0.018349192750895433,
+        "pino_mpc": 0.014093340493591741,
+        "shared_physics": 0.014008783836670287,
+        "small_physics": 0.013964191255984512
+      }
+    },
+    {
+      "replicate": 46,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014411720583627963,
+        "fv_mpc": 0.013739515821303347,
+        "pino_mpc": 0.014093340493591741,
+        "shared_physics": 0.014008783836670287,
+        "small_physics": 0.013964191255984512
+      }
+    },
+    {
+      "replicate": 47,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014413057825596433,
+        "fv_mpc": 0.016081987491097332,
+        "pino_mpc": 0.014092506424634577,
+        "shared_physics": 0.014012236521069255,
+        "small_physics": 0.013966740994242138
+      }
+    },
+    {
+      "replicate": 47,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014413057825596433,
+        "fv_mpc": 0.013680105578418674,
+        "pino_mpc": 0.014092506424634577,
+        "shared_physics": 0.014012236521069255,
+        "small_physics": 0.013966740994242138
+      }
+    },
+    {
+      "replicate": 48,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412819069395325,
+        "fv_mpc": 0.017696980779488943,
+        "pino_mpc": 0.014092042463216534,
+        "shared_physics": 0.013991789590697176,
+        "small_physics": 0.013960086754007449
+      }
+    },
+    {
+      "replicate": 48,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412819069395325,
+        "fv_mpc": 0.013616177057964531,
+        "pino_mpc": 0.014092042463216534,
+        "shared_physics": 0.013991789590697176,
+        "small_physics": 0.013960086754007449
+      }
+    },
+    {
+      "replicate": 49,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412078693237301,
+        "fv_mpc": 0.017634811225968307,
+        "pino_mpc": 0.014093115098729537,
+        "shared_physics": 0.014012416962483322,
+        "small_physics": 0.013959659860993595
+      }
+    },
+    {
+      "replicate": 49,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412078693237301,
+        "fv_mpc": 0.013726865031398708,
+        "pino_mpc": 0.014093115098729537,
+        "shared_physics": 0.014012416962483322,
+        "small_physics": 0.013959659860993595
+      }
+    },
+    {
+      "replicate": 50,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01482937115783818,
+        "fv_mpc": 0.016085433955646485,
+        "pino_mpc": 0.014090589175794655,
+        "shared_physics": 0.014012823509029703,
+        "small_physics": 0.013962359137515416
+      }
+    },
+    {
+      "replicate": 50,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01482937115783818,
+        "fv_mpc": 0.013628176158355439,
+        "pino_mpc": 0.014090589175794655,
+        "shared_physics": 0.014012823509029703,
+        "small_physics": 0.013962359137515416
+      }
+    },
+    {
+      "replicate": 51,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412000981526616,
+        "fv_mpc": 0.016817911373413482,
+        "pino_mpc": 0.014092195084556539,
+        "shared_physics": 0.014014099058402415,
+        "small_physics": 0.013960909546754822
+      }
+    },
+    {
+      "replicate": 51,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412000981526616,
+        "fv_mpc": 0.013594713803988813,
+        "pino_mpc": 0.014092195084556539,
+        "shared_physics": 0.014014099058402415,
+        "small_physics": 0.013960909546754822
+      }
+    },
+    {
+      "replicate": 52,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.0144118676217812,
+        "fv_mpc": 0.016241491854532168,
+        "pino_mpc": 0.014092895603697392,
+        "shared_physics": 0.014010247031071557,
+        "small_physics": 0.013961231827226245
+      }
+    },
+    {
+      "replicate": 52,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.0144118676217812,
+        "fv_mpc": 0.013645689283863444,
+        "pino_mpc": 0.014092895603697392,
+        "shared_physics": 0.014010247031071557,
+        "small_physics": 0.013961231827226245
+      }
+    },
+    {
+      "replicate": 53,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441196897514506,
+        "fv_mpc": 0.016498284940775793,
+        "pino_mpc": 0.01409262240031102,
+        "shared_physics": 0.01401420279619481,
+        "small_physics": 0.013962650887073083
+      }
+    },
+    {
+      "replicate": 53,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.01441196897514506,
+        "fv_mpc": 0.01371089396040955,
+        "pino_mpc": 0.01409262240031102,
+        "shared_physics": 0.01401420279619481,
+        "small_physics": 0.013962650887073083
+      }
+    },
+    {
+      "replicate": 54,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014414053072571867,
+        "fv_mpc": 0.015467609716041178,
+        "pino_mpc": 0.014246999937511454,
+        "shared_physics": 0.014015090439006552,
+        "small_physics": 0.013961638100620968
+      }
+    },
+    {
+      "replicate": 54,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014414053072571867,
+        "fv_mpc": 0.013725395866754158,
+        "pino_mpc": 0.014246999937511454,
+        "shared_physics": 0.014015090439006552,
+        "small_physics": 0.013961638100620968
+      }
+    },
+    {
+      "replicate": 55,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412082146529578,
+        "fv_mpc": 0.017898490840333035,
+        "pino_mpc": 0.01409234843967043,
+        "shared_physics": 0.014013637437832703,
+        "small_physics": 0.013964514788142665
+      }
+    },
+    {
+      "replicate": 55,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412082146529578,
+        "fv_mpc": 0.01372197765952863,
+        "pino_mpc": 0.01409234843967043,
+        "shared_physics": 0.014013637437832703,
+        "small_physics": 0.013964514788142665
+      }
+    },
+    {
+      "replicate": 56,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014409735220416947,
+        "fv_mpc": 0.01701943327544903,
+        "pino_mpc": 0.01409249449054943,
+        "shared_physics": 0.014010974271304877,
+        "small_physics": 0.013960789056001554
+      }
+    },
+    {
+      "replicate": 56,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014409735220416947,
+        "fv_mpc": 0.013679875470958043,
+        "pino_mpc": 0.01409249449054943,
+        "shared_physics": 0.014010974271304877,
+        "small_physics": 0.013960789056001554
+      }
+    },
+    {
+      "replicate": 57,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412622396767947,
+        "fv_mpc": 0.018193420872735063,
+        "pino_mpc": 0.01409379987050067,
+        "shared_physics": 0.01399127936356496,
+        "small_physics": 0.013962565376342719
+      }
+    },
+    {
+      "replicate": 57,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412622396767947,
+        "fv_mpc": 0.013713858961637876,
+        "pino_mpc": 0.01409379987050067,
+        "shared_physics": 0.01399127936356496,
+        "small_physics": 0.013962565376342719
+      }
+    },
+    {
+      "replicate": 58,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014414388333943595,
+        "fv_mpc": 0.01548700125018935,
+        "pino_mpc": 0.014091691677157648,
+        "shared_physics": 0.013992905310399492,
+        "small_physics": 0.013960097945642097
+      }
+    },
+    {
+      "replicate": 58,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014414388333943595,
+        "fv_mpc": 0.013604720994810656,
+        "pino_mpc": 0.014091691677157648,
+        "shared_physics": 0.013992905310399492,
+        "small_physics": 0.013960097945642097
+      }
+    },
+    {
+      "replicate": 59,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014460446718461492,
+        "fv_mpc": 0.017165728619680225,
+        "pino_mpc": 0.014439004999019671,
+        "shared_physics": 0.014013776793991184,
+        "small_physics": 0.0139621100168828
+      }
+    },
+    {
+      "replicate": 59,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014460446718461492,
+        "fv_mpc": 0.013679605508928822,
+        "pino_mpc": 0.014439004999019671,
+        "shared_physics": 0.014013776793991184,
+        "small_physics": 0.0139621100168828
+      }
+    },
+    {
+      "replicate": 60,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412305807951754,
+        "fv_mpc": 0.017363101307509954,
+        "pino_mpc": 0.014092893660383415,
+        "shared_physics": 0.014014338069033775,
+        "small_physics": 0.013965496259407158
+      }
+    },
+    {
+      "replicate": 60,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412305807951754,
+        "fv_mpc": 0.013647696295758587,
+        "pino_mpc": 0.014092893660383415,
+        "shared_physics": 0.014014338069033775,
+        "small_physics": 0.013965496259407158
+      }
+    },
+    {
+      "replicate": 61,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412451990501817,
+        "fv_mpc": 0.01716524347827204,
+        "pino_mpc": 0.014092215194069899,
+        "shared_physics": 0.014014583975390757,
+        "small_physics": 0.013961021479266636
+      }
+    },
+    {
+      "replicate": 61,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412451990501817,
+        "fv_mpc": 0.013582394445923976,
+        "pino_mpc": 0.014092215194069899,
+        "shared_physics": 0.014014583975390757,
+        "small_physics": 0.013961021479266636
+      }
+    },
+    {
+      "replicate": 62,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412264048927375,
+        "fv_mpc": 0.016465525638552254,
+        "pino_mpc": 0.014092752623219094,
+        "shared_physics": 0.013991695449573266,
+        "small_physics": 0.013959331322182175
+      }
+    },
+    {
+      "replicate": 62,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014412264048927375,
+        "fv_mpc": 0.013639453943928357,
+        "pino_mpc": 0.014092752623219094,
+        "shared_physics": 0.013991695449573266,
+        "small_physics": 0.013959331322182175
+      }
+    },
+    {
+      "replicate": 63,
+      "fv_fallback": "zero",
+      "ascending_mean_cost": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ],
+      "ranks": {
+        "pi": 4,
+        "fv_mpc": 5,
+        "pino_mpc": 3,
+        "shared_physics": 2,
+        "small_physics": 1
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014413311025773673,
+        "fv_mpc": 0.016157551046679312,
+        "pino_mpc": 0.014092166095590558,
+        "shared_physics": 0.014013262869670908,
+        "small_physics": 0.013960732499099153
+      }
+    },
+    {
+      "replicate": 63,
+      "fv_fallback": "hold",
+      "ascending_mean_cost": [
+        "fv_mpc",
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi"
+      ],
+      "ranks": {
+        "pi": 5,
+        "fv_mpc": 1,
+        "pino_mpc": 4,
+        "shared_physics": 3,
+        "small_physics": 2
+      },
+      "ties": [],
+      "means": {
+        "pi": 0.014413311025773673,
+        "fv_mpc": 0.013753962938977423,
+        "pino_mpc": 0.014092166095590558,
+        "shared_physics": 0.014013262869670908,
+        "small_physics": 0.013960732499099153
+      }
+    }
+  ]
+}

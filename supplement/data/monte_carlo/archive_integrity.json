@@ -1,0 +1,15 @@
+{
+  "archive": "latency_monte_carlo_20261013T060637Z_results.zip",
+  "sha256": "1f3336baef5be7c4725dd0dbc4fdb677bbb4f429a05d9b6e8ad438d7663d52e5",
+  "bytes": 5101034440,
+  "members": 123410,
+  "crc_checked_bytes": 5377443955,
+  "crc_all_passed": true,
+  "safe_paths": true,
+  "duplicate_paths": 0,
+  "sealed_folders": 9461,
+  "sealed_file_hashes_checked": 104021,
+  "completed_case_folders": 9456,
+  "protocol_sha256": "baac429a756844d8a4f5c9d0aa69b895dd61ac25388a67089aeee49b95c97c4c",
+  "harness_hashes_verified": true
+}

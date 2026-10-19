@@ -1,23 +1,51 @@
 # Thermal Delay Evaluation
 
-**Data and reproducible analysis of inference delay, deadline commands, and thermal-controller performance.**
+**Reproducible data analysis of inference delay, deadline commands, and simulated thermal control.**
 
-Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is in preparation for J-KICS; no acceptance is claimed. **Version 1.2.0** corresponds to the revision prepared on **19 October 2026**.
+Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is being prepared for J-KICS; no acceptance is claimed. **Version 1.3.0** adds 64 empirical latency Monte Carlo repetitions to the previously released fixed-replay and Small-initialization evidence.
 
-[Quick start](#quick-start) · [New seed results](#small-initialization-results) · [Evidence map](supplement/TABLE_FIGURE_MAP.md) · [S1 guide](docs/Supplement_S1_guide.pdf) · [Scope](docs/REPRODUCTION.md) · [Citation](#citation-and-license)
+[Quick start](#quick-start) · [Monte Carlo results](#monte-carlo-results) · [Evidence map](supplement/TABLE_FIGURE_MAP.md) · [S1 guide](docs/Supplement_S1_guide.pdf) · [Reproduction scope](docs/REPRODUCTION.md)
 
-## What this study examines
+## Research question
 
-Five implementations choose heating commands for the same simulated four-heater plate: PI, FV-MPC, PINO-MPC, Shared-Residual and Small-Residual. Delayed commands interact with a 100-ms deadline and a candidate set that changes at most one heater by 0.04 per decision. The primary comparison uses **24 nominal held-out episodes**. Timing settings and training repeats reuse these episodes.
+How do inference completion times and deadline commands change a controller comparison when ordinary commands are selected from a restricted candidate set? Five frozen implementations—PI, FV-MPC, PINO-MPC, Shared-Residual and Small-Residual—control the same simulated four-heater plate. Requests have a 100-ms deadline. Each ordinary candidate changes at most one heater by 0.04. A forced zero command therefore changes the starting point for subsequent command recovery.
 
-| Finding | Evidence | Interpretation |
-|---|---|---|
-| Deadline commands change the observed FV-MPC loss. | Original replay raises mean cost by 25.02% under zero fallback and 2.35% under hold, relative to zero delay. | Matched request/deadline schedules; later states and commands respond to the intervention. |
-| Loss varies across fixed timing settings. | Across seven settings, zero increases cost by 11.70–79.34%; hold by 2.19–6.46%. | Recorded blocks are sensitivity cases, not a random-latency distribution. |
-| Recovery after forced zero can be prolonged. | 715 nonzero resets; 324 observed full-vector restorations and 391 censored. | Restoration is to a historical command, which need not remain thermally desirable. |
-| Small's replay advantage repeats, while its zero-delay ordering varies. | All three added seeds have lower replay mean cost than one fixed Shared checkpoint; only one reverses ordering. | Conditional Small initialization study; one validation-quality failure is retained. |
+The study uses **24 nominal held-out episodes**. Repeated timing settings and model initializations reuse these episodes. Lower whole-episode cost is the ranking criterion; it does not establish lower temperature peaks, stability or deployment safety.
 
-![FV cost sensitivity to replay and deadline policy](figures/replay_fallback_sensitivity.png)
+## Monte Carlo results
+
+The completed batch contains **240 baseline reproductions + 9,216 new runs**. Each of 64 repetitions uses independently sampled delays for five methods with zero fallback and an additional paired FV hold condition. Draws use replacement from archived method/path/token-matched H200 timing pools. The count and sampler were fixed before execution; every result is retained.
+
+| Condition | Mean cost increase from its zero-delay baseline | Empirical 2.5th–97.5th percentile |
+|---|---:|---:|
+| PI / zero | 0.320% | 0.090–2.757% |
+| FV-MPC / zero | **26.012%** | **10.185–49.400%** |
+| PINO-MPC / zero | 0.436% | 0.223–3.141% |
+| Shared / zero | 0.878% | 0.739–0.911% |
+| Small / zero | 0.250% | 0.230–0.281% |
+| FV-MPC / hold | **3.722%** | **2.842–4.712%** |
+
+These percentiles describe the spread of 64 simulated repetition means; they are **not confidence intervals for a mean**. Each repetition averages the same 24 episodes.
+
+![All 64 FV cost and paired policy outcomes](figures/monte_carlo_policy_effect.png)
+
+| Repetition-level event | Count | Wilson 95% interval |
+|---|---:|---:|
+| FV has strictly highest cost with zero | 61/64 | 87.10–98.39% |
+| FV ranks first with hold | 64/64 | 94.34–100% |
+| FV hold has lower mean cost than FV zero | 64/64 | 94.34–100% |
+| Original Small has lower mean cost than Shared | 64/64 | 94.34–100% |
+
+FV hold is compared against the other four methods retaining zero fallback. All 1,536 FV trajectory pairs share potential draws and, as checked in the full archive, realized request/deadline schedules. At the episode level, hold wins 1,034 pairs, ties 114 and loses 388, using the protocol's absolute 1e-10 cost tolerance. Its favorable aggregate result is not uniform across trajectories.
+
+**Scope:** frequencies and intervals condition on the fixed checkpoints, 24 episodes, empirical timing pools and IID sampling. IID sampling removes serial timing correlation. Finite-pool uncertainty, new hardware, new episodes and retraining are not included. The original Small checkpoint is used; the three additional Small seeds are not crossed with these 64 timing repetitions. The 9,216 runs are not 9,216 independent physical scenarios.
+
+## Earlier evidence retained
+
+- Original fixed replay: FV mean cost increases by 25.02% under zero and 2.35% under hold.
+- Seven fixed settings: increases range from 11.70–79.34% under zero and 2.19–6.46% under hold. These selected sequences have a different interpretation from Monte Carlo percentiles.
+- Saved command analysis: 715 nonzero resets, 324 observed full-vector restorations and 391 censored events. A restored historical command need not remain thermally desirable.
+- Plant-step checks preserve the original aggregate ordering without establishing trajectory convergence or stable effect magnitude.
 
 ## Small initialization results
 
@@ -36,37 +64,35 @@ All three new models complete 450 optimizer steps but select warmup step 50. See
 
 The new tests reuse Small's archived latency and calibration. Shared is not retrained. There are **24 unique test episodes**, not 72 independent observations per timing mode. Intervals resample matched episodes conditional on each checkpoint pair and fixed timing. The observed one-of-three reversal count is not a population probability. Architecture, pretraining and selected alpha are not isolated causal effects. The new models are evaluated only at the 10-ms plant cap.
 
+
 ## Quick start
 
-Python 3.10+ with NumPy and Matplotlib is sufficient; no GPU or model download is needed.
+Python 3.10+, NumPy and Matplotlib are sufficient. No GPU or model download is needed.
 
 ```bash
 python -m pip install -r requirements.txt
 python -B scripts/reproduce_all.py
 ```
 
-This verifies package hashes and regenerates the manuscript analyses, **four main figures and six supplementary figures**, including per-seed paired contrasts and validation checks. Outputs are written to `supplement/outputs/`; frozen inputs are unchanged.
-
-For only the seed study:
+This verifies integrity hashes and reanalyses the saved outcomes, regenerating **five main figures and six supplementary figures** under `supplement/outputs/`. For the Monte Carlo subset:
 
 ```bash
-python -B supplement/scripts/reproduce_small_seed.py
-python -B supplement/scripts/make_small_seed_figure.py
+python -B supplement/scripts/reproduce_monte_carlo.py
+python -B supplement/scripts/make_monte_carlo_figure.py
 ```
 
-Inspect `supplement/outputs/small_seed/checks.json` and `paired_contrasts.csv`. The compact inputs and expected values are in [supplement/data/small_seed](supplement/data/small_seed). The complete [table/figure map](supplement/TABLE_FIGURE_MAP.md) identifies every source and generator. Historical output filenames preserve their original numbering.
+Inspect `supplement/outputs/monte_carlo/checks.json`. The script checks all 9,456 saved costs and component sums, the complete roster, 384 group means, 18 distributions, 39 rank-event probabilities and 64 paired effects. The [evidence map](supplement/TABLE_FIGURE_MAP.md) connects all fourteen main tables and eleven figures to inputs and generators. Historical filenames retain earlier numbering.
 
-## Data populations and experimental units
+## Data populations
 
-| Evidence | Executions/records | Independent episode scope |
+| Evidence | Executions/records | Scope |
 |---|---|---|
-| Original nominal comparison | Five methods×two modes×24 episodes | 24 nominal test episodes; eight initially hot episodes reported separately |
-| Numerical checks | 720 D runs plus 21 selected-C checks | Same 24 D episodes; C is one post hoc selected case |
-| Replay/deadline-policy batch | 1,128 executions, including 240 baseline reproductions | Same 24 episodes; seven fixed timing settings |
-| Command/margin/response analysis | 336 FV application traces; 57,504 scored residual requests; 552 curves | Dependent events within reused episodes |
-| Small initialization study | 48 baseline tests+144 new tests+288 validation rollouts | Three new Small seeds; 24 test episodes; 16 separate validation episodes |
-
-No independent random-latency Monte Carlo outcomes are included in this version. Existing checkpoint comparisons remain original-checkpoint results unless explicitly identified as new Small repetitions.
+| Original nominal comparison | Five methods × two modes × 24 episodes | 24 nominal episodes; eight initially hot episodes are separate |
+| Numerical checks | 720 D runs + 21 selected-C checks | Same D episodes; C is one post hoc selected case |
+| Fixed replay / fallback | 1,128 runs, including 240 baseline reproductions | Seven fixed settings on the same episodes |
+| Command / margin / response analysis | 336 FV traces; 57,504 scored residual requests; 552 curves | Dependent events and samples within episodes |
+| Small initialization | 48 baseline + 144 new tests; 288 validation rollouts | Three new Small seeds; 24 reused tests; 16 separate validation episodes |
+| Latency Monte Carlo | 240 baseline + 9,216 new runs | 64 independent timing repetitions conditional on the same 24 episodes and pools |
 
 ## Download and audit the detailed records
 
@@ -122,28 +148,31 @@ The raw audit writes to `outputs/raw_audit/`. It checks **732 independent quadra
 
 Here, “independent reconstruction” describes recalculation from the saved records. It does not mean independently sampled runs or a new experiment.
 
+
 ## Reproduction scope
 
-The compact repository reanalyses saved episode metrics, training histories, validation selection, application records and temperature summaries. It supports paired statistics, integrity checks and figure regeneration. The seed raw-cost audit reports a maximum reconstruction error of 2.78e−16 across 192 tests; that audit used full quadrature and fields that are **not included** in this compact update. Audit receipts document checks on the author's full archive and are not substitutes for independently repeating them.
+This compact package reanalyses stored metrics, validation records, command traces and sampled temperature summaries. No fresh training, inference, simulation or latency measurement is run. All 9,216 new Monte Carlo runs completed without recorded thermal-limit violations. The added harness's inference-failure field is initialized but not incremented; its zeros are not evidence of a measured failure rate.
 
-The supplied subset omits model weights, complete training inputs, the full Small result ZIP and raw replay/fallback trajectories. It does not rerun training, inference, new plant trajectories, or timing measurements. Original primary/numerical raw releases remain available separately as described above. The seed inference-failure counter is not an independent fault-tolerance metric; the paper reports completed runs, thermal-limit outcomes and deadline counts.
+Author audit receipts report full-archive reconstruction of 9,456 Monte Carlo costs (maximum error 6.67e-16), CRC/file-seal checks, all 1,536 matched FV schedules, and deterministic resampling checks on 384 selected cases. The compact executable audit checks saved arithmetic only. **Full raw Monte Carlo trajectories, timing pools, quadrature fields and weights are omitted**, so the raw audit cannot be independently repeated from this subset. The approximately 5.1-GB Monte Carlo ZIP is not bundled. Original raw-data releases remain available as described above.
+
+Raw Monte Carlo `overshoot_k` uses spatial peaks at 10-ms/event endpoints. It is distinct from the paper's 10-Hz spatial-mean overshoot diagnostic. See [METHODS.md](supplement/METHODS.md) and [DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md).
 
 ## Repository layout
 
-- `supplement/`: current compact inputs, methods, source map and portable analysis.
-- `figures/`: publication figures in PNG/PDF; the map identifies the current ten figures.
-- `docs/`: guide, release notes, reproduction scope and data dictionary.
-- `data/`, `scripts/`, `experiment_source/`: retained original records and analysis/implementation excerpts.
-- `MANIFEST.sha256`: integrity hashes for distributed repository files.
+- `supplement/`: current compact inputs, portable scripts, methods and source map.
+- `figures/`: current PNG/PDF figures, including all 64 Monte Carlo repetitions.
+- `docs/`: S1 guide, release notes, data dictionary and reproduction limits.
+- `data/`, `scripts/`, `experiment_source/`: retained original records and implementation excerpts.
+- `MANIFEST.sha256`: integrity hashes for repository files.
 
-The public data package omits manuscript drafts, review correspondence, author biographies, the journal class and fonts. Those private submission materials are maintained separately.
+Manuscript drafts, journal fonts/class, author biographies and internal review correspondence are maintained privately and omitted from this public update.
 
 ## Citation and license
 
-Use [CITATION.cff](CITATION.cff) and identify the version and analysis subset used. Authors: Minsu Jo, Namhyun Yoo, Hoansuk Choi and Jinhong Yang. No archive DOI has been assigned.
+Use [CITATION.cff](CITATION.cff), identifying the version and subset used. No archive DOI has been assigned.
 
 - **Code and documentation:** [MIT](LICENSE).
 - **Data and research figures:** [CC BY 4.0](DATA_LICENSE).
-- External software and models retain their own terms and are not redistributed here.
+- External software and model terms remain applicable; those dependencies are not redistributed.
 
-See [release notes](docs/RELEASE_NOTES.md) for changes from v1.1.0.
+See [release notes](docs/RELEASE_NOTES.md) for the v1.3.0 changes.
