@@ -71,24 +71,8 @@ box(8.35,.85,1.55,1.05,'PINO correction\nFeasibility gate\nCommand',size=7.3)
 arrow((2.35,1.38),(2.75,1.38));arrow((5.85,1.38),(6.3,1.38));arrow((7.9,1.38),(8.3,1.38));arrow((7.1,2.6),(7.1,1.95))
 ax.text(5,.22,'One state per request, shared by all nine candidates. No autoregressive generation.',ha='center',fontsize=8)
 save(fig,'residual_architecture')
-# Schematic: present evaluation and execution roles without claiming a new algorithm.
-fig, ax = plt.subplots(figsize=(3.15,3.65))
-ax.set(xlim=(0,1),ylim=(0,1)); ax.axis('off')
-boxes=[(.91,'Observation and command history','Causal sensors, frames, and process context'),
-       (.735,'Nine candidate heater commands','Hold, or change one heater by +/-0.04'),
-       (.56,'Learned score and feasibility gate','PINO screening; zero-command fallback'),
-       (.385,'Asynchronous command execution','Path-matched delay; 100-ms deadline\nOn expiration: zero or hold command'),
-       (.21,'Finite-volume thermal plant','60 s trajectory; state evolves during delay')]
-for y,title,sub in boxes:
-    ax.add_patch(FancyBboxPatch((.055,y-.068),.89,.13,boxstyle='round,pad=.006,rounding_size=.015',
-                 facecolor='#f4f7fa',edgecolor='#6e8293',linewidth=.7))
-    ax.text(.5,y+.036,title,ha='center',va='center',fontsize=7.8,fontweight='bold')
-    ax.text(.5,y-.025,sub,ha='center',va='center',fontsize=6.7)
-for a,b in zip(boxes,boxes[1:]):
-    ax.annotate('',xy=(.5,b[0]+.07),xytext=(.5,a[0]-.075),arrowprops={'arrowstyle':'->','lw':.8})
-ax.annotate('',xy=(.035,.91),xytext=(.035,.21),arrowprops={'arrowstyle':'->','lw':.75,
-            'connectionstyle':'bar,angle=180,fraction=-0.02'})
-ax.text(.5,.05,'Readouts: FV cost difference / trajectory cost / events',ha='center',fontsize=7.0)
-save(fig,'evaluation_flow')
+# Figure 1 uses an independent vector generator with explicit attached arrows.
+from make_evaluation_flow import draw_evaluation_flow
+draw_evaluation_flow(F)
 
 print('Wrote four revised figures')

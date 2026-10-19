@@ -2,7 +2,7 @@
 
 **Reproducible data analysis of inference delay, deadline commands, and simulated thermal control.**
 
-Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is being prepared for J-KICS; no acceptance is claimed. **Version 1.3.0** adds 64 empirical latency Monte Carlo repetitions to the previously released fixed-replay and Small-initialization evidence.
+Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is being prepared for J-KICS; no acceptance is claimed. **Version 1.3.1** redraws Figure 1 in monochrome with attached directional arrows and an orthogonal feedback path. It retains the complete v1.3.0 data, analyses and results.
 
 [Quick start](#quick-start) · [Monte Carlo results](#monte-carlo-results) · [Evidence map](supplement/TABLE_FIGURE_MAP.md) · [S1 guide](docs/Supplement_S1_guide.pdf) · [Reproduction scope](docs/REPRODUCTION.md)
 
@@ -11,6 +11,10 @@ Companion to *Inference Delay and Deadline Handling in Thermal Controller Evalua
 How do inference completion times and deadline commands change a controller comparison when ordinary commands are selected from a restricted candidate set? Five frozen implementations—PI, FV-MPC, PINO-MPC, Shared-Residual and Small-Residual—control the same simulated four-heater plate. Requests have a 100-ms deadline. Each ordinary candidate changes at most one heater by 0.04. A forced zero command therefore changes the starting point for subsequent command recovery.
 
 The study uses **24 nominal held-out episodes**. Repeated timing settings and model initializations reuse these episodes. Lower whole-episode cost is the ranking criterion; it does not establish lower temperature peaks, stability or deployment safety.
+
+![Monochrome candidate evaluation and execution diagram](figures/evaluation_flow.png)
+
+Figure 1 is also provided as vector PDF/SVG. Regenerate it with `python -B supplement/scripts/make_evaluation_flow.py --output supplement/outputs/figures`.
 
 ## Monte Carlo results
 
@@ -175,4 +179,4 @@ Use [CITATION.cff](CITATION.cff), identifying the version and subset used. No ar
 - **Data and research figures:** [CC BY 4.0](DATA_LICENSE).
 - External software and model terms remain applicable; those dependencies are not redistributed.
 
-See [release notes](docs/RELEASE_NOTES.md) for the v1.3.0 changes.
+See [release notes](docs/RELEASE_NOTES.md) for the v1.3.1 figure update.

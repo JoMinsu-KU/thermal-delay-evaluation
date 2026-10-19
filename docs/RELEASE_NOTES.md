@@ -1,3 +1,15 @@
+# v1.3.1: Monochrome Figure 1
+
+Prepared 19 October 2026. This formatting update replaces Figure 1 with monochrome rectangular nodes, equal-length straight connecting arrows, and one attached orthogonal feedback route from plant to observation. It provides vector PDF/SVG and a 300-dpi PNG, with an independent portable generator called by the existing figure driver.
+
+The five scientific stages, their execution order, experiment data, reported results and other figures are unchanged. All v1.3.0 Monte Carlo and prior analyses are retained. The guide has unchanged scientific content. Code/documentation: MIT; data/research figures: CC BY 4.0.
+
+Extract `thermal-delay-supplement-v1.3.1.zip` and run `python -B Supplement_S1/scripts/reproduce_review.py` with NumPy and Matplotlib installed. For Figure 1 only: `python -B Supplement_S1/scripts/make_evaluation_flow.py --output figure_output`. Verify assets with SHA256SUMS.
+
+Earlier v1.3.0 assets and tags remain unchanged.
+
+---
+
 # v1.3.0: Empirical latency Monte Carlo
 
 Prepared 19 October 2026. Adds all 64 timing repetitions: 240 baseline reproductions and 9,216 new runs using five frozen methods plus FV hold on 24 fixed episodes. No outcomes are excluded.

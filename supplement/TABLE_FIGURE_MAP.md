@@ -27,7 +27,7 @@ Historical `table5`–`table8` output names correspond to current Tables 4, 5, 6
 
 | Figure | Basename | Input / generator |
 |---|---|---|
-| Main 1 | `evaluation_flow` | Documented execution rules; `scripts/make_review_figures.py` |
+| Main 1 | `evaluation_flow` | Documented execution rules; `scripts/make_evaluation_flow.py` via `scripts/make_review_figures.py` |
 | Main 2 | `paired_test_results` | `data/revision/cost_components.csv`; same script; panel (c) uses 10^-5 units as Table 6 |
 | Main 3 | `replay_fallback_sensitivity` | `data/replay/replay_results.json`; `scripts/make_replay_figure.py` |
 | Main 4 | `temperature_response` | Representative temperature and hold curves; `scripts/make_review_figures.py` |
@@ -51,3 +51,5 @@ All eleven are regenerated as PNG/PDF under `outputs/figures/`. Main Figure 4 an
 - Alpha, injected delays, and hold-curve checks: `scripts/reproduce_method_details.py` → `method_detail_checks.json`.
 
 Raw source audit receipts and portable compact-input checks have different scopes. Full timing journals, quadrature fields, weights, and training inputs are not distributed here.
+
+Figure 1 was redrawn on 19 October 2026 with monochrome rectangular nodes, consistent straight arrows, and an attached orthogonal plant-to-observation feedback path. Its scientific labels and execution order are preserved. PDF and SVG are vector exports; PNG is 300 dpi. Run `python -B scripts/make_evaluation_flow.py --output outputs/figures` to regenerate this figure alone.

@@ -2,7 +2,7 @@
 
 Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*. Revision: 2026-10-19.
 
-This public data package contains compact scientific records, implementation details, and scripts to regenerate **five main figures and six supplementary figures**. Version 1.3.0, prepared 19 October 2026, by Minsu Jo, Namhyun Yoo, Hoansuk Choi and Jinhong Yang. Code/documentation: MIT; data/research figures: CC BY 4.0. See LICENSE, DATA_LICENSE and CITATION.cff. External dependencies are not bundled. Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation.
+This public data package contains compact scientific records, implementation details, and scripts to regenerate **five main figures and six supplementary figures**. Version 1.3.1, prepared 19 October 2026, by Minsu Jo, Namhyun Yoo, Hoansuk Choi and Jinhong Yang. Code/documentation: MIT; data/research figures: CC BY 4.0. See LICENSE, DATA_LICENSE and CITATION.cff. External dependencies are not bundled. Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation.
 
 ## Reproduce
 
@@ -72,3 +72,5 @@ All 9,216 new runs complete without recorded thermal-limit violations. Missed de
 `independent_verification.json`, `archive_integrity.json` and `raw_metric_hashes.json` document the author's full-archive audit: all 9,456 raw costs reconstructed (maximum discrepancy 6.67e-16), archive CRC/seals verified, all 1,536 FV schedules paired, and deterministic sampling checked on 384 selected cases. These receipts do not make omitted quadrature, fields, timing pools or schedules executable in the compact package. `outputs/monte_carlo/checks.json` is a fresh saved-metric check with this narrower scope.
 
 Quantiles use NumPy linear interpolation between adjacent ordered repetition values (the default `quantile` method); standard deviations use `ddof=1`. Rank events and episode-level FV win/tie/loss counts use the protocol absolute cost tolerance of 1e-10.
+
+Figure 1 was redrawn on 19 October 2026 with monochrome rectangular nodes, consistent straight arrows, and an attached orthogonal plant-to-observation feedback path. Its scientific labels and execution order are preserved. PDF and SVG are vector exports; PNG is 300 dpi. Run `python -B scripts/make_evaluation_flow.py --output outputs/figures` to regenerate this figure alone.
