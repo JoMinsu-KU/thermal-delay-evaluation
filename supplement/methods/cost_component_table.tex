@@ -1,0 +1,20 @@
+\begin{table}[tbp]
+\centering
+\caption{Physical effect sizes over 24 nominal episodes at the 10-ms plant cap, using original interleaved replay with zero fallback. FV: replay minus zero delay. Sh--Sm: Shared minus Small. RMSE differences are in K; cost-component differences are in $10^{-5}$ units.}
+\label{tab:physical}
+\fontsize{9.5pt}{11.5pt}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}Yrrr@{}}
+\toprule
+Difference & FV & \multicolumn{2}{c}{Sh--Sm}\\
+\cmidrule(l){3-4}
+ & & Zero delay & Replay\\
+\midrule
+$\Delta$RMSE & $1.0596$ & $-0.0110$ & $0.0232$\\
+$\Delta J_{\rm tr}$ & $339.978$ & $-2.735$ & $5.283$\\
+$\Delta J_{\rm term}$ & $-8.116$ & $-1.129$ & $-0.220$\\
+$\Delta J_u$ & $-4.063$ & $0.038$ & $0.161$\\
+$\Delta J_{\Delta u}$ & $1.981$ & $0.002$ & $0.001$\\
+\bottomrule
+\end{tabularx}
+\end{table}

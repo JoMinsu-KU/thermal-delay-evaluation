@@ -1,24 +1,21 @@
-# Version 1.1.0 — replay and deadline-policy evidence
+# Version 1.2.0: Small initialization and saved-trajectory evidence
 
-Companion data for *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*, manuscript revision of 10 October 2026.
+Companion to the manuscript revision prepared 19 October 2026.
 
 ## Added
 
-- Compact outcomes for 1,128 completed cases: 240 original-condition reproductions, 720 additional-replay runs, and 168 FV hold runs, using the same 24 normal episodes.
-- All 57 paired replay/fallback contrasts, sequence summaries, method rankings, and fixed protocol records.
-- Cost-component and physical-effect checks, alpha-selection evidence, and representative hold temperature inputs.
-- First-deadline applied-command records, reconstructed increment penalties, and Figure S2.
-- Six main figures, two supplementary figures, the complete table/figure map, and a three-page S1 guide.
-- Byte-preserved scheduler, latency-matching, protocol, and metric-check source excerpts.
+- All 192 Small test outcomes: 48 original-checkpoint reproductions and 144 tests from three new initializations.
+- All three training histories, 288 validation-selection outcomes, selected-alpha evidence, quality flags, and per-seed paired intervals. Seed 6062 fails the validation improvement criterion and is retained.
+- The October 13 saved-record analyses of 57,504 scored requests, 336 FV traces, command restoration and thermal responses.
+- A nine-page S1 guide, four main figures, six supplementary figures and complete evidence map.
+- Portable seed and combined reproduction commands; SHA-256 integrity manifests.
 
-## Reproduce
+## Interpretation
 
-Install `requirements.txt` and run `python -B scripts/reproduce_all.py`. Current outputs are in `supplement/outputs/`. The standalone ZIP contains equivalent inputs and can be run with `python -B Supplement_S1/scripts/reproduce_review.py` after extraction.
+All three added Small seeds have lower replay mean cost than the fixed Shared checkpoint; zero-delay ordering varies and only one new seed reverses ordering. These are 24 reused episodes, with fixed upstream components, calibration and archived timing. Shared is not retrained. No independently sampled latency Monte Carlo result or general architecture/pretraining claim is included.
 
-## Assets and scope
+## Assets
 
-This release contains the small supplement ZIP and its guide PDF. Check both against the attached SHA256SUMS. The two large raw-data assets remain at v1.0.0; their bytes and tag are unchanged. The full raw replay/hold batch is not distributed in v1.1.0. Saved-result checks do not rerun training/inference, perform new measurements, or independently repeat the omitted raw-input audit.
+`thermal-delay-supplement-v1.2.0.zip` contains the compact public supplement. Extract it and run `python -B Supplement_S1/scripts/reproduce_review.py` after installing its requirements. `Supplement_S1_guide.pdf` summarizes the evidence. Check both against SHA256SUMS.
 
-Additional replay/hold settings were tested at 10 ms only. Their settings reuse three archived timing repeats, not six independent hardware measurements. Intervals condition on fixed systems and timing sequences.
-
-Code/documentation: MIT. Data/figures: CC BY 4.0. Authors: Minsu Jo, Namhyun Yoo, Hoansuk Choi, Jinhong Yang. The associated manuscript is in preparation; no journal acceptance is claimed.
+The original v1.0.0 raw-data assets and v1.1.0 release remain unchanged. New Small raw trajectories, weights and full training inputs are omitted. Raw-quadrature and remote-input checks are author audit receipts; compact saved-metric analyses are executable here. Code/documentation: MIT; data/research figures: CC BY 4.0.

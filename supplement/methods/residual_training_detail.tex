@@ -1,0 +1,34 @@
+Let $C_i(x)$ subtract the mean over FV-eligible valid candidates $\mathcal E_i$. The loss is
+\begin{equation}
+\begin{aligned}
+L&=\operatorname{mean}_{i,a\in\mathcal E_i}
+ \operatorname{SmoothL1}\!\left(C_i(s)_a+
+                 \frac{C_i(Q^{\mathrm{FV}})_a}{\sigma}\right)\\
+ &\quad-\frac{0.2}{b}\sum_i\sum_{a\in\mathcal E_i}q_{ia}\log p_{ia},
+\end{aligned}
+\label{eq:residualloss}
+\end{equation}
+where $b$ is the decision batch size. The target $q_i$ is the softmax of $-Q_i^{\mathrm{FV}}/\tau$ over $\mathcal E_i$, with $\tau=4.5805\times10^{-5}$. The predicted $p_i$ is the softmax of $\sigma s_i/\tau$ over all valid candidates. Smooth-L1 uses unit transition width and averages eligible candidate elements across the batch; its target is not clipped. Table~\ref{tab:training} summarizes optimization. Batches contain eight original and eight common rollout rows, sampled with replacement, with randomized candidate order. AdamW is reinitialized for each phase, clips gradient norm at one, and uses no learning-rate ramp. The earlier direct scorers instead use classification plus a 0.2-weighted pair-ranking loss and a per-phase learning-rate ramp; these settings do not describe D.
+
+\begin{table}[tbp]
+\centering
+\caption{Final residual-training settings. The selected checkpoint, rather than the full executed budget, defines the tested system.}
+\label{tab:training}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}lY@{}}
+\toprule
+Item & Setting\\
+\midrule
+Training inputs & Same examples and batch order; original anchors plus common PI/PINO states\\
+Target & Observed-state FV held-action cost over 2~s\\
+Optimizer & AdamW; weight decay 0.01; batch 16\\
+Learning rates & New modules $10^{-4}$; adaptation LoRA $3\times10^{-5}$\\
+Executed stages & 50 warmup and 400 adaptation steps\\
+Warmup & Shared backbone and released LoRA frozen; new thermal modules trained\\
+Selected stage & Warmup step 50 for both systems\\
+Strength selection & $\alpha\in\{0,0.5,1\}$; validation at zero and 38~ms\\
+\bottomrule
+\end{tabularx}
+\end{table}
+

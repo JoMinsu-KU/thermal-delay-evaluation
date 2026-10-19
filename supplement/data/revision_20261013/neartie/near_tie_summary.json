@@ -1,0 +1,594 @@
+{
+  "scope": "24 nominal D episodes, two frozen residual systems, zero and original interleaved replay, 10-ms plant cap",
+  "definition": "largest minus second-largest saved corrected score among predicted_safe_mask candidates; dimensionless before probability temperature",
+  "grid_fixed_in_script_before_analysis": [
+    0.0,
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "quantiles": "numpy linear interpolation",
+  "request_rows_are_descriptive_not_independent_observations": true,
+  "no_cost_difference_proxy": true,
+  "cases": 96,
+  "groups": [
+    {
+      "method": "shared_physics",
+      "mode": "delayed",
+      "requests": 14400,
+      "unscored_initial_missing_input": 24,
+      "scored": 14376,
+      "eligible_5": 7176,
+      "filter_intervention": 0,
+      "eligible_6": 664,
+      "eligible_7": 1093,
+      "eligible_8": 1434,
+      "eligible_9": 4009,
+      "exact_top_score_ties": 0,
+      "q_0.0": 5.7220458984375e-06,
+      "q_0.01": 0.0005231499671936035,
+      "q_0.05": 0.0029090866446495056,
+      "q_0.25": 0.018990516662597656,
+      "q_0.5": 0.09525269269943237,
+      "q_0.75": 1.9490944296121597,
+      "q_0.95": 5.163566887378693,
+      "q_0.99": 9.90871000289917,
+      "q_1.0": 18.068755626678467
+    },
+    {
+      "method": "shared_physics",
+      "mode": "zero",
+      "requests": 14400,
+      "unscored_initial_missing_input": 24,
+      "scored": 14376,
+      "eligible_5": 7010,
+      "filter_intervention": 0,
+      "eligible_6": 668,
+      "eligible_7": 1124,
+      "eligible_8": 1461,
+      "eligible_9": 4113,
+      "exact_top_score_ties": 0,
+      "q_0.0": 7.62939453125e-06,
+      "q_0.01": 0.0006196014583110809,
+      "q_0.05": 0.0027935169637203217,
+      "q_0.25": 0.018654429353773594,
+      "q_0.5": 0.0735483169555664,
+      "q_0.75": 1.841227948665619,
+      "q_0.95": 5.0926366448402405,
+      "q_0.99": 9.865374445915222,
+      "q_1.0": 17.99527406692505
+    },
+    {
+      "method": "small_physics",
+      "mode": "delayed",
+      "requests": 14400,
+      "unscored_initial_missing_input": 24,
+      "scored": 14376,
+      "eligible_5": 7103,
+      "filter_intervention": 0,
+      "eligible_6": 627,
+      "eligible_7": 1051,
+      "eligible_8": 1338,
+      "eligible_9": 4257,
+      "exact_top_score_ties": 0,
+      "q_0.0": 9.5367431640625e-07,
+      "q_0.01": 0.0004910677671432495,
+      "q_0.05": 0.0026705721393227577,
+      "q_0.25": 0.019376158714294434,
+      "q_0.5": 0.07754845172166824,
+      "q_0.75": 1.9024681746959686,
+      "q_0.95": 5.131076276302338,
+      "q_0.99": 9.883956670761108,
+      "q_1.0": 18.09259796142578
+    },
+    {
+      "method": "small_physics",
+      "mode": "zero",
+      "requests": 14400,
+      "unscored_initial_missing_input": 24,
+      "scored": 14376,
+      "eligible_5": 7079,
+      "filter_intervention": 0,
+      "eligible_6": 632,
+      "eligible_7": 1056,
+      "eligible_8": 1351,
+      "eligible_9": 4258,
+      "exact_top_score_ties": 0,
+      "q_0.0": 9.719282388687134e-06,
+      "q_0.01": 0.0005531171336770058,
+      "q_0.05": 0.0026634717360138893,
+      "q_0.25": 0.019279640167951584,
+      "q_0.5": 0.0765690803527832,
+      "q_0.75": 1.8572126924991608,
+      "q_0.95": 5.114290833473206,
+      "q_0.99": 9.817086935043335,
+      "q_1.0": 18.078418254852295
+    }
+  ],
+  "original_saved_score_parity_rows": 57504,
+  "original_saved_score_parity_all": true,
+  "inputs": [
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240064",
+      "trace_sha256": "b24e161c62f4f3c3766326910813340a0aee28c01cb8823ec0376a3c9da4a1d7",
+      "original_trace_sha256": "c105606eebe6ff0c403f1540a72bd17ad1272a5c87d152f24baad7c4fc61a2bc"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240065",
+      "trace_sha256": "f7a5ebdfc3a0cae3c40f402d80fcab708c2e1fd6a15c89f663f166107610c9a2",
+      "original_trace_sha256": "c211caf660a2dcd66036db7cf5e0351a3fe8043fea1567fcfffa1574db68aed7"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240066",
+      "trace_sha256": "ac657a874f076ddd4f5f301a39ef4904f6df4164932ade19d32080eaa4c51e26",
+      "original_trace_sha256": "89795710c502c8b778c61a601777a4b55e9dca292aa620e414fe900851cda6b2"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240068",
+      "trace_sha256": "4fd3e4d47fea554677626e24567abc6224504664ed826d9727206c2b0db78179",
+      "original_trace_sha256": "238d7efda067b0005f43bcb30933906b2e2e42c8bd5e7df848d18f494fa21a52"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240069",
+      "trace_sha256": "4a98f534a953566ce062295102902583ad8177e0e9465c9fe12587e4c3423d25",
+      "original_trace_sha256": "e52d76f2dc2369bedda4c9edef51079b5f4a260d1c419b074296a564e6620b97"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240070",
+      "trace_sha256": "c19ca20532c741316d52f1991dfba6b17f267012b160edf79f39c22e11c40c9b",
+      "original_trace_sha256": "ed978b8ed9985fa7cc351c2b001e0ea547d8b17e69457beaf515563c777375a2"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240072",
+      "trace_sha256": "52b774aaaf88ef176e1917bb0350f808b19ca6b59ff650b740c032c44102a043",
+      "original_trace_sha256": "d44b325a7a2b7b59e162092004e72da3d6ac25142b43506b005270e7f53ec9b8"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240073",
+      "trace_sha256": "8f97ff7600d1f31f661a4428e3e920aef36d200393559a25391d1d7a9ba281f4",
+      "original_trace_sha256": "840073a6381e30bebf3f1c9d58fb62028d333600e49e7e4b351559aa425dc1d4"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240074",
+      "trace_sha256": "d1b08ddd58e244d88cfcffec994810009655f18bc36b221c4b91927b23f22847",
+      "original_trace_sha256": "404ceef28d243e1ff4fb16ab80e567b8b593cadd278d06edca834a3e3392cef0"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240076",
+      "trace_sha256": "f2700102c6428e70d66d44c156d0cd1d8c4963f0014470d1676c1dd439ff70f1",
+      "original_trace_sha256": "495340a0f0ad09657a84eb72452ec6f68e32981e9611df6a355efaa61fc6ad61"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240077",
+      "trace_sha256": "dd852b44d7f211854a3005ed625eda7a0d0c47a752055d6722a02017492f60cf",
+      "original_trace_sha256": "34931bc5c7b2c22e149a0a9055bea4055cba707146c89b7b3db957134ea2039b"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240078",
+      "trace_sha256": "3886fcc4cd9f706b2a5f6011707b458c70a333cb43246125ddfb20c241a76718",
+      "original_trace_sha256": "5b0e023c031daa84320c5d62dfda658581060578dda1359e6244284f4e45b18a"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240080",
+      "trace_sha256": "d28cd14f375a09cb2577c6b8b3178681a521acb3b739c4bbd12b4593f0c87da1",
+      "original_trace_sha256": "bd5cbc86e4305c761d60fb6bb2f8b52430a6fe0f990c7e17b537f857fa76be3c"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240081",
+      "trace_sha256": "f97c8592c7ba5785ef4761035974abc1e2cb6ae5957cb0fe0c305196e0a39c81",
+      "original_trace_sha256": "3cf902665148bc27c0af9688db6e43516d552aeba4eec508ee8ae8dbc71a450c"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240082",
+      "trace_sha256": "3e8c00b2483e8bab13d07471d5aee57794b05c98fd8aec6ffcead6d3addc0cf8",
+      "original_trace_sha256": "dc9db4093df660208e0974437fcce69f8f2726083dd2b334afb9362a8f7061b5"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240084",
+      "trace_sha256": "3364ce11310753776a5455137249de163388b73eb1846a5b7ab4e404584ebbf5",
+      "original_trace_sha256": "f4ee1e79240d380647a6bde913541d6674b16fc023c68f20f5c5fe9a1775c6cb"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240085",
+      "trace_sha256": "931e9bd1d88ba45c325493113c4e9348ba8ba17b860f3472610dc9aeebbc86a8",
+      "original_trace_sha256": "e545e724987aa43df84e50b1f31ff2e6652794dd17824c81d301c4d5d8a11738"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240086",
+      "trace_sha256": "ee322b5eb6bb4033a29f08c6c2e1b57960171f093fff0e447faa9f2ea449420c",
+      "original_trace_sha256": "ff560fefaca4a21a1f58d65eedb4b7206980c3945ae569edaea723986d352f5a"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240088",
+      "trace_sha256": "5608ba3344b05cf96046f33e808a8f79a9dbb4f414eebeabe22310b82022af39",
+      "original_trace_sha256": "ec5c71b163dc30f9af00c376b8c2d4fe8f6e51d5ed25bdcbfbc112296147f003"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240089",
+      "trace_sha256": "0b774a3f89ab9cbfecc6b06db5050411c5c8514cb191289edcd55797da513276",
+      "original_trace_sha256": "62d29295843c357d3a7a03a00aa57fb3f61658dff76e885b657b257db3b7bc7b"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240090",
+      "trace_sha256": "ebd1f07c24496f5e35e7aec4108c92777f4393bbc41deed6024fe2b6b5d4d0c1",
+      "original_trace_sha256": "c9d83d95000c9d62a302847584604b71e9e28fd75fedae50e028bff1b743a61e"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240092",
+      "trace_sha256": "66d82e9a48edb8c87a6a25e986141f752aab9ecb05112e0b63deb713bd35ee32",
+      "original_trace_sha256": "c14c377af5393ededa854f7e9aafc4f6ed5934576d948db9fe9fa6d8269ce1fe"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240093",
+      "trace_sha256": "988c8825e97904840bec58029be547a7f7043528739bb3a86b6488f3444375f8",
+      "original_trace_sha256": "0729804e38e34df483e06a9c28ec216b78dee651b04f24abd943367f85f01b86"
+    },
+    {
+      "case": "baseline_shared_physics_delayed_legacy_zero_l2_240094",
+      "trace_sha256": "ae9b73fa0ce6432271d50d86c85994c15952f04aeec96e18f1e6f97c3d40ff1e",
+      "original_trace_sha256": "1b16193584f3880419f1de9188a6c13591d42745df548cef144edfe796915ee5"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240064",
+      "trace_sha256": "3838e919916e6cb8f422d2e4effa3e1ba4f8d9c10c4d816de96da48cb99c6a88",
+      "original_trace_sha256": "7c95994754cc712f8fdc75114090681a202707a9614210002a238c182b2f86ed"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240065",
+      "trace_sha256": "162b3c78f341ddd54aad4c1d87ba82a48a82b9d8cdd1486216eb0b2e32503f56",
+      "original_trace_sha256": "e075c2459d93cd9c09805e190e1b00b532dabb5e872e69f86a0df53a3249b604"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240066",
+      "trace_sha256": "4a8cbf554de030253feb7ebba5f3f5bbb97ae2eb8f1fab0b02b1729f6c94857f",
+      "original_trace_sha256": "508207c2c33a95fb86a4eafb4c2f26df0281ac802b3f2dbf13f778068c52966d"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240068",
+      "trace_sha256": "39988c9c2917d64fe50021abf70bb903b88f06da110702684c1dccff19c2b79c",
+      "original_trace_sha256": "0c202a5abae2dffd9f54709e1ec6a5d7d1b852d3db084c93bc974e6cf4e03538"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240069",
+      "trace_sha256": "50aae2e36fb28da107fd75aeacd184a3e32b2d09f8be065deaffbea11a0819d4",
+      "original_trace_sha256": "6fcd65b5761fb0837c09f93b9a83655d9d29d44b773a8066e27ca49ab73a58d2"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240070",
+      "trace_sha256": "cef8d62df10fa0925b022a491864caae758579b95490c1f29bdee662490f77e6",
+      "original_trace_sha256": "b58a7717ee9b8e1c0c8056532db67946dd1d498dfc739ca36a358f0d72bb7434"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240072",
+      "trace_sha256": "72a993f88c3e1fa006c1ca9f7802392bab272ceab53820fb78fb32d2ccce1eb1",
+      "original_trace_sha256": "23fe78796e52105717d97e518866718237411bb02fa05402a15686297decd537"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240073",
+      "trace_sha256": "7535f215d98919f2e8ff08de5a9746edf1dc73a5ced561dc980997c95ada533c",
+      "original_trace_sha256": "ef5a1340de9035d144e0dc687c87fc63e9c6b9bfaeb4778d65dd22849851cab6"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240074",
+      "trace_sha256": "49f6401d7ecb2d438ebac7d6581f5afc5cac96b12f924e6c337f038d59f8096a",
+      "original_trace_sha256": "46dbb58cc47f7af4a386651f20339449fc5a417f03289deffd0ab55d03a0d4bb"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240076",
+      "trace_sha256": "a6f93d28a16cade5f6e5386a4153623b1f0c27c480bd409a7070bb96b47ccf58",
+      "original_trace_sha256": "5a0219694e9729b2a7c3b84b9d7f87f71715c64246a8c128ff69154019d196d3"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240077",
+      "trace_sha256": "263e1b704ae3eab5e60302bbbf7c3056bc8d55b4ae26d9d492ce4e4fb4429034",
+      "original_trace_sha256": "f891bdae1b874fa5d659206a50a740d57bf6154736f4710f2a51d9fa92cf5d2c"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240078",
+      "trace_sha256": "159725b1be281c254bc4c930cdc209b2bf427a0bc696e87f73c78bffc27cf732",
+      "original_trace_sha256": "72b1d3042d7458019be702b6eb8584e31a594b33b73994c0d5710e9cbb8d9906"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240080",
+      "trace_sha256": "4b307470b842d1739be9192c3c68eba788281e23d66cf64dfd31247de3b66e99",
+      "original_trace_sha256": "b40472807c512b243b7ee8e93936e813d888058ad0a81f3abc9aae3db7b9832e"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240081",
+      "trace_sha256": "f54973aa97a46608c1a3673a497d2e69c08d1a5579ec30fb048bff256b1de1c7",
+      "original_trace_sha256": "c2bcdc21209a2340ae13eb094325fccfd1b59f67597f77f8b248424c7a15b9b0"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240082",
+      "trace_sha256": "471178028c5058dab835efc3ac9e537caeeb10018452aad308fbeb806d6cc0c1",
+      "original_trace_sha256": "b081f1208f8d068cbf016ba2e05f7a4c24403322bebe330e5265f0616726b65d"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240084",
+      "trace_sha256": "a33c12380e483e4f8feedeefd89f664e587cc1fbf583efa4f41764cba68fd65c",
+      "original_trace_sha256": "4edb063b4d5b6e2c254bcacdf903d5d7aa65a65bfd33d5d9da70e05915e18d72"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240085",
+      "trace_sha256": "8f25446fc536738de9ea99588479757e6e43f451b181a7dc029dccb0d464893f",
+      "original_trace_sha256": "7b9c6407ea88945c62f66bf42a689c47bfc546ec5b436106d763f8319da8ca09"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240086",
+      "trace_sha256": "0b42650109bcfc37e77b094553b1cea71d64af28003864a168f1fbe3c6d7afad",
+      "original_trace_sha256": "81383e98d08a6e6ce22b4adac8e6f81969312a85d255d8e3761ae61bbd168295"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240088",
+      "trace_sha256": "fe194bacb1621c342b980d872ecdf1b7372f62855b5224c1f60b88dfbad15377",
+      "original_trace_sha256": "c7eb541614b93b3af2ccc18e6ee47c86a0bd9f59c82f5c2438ddfe42e33148e6"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240089",
+      "trace_sha256": "6789bb3074ab0f316274908099f68b67b11aabcc491b009d34ae2c8d8e3590e8",
+      "original_trace_sha256": "12077749fe4e61697eacf726b043a9972c5bf83aee1ef308ba57467c25971eba"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240090",
+      "trace_sha256": "b1acfa68bb49f57dedecf32179e3b54c47d5d05af6992780f735f8b382ff8fc2",
+      "original_trace_sha256": "412ebf9775917eaf4ebacbde7017cf4646957d9f9f0e8d292cce868b55f85c88"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240092",
+      "trace_sha256": "873f5235d5a6974495c8acfb63650f15ab5e476475b099c93bcd402116fb6d54",
+      "original_trace_sha256": "85e3b87f0bde88f3e6e8928727946dbbe0c2b16bfb7760f0bb3d647efac1f477"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240093",
+      "trace_sha256": "dcca5c7950153f8a47daf8da229e784e7284c173303268fd1d0bfb06c3dbe9ef",
+      "original_trace_sha256": "4cca0c9909e9b7034a250b1f04e45d1cf34bc76b137c6b00c1be7d38d7a173d9"
+    },
+    {
+      "case": "baseline_shared_physics_zero_legacy_zero_l2_240094",
+      "trace_sha256": "abaed4f54735514c61a013c38b32e7aa3681c46555c140cd607233a4ae2afb27",
+      "original_trace_sha256": "e242168ca79ab17ce1251615c0606986ce05ceb72e93e4185eac2f3bc5916071"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240064",
+      "trace_sha256": "af0be9a0caa3a4f3aa446e083870af3173e4ed82818e5247a2756e5c91445541",
+      "original_trace_sha256": "89891963b15ec447a5634761f6d050860e240db79f7310bed3effc7510e51a38"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240065",
+      "trace_sha256": "1ee47981a8d5ae42db07b25cb4e39980198bfd9818c707d7489422fb891d30e3",
+      "original_trace_sha256": "46f8a17a447f9fc68acf5bb50071434b2a7ac7f79a9f660dac90f53042531445"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240066",
+      "trace_sha256": "b8052d463af8de1d70f7b6735cb362340d311a60b3caa317a01ae1730117d31d",
+      "original_trace_sha256": "e89a9b3ab5dd0311714240ffefb2f6cd48be949b0a1746295b72087915426164"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240068",
+      "trace_sha256": "23d5e7e4f70d85a5cd383c45aada48ce1fa3da955faa7998c3c5274d1e835fc2",
+      "original_trace_sha256": "4a0db8acc097da51e2969f12a81a829b6d6b403bde8b41d5abc07392d6821647"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240069",
+      "trace_sha256": "55fd319c485e1878601aa28d67efb17db606ad9f74906b0cb82fe074128c3314",
+      "original_trace_sha256": "a6704dc92a7f374347b05371cbeb465535e69ad5fef8d25639276c2a944e0f7d"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240070",
+      "trace_sha256": "3eddf5e798c05c14064592e95c5acb67525bce2992918bbe9aba2884f9711ec9",
+      "original_trace_sha256": "63f03390203de2b249ca8fff160c09787f87dfc36b5e05104aa6e2e2bc5f31d4"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240072",
+      "trace_sha256": "7f0eaffa89d0f76fdaa17e2578e00d02e4f14d06533e0307bd53ac794ca9a3b2",
+      "original_trace_sha256": "5bb762e859db1cc946bfd4045b74361f57d0a92a4e261d7ee3865e56b1f6e93c"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240073",
+      "trace_sha256": "a9116183578ec6a549647a263a25966e104f11a06147aa34b088de7b24601c7f",
+      "original_trace_sha256": "763a601bc75b522e715abf2a750d285ab977ae82b8a24e14662cafb86bc2fcc3"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240074",
+      "trace_sha256": "9937bc7d9affd2571d0c1fdd28fe9c3e7e919ea0f329f4df3924fb14a971cd5e",
+      "original_trace_sha256": "442b48a589e4d705fbc53dd90ef493cf847b39e54169ca85baac9fb9f2bb776a"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240076",
+      "trace_sha256": "71e912046ccdd047462117e109bfd7c36aec4c89bdb46ccb09da9f138d5ce360",
+      "original_trace_sha256": "abcf4bae3b1fd5dd4cc8a4dd779549871463ac600e08cd52b296bcda665eb6bc"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240077",
+      "trace_sha256": "6c71ca24a87249a9a19be8d6f8fce2c94065df7fe63bf44124a2e4ec17747476",
+      "original_trace_sha256": "c524879e39a3a14a31d2e24712441f2778cdec9048fbbf17188d42c3723cfa18"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240078",
+      "trace_sha256": "a0fcf2dba066dc1a8893e5395faee33f801e3477330f38e162aca00002c8942b",
+      "original_trace_sha256": "23de48d367f76a837cb2ed9ca853d4ca8a2d2b70f73c618f22954a6f3752c1c6"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240080",
+      "trace_sha256": "f92ef2e5a4ea508ad64ffe99acde6518da851d2d84eea914f376db093349fc68",
+      "original_trace_sha256": "d9790f6d86181b5208a232c41d13299884a75caabb0ab932c8ab73595366c4de"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240081",
+      "trace_sha256": "5fa2e9ad5f16554d994891b5f8cfca28ecef8109cc679dbe8203900a2ac8fdec",
+      "original_trace_sha256": "f063b3b314f77fc69720d58e36cb303d0ebb95f1d6d04793cefd512e059d4030"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240082",
+      "trace_sha256": "545fb4d47acef36e94e736301db788f31f1e0c2bf7ad3ba8784e9253292aa566",
+      "original_trace_sha256": "656ff198ccf3a769e67acf4238f10ab27ed0166b2db3e5324ffc506643ea746d"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240084",
+      "trace_sha256": "2df5176f9536ca96ff6a8426754b7f183a66b56cf093e20683a3487271b5a087",
+      "original_trace_sha256": "fcd685e8dda7215e1fb577adc4bd8b25588b2eaab369ec0686deeb24708cbaed"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240085",
+      "trace_sha256": "3a4b287e210ee403d05ee782f236b4f1257408d137f525517fded5d2bfc702cb",
+      "original_trace_sha256": "e74a01d121d72a630c4a2c0df6573590ef913e7de1fbd43f33ada391d23ea321"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240086",
+      "trace_sha256": "fb36a74a69cf04e5ca3d99525195805b7d2fb2a0915551047e0b8eb9b03ec32c",
+      "original_trace_sha256": "db91546a4b8dfd209f5d7fbe2982320ec4c1f32b2271f27fc4cff59155b1ed6e"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240088",
+      "trace_sha256": "10f120b2e8e9f32da06adf126137397d96c06ce384817888457c3dbd3d8dbf59",
+      "original_trace_sha256": "23e0f85847eaf1c7d3af858bf41f1ba34142f10f4e2d6ed82c6fc20fa8176332"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240089",
+      "trace_sha256": "53ce967580ee3301a98447ad898020b3916457458af1d20f0c94ca047246d4b8",
+      "original_trace_sha256": "47f2964c3907ea8e1256da13eae31a0e987262aa62ccf7f42d72ed39a843f259"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240090",
+      "trace_sha256": "d708604dbe73fb98f73d9421d7726fc81a9391d09083dc17ce255856b9bd36e0",
+      "original_trace_sha256": "a1fa60ee3c80b779eb835011e8ceace8346774ba0152735e8d5357c22d3323cb"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240092",
+      "trace_sha256": "6038a797582b408ae72c8f1c006ce447c289565783a534a4f7c15f915c71abb0",
+      "original_trace_sha256": "26c7a1157a245b0263417b7b02ddcad4fc16cd60553ea7e33bcbfaac7fc89254"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240093",
+      "trace_sha256": "3b3e3301f246699ca43501126a2cac07f6fe5890a8d9c5641a875c650c91275e",
+      "original_trace_sha256": "1c3b6e68d48b8de66c75822593a8b4bff975cd0bb237b5d3cccaf141fc700cd5"
+    },
+    {
+      "case": "baseline_small_physics_delayed_legacy_zero_l2_240094",
+      "trace_sha256": "d6fef74754f6ca94a9108f554a2126e42a4bfc9a4d9952a7845437be0d9bb475",
+      "original_trace_sha256": "5702f8cb17dafbf51fa3a0fc89fb337f4108aa5bf19b4fe75b9ea90df090c3a9"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240064",
+      "trace_sha256": "73740ff0fe7e7f119710092be939f52f7c21d4aafc3adffa54e1a59f329d9001",
+      "original_trace_sha256": "be6fd7016197aa2cf5ab7c789a71cd04d4905c7bf8c61731bd73cd20d1bda563"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240065",
+      "trace_sha256": "6309d03c224ab0e11e823afe0e2d08801dd0018eac6859da9b02034d4a6fa5e7",
+      "original_trace_sha256": "5caecca4117f981d7532ed19ec194fdb198e22ad968a87cbfa5592aa7c4ae599"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240066",
+      "trace_sha256": "1fcd42c3ea81adb5ddc1434c81a9531fed0009a91787cdfcf918b3020ca94cbd",
+      "original_trace_sha256": "11de023f1459691ddbed2e2633e158d521bf27f7ef34f7eb2ee7e9e76ce0658b"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240068",
+      "trace_sha256": "4331e14c091db1731d5d3972390c64edbc852cf8fbbc09a6bce911092a16c2cf",
+      "original_trace_sha256": "1682337f6bc7eaa04b7aa6af9b6de5a755fc880fab65e94a33bd15e50e0a3009"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240069",
+      "trace_sha256": "6a5a2f8fa47c4167890a5cc71e1b3d3c50dd7ab32ed1708fc950acd3f2c9ff72",
+      "original_trace_sha256": "42eb2d3b90d8edaff58ca8d7ba55f8a8d3c905e838b52cbc487e5b17b1dac882"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240070",
+      "trace_sha256": "10ca950ad6c6322ae0d8969af2538aa10b5602e906e9b41a5a0916b2035d0021",
+      "original_trace_sha256": "9f6bbbc4e9ca65e28a2793a54d4bfe5298e9d75c5cdc9f5ae0c220aa579ea81f"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240072",
+      "trace_sha256": "3f49c22fbca9579646b787c279ce9c1c1172147a37b7692225429c3a8cfb05c9",
+      "original_trace_sha256": "0dc211da3f2cf0a1fad9fc7dcb1301fa0a234ccec8ad4caa766c3dba19053be1"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240073",
+      "trace_sha256": "74b349db0cd75f1659c9733e43b2dba5223686d34b94f5a7ca7f4c1e4202b505",
+      "original_trace_sha256": "41617f28db3bdd15908ce8e49e63d0b42a69475d28ac6ec35edc5dd00966079f"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240074",
+      "trace_sha256": "f93be8cfae73f5b6bc9914ef9ca81fad17f1626ce65c47d3a17e7c3c8da91cb1",
+      "original_trace_sha256": "4d4806729a687637db737bb34c02877605ddcdf9ca0ecfefb90dd0f7a1e1a8d8"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240076",
+      "trace_sha256": "d49aa795cccb313cf521f8cf148d3e5ce32e8e534bf60246e42d35fac2a808dc",
+      "original_trace_sha256": "cec7a629ca66f9464efffd31115b837d5406f12c16a87be29ea08ea4dea65b2c"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240077",
+      "trace_sha256": "ec004197134397c10bce9cb19d90a26697d419caa1d5c84d82de8df107516649",
+      "original_trace_sha256": "1dfee58cba15bf16ba4a37c130c6428cee83c2a860741f65a1fd3591ef133561"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240078",
+      "trace_sha256": "a36669eca3dca02e4528ca4e3c32b12b4f1f974d5ab3fa90dc72fc8ec9e2fc8a",
+      "original_trace_sha256": "a4a994603fbdbbb13342459ccda8185abd3a381d37be42b81dcd6029f06315ad"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240080",
+      "trace_sha256": "e3873d2b9a7797422dc3a9aa671261dd6f3e9573def1b86eb21a6bd3f5b5bc4b",
+      "original_trace_sha256": "1ccb58670fa6f960c1d57f57a834537284cb8b0673568300284f34b4fe0f0bec"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240081",
+      "trace_sha256": "3bf5d1f3225664be7bed3510dec149a264dce6908e5074b9339ef9fe3bb03889",
+      "original_trace_sha256": "06f0eda2ecf2463dde5b5b84953ac88a90c40e50d06a6bc06cfce7b82db59632"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240082",
+      "trace_sha256": "55c9bb50343f6487fadf8fe825a225068b196786461288e73f6d9dc2a3e82814",
+      "original_trace_sha256": "4db4a2214b08f8dec4be252dd66cf929f325759259b7521c90b202c6c73e8529"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240084",
+      "trace_sha256": "90912a9a1205afd100c4b874d290eaee4dbe4bd6596fd929b0323e4661d11eae",
+      "original_trace_sha256": "b866357a085343fa4b1d0e42d32282777dc4746dfba03eb1fbbaed676d8a8184"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240085",
+      "trace_sha256": "4c6fa695e1e9800d5c335ae3553d15fef27f9962c7d4ed215e0f859839e1b7f2",
+      "original_trace_sha256": "9b5526778e976669023d4f66fc1faf43f8098b9bae45829c3b37ce49fa59fe54"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240086",
+      "trace_sha256": "69d07063320c2a43bca290427fb8b0d36673167148e67f381900dc3fa89416d5",
+      "original_trace_sha256": "fb1e2a6cee32d986ad4b0b954cd2cdffe9a7839bd1b8df0ce67f780384b59e38"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240088",
+      "trace_sha256": "d916c7305076597117dbe35186b2643f81054b9d96d2c456c39f180075b552b5",
+      "original_trace_sha256": "85dba705fec42cdaec29500e0fedf8c277196c228027c50ec4890cc1046e3c28"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240089",
+      "trace_sha256": "874cda68907fb01e20b7c9f9f2acbe66c0091ddeb107a8d76b3c59e7c8bec60c",
+      "original_trace_sha256": "276c3bf20ca09d7c5fb99d17aa357eaee7a402805e49ca87f282412237eb53d2"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240090",
+      "trace_sha256": "f4e942d433affd1fd3741ecdda1c6953ec1286252ba2aaef0f042da959e1d010",
+      "original_trace_sha256": "d6abb342c5d67a34beb8ecc407152da0095e673bd265c77042e32064505d95eb"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240092",
+      "trace_sha256": "cf026579ed570bd540ce010ba1b453a867ae0098c12ede8a10b64dbc280a1c0e",
+      "original_trace_sha256": "b12dd07f907cd9c92399e4f67c0d0d3401a4e557a79b8e655782f071a8faa66f"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240093",
+      "trace_sha256": "1072af15ca470824a5b52470ee84b5f1a238c23382a9db85741fdcc3e9dfc744",
+      "original_trace_sha256": "1d6962d6814360cb7c571d10f4049ae4cec9fc1b3a59fa1051117cf326916f42"
+    },
+    {
+      "case": "baseline_small_physics_zero_legacy_zero_l2_240094",
+      "trace_sha256": "ca15c3b177e3c9ab0e39c5efd6759e9cda158309643eeda5b36a069a9aec860b",
+      "original_trace_sha256": "0ddc3d6ddb69233481244b244d35009cfe8234c9e57452b7599a016328f078b6"
+    }
+  ]
+}

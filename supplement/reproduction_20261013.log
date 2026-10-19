@@ -1,0 +1,209 @@
+PASS: 798 supplement file hashes
+{
+  "passed": true,
+  "primary_independent_normal_episodes": 24,
+  "numerical_executions": 741,
+  "extended_cases": 732,
+  "prior_C_cases": 9,
+  "conditional_bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261007,
+  "verified_numerical_contrasts": 27,
+  "baseline_episode_costs_match": true,
+  "rankings": [
+    {
+      "h_ms": 10.0,
+      "mode": "zero",
+      "methods": [
+        "fv_mpc",
+        "shared_physics",
+        "small_physics",
+        "pino_mpc",
+        "pi"
+      ]
+    },
+    {
+      "h_ms": 10.0,
+      "mode": "delayed",
+      "methods": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ]
+    },
+    {
+      "h_ms": 5.0,
+      "mode": "zero",
+      "methods": [
+        "fv_mpc",
+        "shared_physics",
+        "small_physics",
+        "pino_mpc",
+        "pi"
+      ]
+    },
+    {
+      "h_ms": 5.0,
+      "mode": "delayed",
+      "methods": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ]
+    },
+    {
+      "h_ms": 2.5,
+      "mode": "zero",
+      "methods": [
+        "fv_mpc",
+        "shared_physics",
+        "small_physics",
+        "pino_mpc",
+        "pi"
+      ]
+    },
+    {
+      "h_ms": 2.5,
+      "mode": "delayed",
+      "methods": [
+        "small_physics",
+        "shared_physics",
+        "pino_mpc",
+        "pi",
+        "fv_mpc"
+      ]
+    }
+  ],
+  "adverse_individual_episode_relative_pct": 3.892016729222192,
+  "simulation_training_or_inference_executed": false,
+  "raw_audit_required_for": [
+    "Latency journal reaggregation",
+    "Quadrature cost reconstruction",
+    "Field-difference reconstruction"
+  ]
+}
+PASS: 240 cost-component sums and all physical cell means
+PASS: delay values, six alpha candidates, and 601 saved hold temperature samples
+Wrote four revised figures
+{
+  "passed": true,
+  "saved_cases": 1128,
+  "unique_episodes": 24,
+  "paired_contrasts_recomputed": 57,
+  "all_rankings_and_figure_inputs_checked": true,
+  "new_simulation_or_inference": false,
+  "raw_quadrature_and_timing_audit_repeated": false,
+  "scope": "Compact-record reanalysis. Original raw-input audit is documented separately; raw journals and quadrature arrays are not bundled."
+}
+Wrote replay_fallback_sensitivity
+PASS: fixed N=600 command penalties; wrote supplementary deadline_command_response
+{
+  "summary": [
+    {
+      "method": "shared_physics",
+      "mode": "delayed",
+      "scored": 14376,
+      "unscored": 24,
+      "q_0.01": 0.0005231499671936035,
+      "q_0.05": 0.0029090866446495056,
+      "q_0.5": 0.09525269269943237,
+      "q_0.95": 5.163566887378693,
+      "q_0.99": 9.90871000289917,
+      "fraction_le_0.0": 0.0,
+      "fraction_le_0.0001": 0.0020172509738452978,
+      "fraction_le_0.001": 0.018363939899833055,
+      "fraction_le_0.01": 0.15324151363383418,
+      "fraction_le_0.1": 0.5010434056761269,
+      "fraction_le_1.0": 0.6217306622148024
+    },
+    {
+      "method": "shared_physics",
+      "mode": "zero",
+      "scored": 14376,
+      "unscored": 24,
+      "q_0.01": 0.0006196014583110809,
+      "q_0.05": 0.0027935169637203217,
+      "q_0.5": 0.0735483169555664,
+      "q_0.95": 5.0926366448402405,
+      "q_0.99": 9.865374445915222,
+      "fraction_le_0.0": 0.0,
+      "fraction_le_0.0001": 0.001669449081803005,
+      "fraction_le_0.001": 0.017042292710072342,
+      "fraction_le_0.01": 0.15038953811908737,
+      "fraction_le_0.1": 0.5108514190317195,
+      "fraction_le_1.0": 0.6354340567612687
+    },
+    {
+      "method": "small_physics",
+      "mode": "delayed",
+      "scored": 14376,
+      "unscored": 24,
+      "q_0.01": 0.0004910677671432495,
+      "q_0.05": 0.0026705721393227577,
+      "q_0.5": 0.07754845172166824,
+      "q_0.95": 5.131076276302338,
+      "q_0.99": 9.883956670761108,
+      "fraction_le_0.0": 0.0,
+      "fraction_le_0.0001": 0.0018781302170283807,
+      "fraction_le_0.001": 0.018850862548692265,
+      "fraction_le_0.01": 0.15505008347245408,
+      "fraction_le_0.1": 0.5082776850306066,
+      "fraction_le_1.0": 0.6269476905954369
+    },
+    {
+      "method": "small_physics",
+      "mode": "zero",
+      "scored": 14376,
+      "unscored": 24,
+      "q_0.01": 0.0005531171336770058,
+      "q_0.05": 0.0026634717360138893,
+      "q_0.5": 0.0765690803527832,
+      "q_0.95": 5.114290833473206,
+      "q_0.99": 9.817086935043335,
+      "fraction_le_0.0": 0.0,
+      "fraction_le_0.0001": 0.002434613244296049,
+      "fraction_le_0.001": 0.019337785197551475,
+      "fraction_le_0.01": 0.15449360044518642,
+      "fraction_le_0.1": 0.5095297718419588,
+      "fraction_le_1.0": 0.6310517529215359
+    }
+  ],
+  "reference_checks": {
+    "threshold_fractions.csv": {
+      "rows": 24,
+      "numeric_fields_equal": true,
+      "identity_fields_equal": true
+    },
+    "episode_threshold_fractions.csv": {
+      "rows": 576,
+      "numeric_fields_equal": true,
+      "identity_fields_equal": true
+    }
+  }
+}
+{
+  "analysis": "Post hoc saved-log analysis; no new runs",
+  "fixed_settings": 7,
+  "unique_episodes": 24,
+  "fv_zero_hold_cases": 336,
+  "nonzero_zero_reset_events": 715,
+  "completed_nonzero_restorations": 324,
+  "censored_nonzero_restorations": 391,
+  "all_hold_events_restored_immediately": true,
+  "event_descriptive_completed_restoration_range_s": [
+    0.175322539,
+    32.576986831
+  ],
+  "event_descriptive_coordinate_moves_range": [
+    1,
+    100
+  ],
+  "interpretation": "Events are dependent and censored; summaries do not estimate a new-timing distribution or infer a causal effect of expiration time.",
+  "physical_response_conditions": 11
+}
+Reconstructed 552 curves, 336 command traces, and 2,256 expiration records.
+PASS: saved score margins, restoration metrics, and thermal responses agree with bundled derived data.
+PASS: outputs/ contains saved-data reanalyses, four main figures and five supplementary figures.

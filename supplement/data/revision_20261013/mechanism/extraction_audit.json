@@ -1,0 +1,101 @@
+{
+  "verified_cases": 552,
+  "fv_cases": 336,
+  "deadline_records": 2256,
+  "ordinary_one_coordinate_transitions_checked": 196752,
+  "all_48_FV_cases_share_identical_request_schedule_within_setting": true,
+  "settings": {
+    "legacy": {
+      "deadline_s": [
+        6.8,
+        7.0,
+        25.3,
+        26.2,
+        51.3,
+        54.8,
+        55.8,
+        56.2
+      ],
+      "request_schedule_sha256": "4f97a8952a1be2b547b6512c2ce7c8ddb4cec995ecdc74545b6fc59ed0e3eb3b",
+      "cases": 48
+    },
+    "r0_b0": {
+      "deadline_s": [
+        8.7,
+        32.4,
+        32.6,
+        40.0,
+        50.4,
+        50.6
+      ],
+      "request_schedule_sha256": "c997c2ba7a522c7fab2c3db5976c80d13cec8d326fa9ebde56ba24e235034927",
+      "cases": 48
+    },
+    "r0_b1": {
+      "deadline_s": [
+        3.5,
+        10.6,
+        11.3,
+        17.7,
+        34.2,
+        34.4,
+        41.9,
+        50.1,
+        50.3
+      ],
+      "request_schedule_sha256": "6b85131ea3fb85fa814a2f4ee367d26cceab49e555e6777f888daca5ee199544",
+      "cases": 48
+    },
+    "r1_b0": {
+      "deadline_s": [
+        2.3,
+        8.5,
+        17.2,
+        20.6,
+        21.0,
+        25.0,
+        29.0,
+        32.2,
+        32.4
+      ],
+      "request_schedule_sha256": "242b2731e9d5b311912fc2bd1bf1ff6f5943b3a6f90e78c6cacd0516d858ec3b",
+      "cases": 48
+    },
+    "r1_b1": {
+      "deadline_s": [
+        1.4,
+        18.0
+      ],
+      "request_schedule_sha256": "bef6eb5bcc50a2b1e7f9451cd28341aee8b29f0b5ac7543e1f8618f450c7db85",
+      "cases": 48
+    },
+    "r2_b0": {
+      "deadline_s": [
+        2.3,
+        18.2,
+        18.6,
+        18.8,
+        24.9,
+        25.1,
+        52.4
+      ],
+      "request_schedule_sha256": "000d44be54c1b5cc89a1dd71edeac56e217ad62d621631e87053a046d45b5fd3",
+      "cases": 48
+    },
+    "r2_b1": {
+      "deadline_s": [
+        2.1,
+        2.3,
+        9.1,
+        9.3,
+        44.3,
+        44.5
+      ],
+      "request_schedule_sha256": "e8a9a6471e4b9bec5ea2edfba79b0b0d93aded4411d72bed6a408cbe7dc42324",
+      "cases": 48
+    }
+  },
+  "no_simulation_inference_training": true,
+  "sampling_unit": "24 episodes, reused over seven fixed timing settings",
+  "definitions_sha256": "5490a0a8f9316769023b002bf59004f7452332b8eebcb02b0b5f2a3b48df4d08"
+}

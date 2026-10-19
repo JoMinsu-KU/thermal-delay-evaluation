@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this dataset and identify the release version used. The associated manuscript is in preparation."
 type: dataset
 title: "Data and analysis for Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study"
-version: 1.1.0
+version: 1.2.0
 url: "https://github.com/JoMinsu-KU/thermal-delay-evaluation"
 repository-code: "https://github.com/JoMinsu-KU/thermal-delay-evaluation"
 authors:
@@ -21,4 +21,4 @@ keywords:
   - closed-loop evaluation
   - numerical sensitivity
   - reproducibility
-abstract: "Archived thermal-controller evaluation, numerical validation, and 1,128 replay/fallback runs, with portable saved-result analysis scripts. Statistical units remain one selected C episode and 24 normal D test episodes for the numerical comparisons. Data are CC BY 4.0; code is MIT."
+abstract: "Saved thermal-control outcomes, numerical and replay/fallback validation, command-recovery diagnostics, and three additional Small initializations. All seed outcomes are retained, including one validation-quality failure. There are 24 unique nominal test episodes. Code is MIT; data and research figures are CC BY 4.0."

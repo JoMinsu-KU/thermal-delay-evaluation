@@ -1,54 +1,53 @@
 # Supplement S1: saved-result analysis
 
-Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*.
+Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*. Revision: 2026-10-19.
 
-This saved-result package contains compact scientific records, implementation details, and code to reanalyze the saved results and regenerate the six main figures and two supplementary command figures. Public release v1.1.0 by Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang. Code and documentation are MIT; data and research figures are CC BY 4.0. See LICENSE, DATA_LICENSE, and CITATION.cff. External dependencies retain their own terms. Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation.
+This public data package contains compact scientific records, implementation details, and scripts to regenerate **four main figures and six supplementary figures**. Version 1.2.0, prepared 19 October 2026, by Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang. Code/documentation: MIT; data/research figures: CC BY 4.0. See LICENSE, DATA_LICENSE and CITATION.cff. External dependencies are not bundled. Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation.
 
 ## Reproduce
 
-Use Python 3.10 or later with NumPy and Matplotlib. If needed, install the two dependencies with `python -m pip install -r requirements.txt`, then run:
+Use Python 3.10+ with NumPy and Matplotlib. From this directory:
 
 ```bash
+python -m pip install -r requirements.txt
 python -B scripts/reproduce_review.py
 ```
 
-The command verifies SHA-256 hashes, recomputes paired episode summaries and the existing numerical contrasts, checks the 240 cost-component records, recomputes all 57 replay/fallback contrasts from 1,128 cases, checks both injected delay values and all six alpha-selection candidates, and writes figures and tables into `outputs/`. The figures are `evaluation_flow`, `residual_architecture`, `paired_test_results`, `temperature_response`, `first_command_divergence`, `numerical_case_C`, `replay_fallback_sensitivity`, and `deadline_command_response`. Figures S1 (`first_command_divergence`) and S2 (`deadline_command_response`) are supplementary; the other six appear in the revised main manuscript. Captions are in SUPPLEMENTARY_FIGURES.md.
+The command verifies SHA-256 hashes, recalculates paired episode contrasts and numerical comparisons, checks 240 cost decompositions and alpha selection, and reproduces all 57 replay/fallback contrasts from 1,128 cases. It also checks all three additional Small initializations, 192 test outcomes, 288 validation selection outcomes, and per-seed paired intervals. It recomputes 57,504 eligible score margins, command restoration from 336 FV traces, and thermal metrics from 552 mean-temperature curves. It checks these new results against the bundled summaries. Outputs go to `outputs/`. No model, training, GPU, or plant simulation is invoked.
 
-## Quick route to Table 9 and Figure 4
+## Navigation
 
-| Manuscript item | Input | Run | Output |
-|---|---|---|---|
-| Table 9 | `data/replay/episode_metrics.csv` | `python -B scripts/reproduce_replay.py` | `outputs/replay_paired_results.json` (57 paired contrasts); compare `data/replay/sequence_summary.csv` and `method_rankings.json` |
-| Figure 4 | `data/replay/replay_results.json` (checked by the previous command) | `python -B scripts/make_replay_figure.py` | `outputs/figures/replay_fallback_sensitivity.pdf` and `.png` |
-| Supplementary Figure S2 | `data/minor_revision_r2/deadline_commands.csv` | `python -B scripts/make_deadline_figure.py` | `outputs/figures/deadline_command_response.pdf` and `.png` |
+The included [Supplement_S1_guide.pdf](Supplement_S1_guide.pdf) presents the supplementary figures and key moved results. [TABLE_FIGURE_MAP.md](TABLE_FIGURE_MAP.md) maps all twelve main tables, four main figures, and six supplementary figures. Historical table numbers in output filenames are preserved for provenance.
 
-The complete [table/figure map](TABLE_FIGURE_MAP.md) covers every main table and figure. The included [Supplement_S1_guide.pdf](Supplement_S1_guide.pdf) is a readable navigation guide with both supplementary figures. This ZIP provides the executable inputs and scripts; the guide does not replace it.
+| Evidence | Input directory | Reproduction |
+|---|---|---|
+| Original 24-episode comparison | `data/primary/` | `scripts/reproduce.py` |
+| Seven fixed timing settings and FV zero/hold | `data/replay/` | `scripts/reproduce_replay.py` |
+| Score margins (Table 7) | `data/revision_20261013/neartie/` | `reproduce_neartie.py` in that directory |
+| Restoration and thermal response (Tables 9–10) | `data/revision_20261013/mechanism/` | `reproduce_compact.py` in that directory |
+| Numerical refinement (Table 11) | `data/numerical/` | `scripts/reproduce.py` |
 
-## Contents and limits
+The main driver runs each required script with explicit output directories. Individual analysis scripts may default to a sibling `reproduced/` directory; generated outputs are not frozen inputs.
 
-- `data/primary`: saved D outcomes and latency quantile summaries. The primary inferential sample is 24 normal test episodes; hot/OOD results are separately labelled.
-- `data/development`: A/B checkpoint and validation records. Reused validation trajectories do not establish a selector's independent test benefit.
-- `data/numerical`: summaries of 720 D and 12 C executions in the extended batch and nine earlier C closed-loop runs. Repeated settings do not enlarge the independent episode count.
-- `data/selected_C`: the supporting selected-episode command diagnostic.
-- `data/revision`: the 240 D baseline cost decompositions, physical contrasts, representative 10-Hz temperature records, and hashes identifying the raw inputs used by the authors. The temperature episode is the lower median (12th of 24) by zero-delay FV cost, with episode ID breaking ties.
-- `METHODS.md`: model input construction, candidate scoring, losses, retained checkpoints, discrete PI updates, and evaluation definitions.
-- `methods/`: detailed A/B text and PINO training settings moved out of the main paper. These are LaTeX fragments, not standalone documents; cross-references refer to the main manuscript.
-- `DATA_DICTIONARY.md`: original field names and units. Entries referring to raw archives describe the full evidence archive, which is not included in this compact supplement.
+## Evidence and scope
 
-The bootstrap uses 24 paired episodes conditional on the frozen models and fixed replay sequences. The supplement does not include model weights, complete training inputs, raw timing journals, all quadrature arrays, or full temperature fields. Therefore it cannot independently repeat training/inference or the authors' raw-input audit. Stored component values and temperature inputs permit the reported saved-result analyses and figures to be checked. The completed replay/fallback batch contains 240 original-condition reproductions, 720 alternative-replay runs and 168 FV hold runs. All 1,128 cases use the same 24 normal episodes. `data/replay/` supplies compact records, fixed protocol settings, all paired contrasts and an audit receipt. `methods/selected_C_detail.tex` retains the command diagnostic moved out of the main text. The new replay/hold conditions were evaluated at a 10-ms plant cap only.
+- **Original archive:** `data/primary/`, `data/development/`, and `data/protocol/` document the original frozen systems and execution conditions. D contains 24 nominal test episodes; eight initially hot episodes and other OOD conditions are separate. Nominal describes initial conditions; normal path describes inference with usable inputs and an admitted candidate.
+- **Numerical validation:** `data/numerical/` contains nine earlier C closed-loop runs, twelve fixed-command C runs, and 720 D runs at 10/5/2.5 ms. Repeated conditions do not add independent episodes.
+- **Replay/fallback batch:** `data/replay/` contains 240 baseline reproductions, 720 alternative replay runs, and 168 FV hold runs. All use the same 24 nominal episodes at a 10-ms plant cap. R1B1–R3B2 reuse three recorded timing repeats; they are not new independent measurements.
+- **Physical and method checks:** `data/revision/`, `data/minor_revision/`, and `data/minor_revision_r2/` retain cost decompositions, the unchanged representative episode, alpha-validation outcomes, injected-delay checks, and the selected deadline-command comparison.
+- **Current saved-data analyses:** `data/revision_20261013/` adds scored candidate vectors, compact application logs, 10-Hz mean-temperature curves, exact definitions, derived event/episode summaries, and source audit receipts. These support new analyses of existing experiments; these October 13 inputs contain no new experiments. The subsequently completed Small repetitions are supplied separately under `data/small_seed/`; no independent random-latency Monte Carlo result is included.
+- `METHODS.md` specifies implemented models and measures. `methods/` retains LaTeX fragments for A/B/C, architecture/training details, the original cohort/procedure tables, and cost components moved from the main manuscript. The fragments are supporting source, not standalone TeX documents.
 
-`SHA256SUMS` covers every distributed input and script except the checksum file itself. Generated `outputs/` are not part of this fixed input manifest.
+## Interpretation limits
 
-## Find the evidence used in the manuscript
+Bootstrap intervals condition on the trained systems and fixed replay settings. Requests and expiration events within an episode are dependent. Command restoration refers to a historical input vector and is censored at the next expiration or 60 s. Thermal metrics use sampled spatial means, so they do not bound intersample or local peak temperatures.
 
-Start with [TABLE_FIGURE_MAP.md](TABLE_FIGURE_MAP.md), which maps every main table and figure to its input, script, and output. File names containing old table numbers are retained for provenance; the map gives the current numbering.
+The supplement supports saved-result reanalysis. It omits model weights, complete training inputs, full raw timing journals, and full quadrature/temperature-field archives. It cannot independently repeat training, inference, new closed-loop conditions, or the authors' complete source-seal audit. Audit receipts describe checks on the original archive; compact-input checks are executable here.
 
-Three evidence groups must be distinguished:
+`SHA256SUMS` covers every distributed input/script/document except itself. Generated `outputs/`, `reproduced/`, and Python caches are excluded. Hashes establish file integrity, not scientific correctness.
 
-1. **Original archive:** `data/primary/`, `data/development/`, and `data/protocol/D_*` describe the original frozen systems, development cohorts, original interleaved replay and zero fallback. The primary comparison uses 24 normal episodes. The hot and other OOD records are separate.
-2. **Numerical-validation batches:** `data/numerical/` contains 9 earlier C closed-loop runs, 12 C fixed-command runs, and 720 D runs at 10/5/2.5 ms. These establish the reported sensitivity of the original conditions; they do not refine the newly added replay/hold conditions.
-3. **Replay/fallback batch:** `data/replay/` contains 1,128 runs: 240 original-condition reproductions, 720 additional-replay runs, and 168 FV hold runs. Each uses the same 24 normal episodes, with a 10-ms plant cap. R1B1–R3B2 reuse three archived timing repeats; they are not six new independent timing measurements.
+## Small initialization repetitions (19 October update)
 
-`data/minor_revision/` adds saved D alpha-validation outcomes, the 601-sample hold temperature curve for the unchanged representative episode, and a method-audit receipt. `scripts/reproduce_method_details.py` recalculates all six alpha keys, checks injected delays in the compact records, and checks the hold input against the saved case metrics. It does not rerun raw trace or file-seal checks; those are recorded author audits.
+`data/small_seed/` contains 192 test outcomes (48 original-Small reproductions and 144 new tests), complete recorded training histories, 288 validation-selection outcomes, a fixed Shared reference, and author audit receipts. Run `python -B scripts/reproduce_small_seed.py` for the table/statistics and `python -B scripts/make_small_seed_figure.py` for Figure S6; the main driver runs both.
 
-The main manuscript's method references resolve to METHODS Section 2 (residual loss and alpha selection), Section 3 (PINO loss/training), and Section 6 (injected delays and hold-curve provenance). Detailed A/B protocols are in `methods/development_detail.tex`; PINO settings are also in `methods/pino_training_detail.tex`. `data/replay/paired_contrasts.csv`, `sequence_summary.csv`, and `method_rankings.json` retain every replay-setting comparison.
+All three new seeds have lower mean replay cost than the fixed Shared checkpoint, but only one exhibits the original ordering reversal. Seed 6062 fails the original validation improvement criterion and is retained. There are 24 unique test episodes, not 72 independent observations per mode. Timing and calibration are reused; Shared is not retrained. Raw-field/quadrature and source-hash audits are receipts, not independently reproducible from this compact subset. Selected weights and complete training inputs are omitted.

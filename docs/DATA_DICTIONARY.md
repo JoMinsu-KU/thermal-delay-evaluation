@@ -71,3 +71,8 @@ Within latency rows, `e2e_ms` is warm end-to-end wall-clock inference time. `gpu
 ### `raw_data/numerical/initial_C/{case}/`
 
 Nine earlier closed-loop cases: metrics, compressed events, `truth_100hz.csv.gz`, and final fields. No interval quadrature was saved. The raw audit uses the reported tracking RMSE for these nine cases and identifies that limitation in its output.
+
+
+## Small initialization update
+
+`seed`: 6060 original or 6061–6063 new; `mode`:zero or delayed (original replay); `episode`:one of 24 reused nominal test IDs. `episode_cost` is the saved full-field composite cost. `cost_reconstructed` and component columns come from the author's raw-record audit, not fresh simulation. `alpha` is validation selected. `validation_quality_pass` checks candidate-cost improvement with zero invalid selections/unexpected fallbacks; 6062 fails and remains included. `small_relative_to_shared_pct` uses Shared as denominator; negative favors Small. `conditional_episode_ci_*` resamples 24 matched episodes, excluding seed-population and new-timing uncertainty. `source_provenance.json` retains raw metric hashes and archive identity; omitted raw inputs are not available for this compact audit.

@@ -1,0 +1,44 @@
+{
+  "reload": {
+    "passed": true,
+    "reload": {
+      "method": "small_physics",
+      "score_max_error": 0.0,
+      "probability_max_error": 0.0,
+      "choice": 1,
+      "fresh_process": true
+    },
+    "parity": {
+      "passed": true,
+      "method": "small_physics",
+      "zero_alpha_matches_PINO": true,
+      "graph_max_error": 0.0,
+      "checked_rows": 8,
+      "selected_alpha": 0.5,
+      "selected_checkpoint_modified": false,
+      "in_memory_nonzero_probe": false
+    },
+    "parameters_sha256": "a78a2c5140e513bd4fc6634bcdaa912de6b75dffa6b458ad6fff37faa5b5c1b8",
+    "protocol_sha256": "77c333b304f6013ddfce441dba6221bd856c77e9ee3b5c9f552ab547d41e0627"
+  },
+  "training": {
+    "full_budget": true,
+    "identical_batch_hashes": true,
+    "validation_only": true,
+    "original_selection_rule": true,
+    "quality_pass": false,
+    "quality_pass_required_for_publication_claim": true,
+    "quality_is_reported_not_used_to_filter_seed_outcomes": true,
+    "initialization_seed": 6062,
+    "configured_seed": 6060,
+    "batch_sampler_seed": 6271,
+    "protocol_sha256": "77c333b304f6013ddfce441dba6221bd856c77e9ee3b5c9f552ab547d41e0627"
+  },
+  "selected": {
+    "parameters_sha256": "a78a2c5140e513bd4fc6634bcdaa912de6b75dffa6b458ad6fff37faa5b5c1b8",
+    "model_sha256": "80809fc507e4877f63e6b92b7e134c626f4015b69f470b9b086d2f596f4c3b50",
+    "initialization_seed": 6062,
+    "alpha": 0.5,
+    "test_accessed_for_selection": false
+  }
+}

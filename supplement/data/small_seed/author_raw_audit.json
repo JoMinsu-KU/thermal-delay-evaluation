@@ -1,0 +1,31 @@
+{
+  "status": "PASSED_WITH_INTERPRETATION_LIMITS",
+  "protocol_sha256": "77c333b304f6013ddfce441dba6221bd856c77e9ee3b5c9f552ab547d41e0627",
+  "archive_sha256": "ce781f8c763c4f4e3a76c8ac6d74c1c70c7b7bd4a6010a7bcf685423a778023f",
+  "sealed_directories": 219,
+  "file_hash_checks_including_nested_repeats": 2739,
+  "test_cases_recomputed": 192,
+  "new_test_cases": 144,
+  "validation_rollouts_checked": 288,
+  "max_cost_reconstruction_error": 2.7755575615628914e-16,
+  "new_seed_quality_passes": 2,
+  "new_test_thermal_violation_episodes": 0,
+  "new_test_missed_deadlines": 0,
+  "new_test_request_count": 86400,
+  "replay_runs_with_identical_source_sequence": 96,
+  "saved_new_test_inference_failures": 0,
+  "replay_lower_cost_new_seeds": 3,
+  "rank_reversals_new_seeds": 1,
+  "test_wall_seconds_sum": 2246.2515615546145,
+  "checks_passed": 237724,
+  "limitations": [
+    "Shared is one fixed checkpoint; Small initialization alone varied, with validation-selected alpha.",
+    "24 unique test episodes reused across seeds; do not use n=72 independent episodes.",
+    "Bootstrap intervals condition on each checkpoint pair and fixed archived timing; no initialization-population interval.",
+    "6062 fails the original validation regret improvement criterion and remains included.",
+    "No new latency benchmark, recalibration, hot-test evaluation, or independent latency Monte Carlo in this ZIP.",
+    "Root input integrity and exact baseline event reproduction are execution receipts; external H200 originals were not rehashed here.",
+    "inference_failures is an unincremented counter in the saved scheduler; completed cases support no aborting exceptions, not a separate fault-tolerance test.",
+    "Training validation regret is checked against recorded values, without loading models to repeat inference."
+  ]
+}

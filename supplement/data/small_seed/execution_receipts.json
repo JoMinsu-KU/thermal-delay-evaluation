@@ -1,0 +1,647 @@
+{
+  "status": {
+    "state": "EXECUTION_COMPLETE",
+    "error": null,
+    "time_utc": "2026-10-16T00:16:24.832150+00:00",
+    "scientific_success_not_implied": true
+  },
+  "baseline_gate": {
+    "passed": true,
+    "expected_cases": 48,
+    "checks": {
+      "baseline_small_zero_l2_240064": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240065": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240066": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240068": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240069": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240070": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240072": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240073": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240074": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240076": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240077": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240078": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240080": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240081": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240082": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240084": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240085": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240086": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240088": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240089": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240090": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240092": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240093": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_zero_l2_240094": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240064": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240065": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240066": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240068": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240069": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240070": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240072": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240073": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240074": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240076": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240077": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240078": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240080": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240081": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240082": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240084": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240085": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240086": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240088": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240089": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240090": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240092": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240093": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      },
+      "baseline_small_delayed_l2_240094": {
+        "passed": true,
+        "metric_atol": 1e-10,
+        "metric_rtol": 1e-08,
+        "require_exact": "request/action times, commands, candidate choices, masks, fallback paths, replay-row identities",
+        "trace_records_changed": 0,
+        "continuous_trace_max_abs_difference": {
+          "scores": 0.0,
+          "probabilities": 0.0,
+          "predicted_peak_c": 0.0
+        },
+        "failures": []
+      }
+    },
+    "protocol_sha256": "77c333b304f6013ddfce441dba6221bd856c77e9ee3b5c9f552ab547d41e0627"
+  },
+  "input_integrity": {
+    "passed": true,
+    "checked_files": 1596,
+    "checked_bytes": 5139626482,
+    "failures": [],
+    "time_utc": "2026-10-16T00:16:15.532179+00:00",
+    "protocol_sha256": "77c333b304f6013ddfce441dba6221bd856c77e9ee3b5c9f552ab547d41e0627"
+  }
+}

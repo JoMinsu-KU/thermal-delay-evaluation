@@ -1,84 +1,72 @@
 # Thermal Delay Evaluation
 
-**Saved results and analysis linking inference delay, deadline handling, applied heater commands, and closed-loop performance.**
+**Data and reproducible analysis of inference delay, deadline commands, and thermal-controller performance.**
 
-Companion to **Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study**, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is in preparation for J-KICS. This **v1.1.0** package matches the manuscript revision prepared on **10 October 2026**.
+Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is in preparation for J-KICS; no acceptance is claimed. **Version 1.2.0** corresponds to the revision prepared on **19 October 2026**.
 
-[Quick start](#quick-start) · [Main findings](#main-findings) · [Table/figure map](supplement/TABLE_FIGURE_MAP.md) · [S1 guide](docs/Supplement_S1_guide.pdf) · [Reproduction scope](docs/REPRODUCTION.md) · [Citation](#citation)
+[Quick start](#quick-start) · [New seed results](#small-initialization-results) · [Evidence map](supplement/TABLE_FIGURE_MAP.md) · [S1 guide](docs/Supplement_S1_guide.pdf) · [Scope](docs/REPRODUCTION.md) · [Citation](#citation-and-license)
 
-## Main findings
+## What this study examines
 
-The primary comparison uses **24 normal held-out episodes** and five fixed control systems: PI, finite-volume MPC (FV-MPC), physics-informed neural-operator MPC (PINO-MPC), Shared-Residual, and Small-Residual. Paired analyses reuse those episodes across conditions.
+Five implementations choose heating commands for the same simulated four-heater plate: PI, FV-MPC, PINO-MPC, Shared-Residual and Small-Residual. Delayed commands interact with a 100-ms deadline and a candidate set that changes at most one heater by 0.04 per decision. The primary comparison uses **24 nominal held-out episodes**. Timing settings and training repeats reuse these episodes.
 
-| Finding | Evidence | Scope |
+| Finding | Evidence | Interpretation |
 |---|---|---|
-| Deadline handling explains much of the observed FV-MPC cost increase. | Under the original replay, mean cost increases **25.02%** with zero fallback and **2.35%** with hold, relative to zero delay. Both retain eight deadline misses and eight skipped ticks per episode. | Matched timing and gate rules; the fallback command and subsequent feedback differ. |
-| The effect persists across alternative replay settings. | Across six additional settings, increases are **11.70–79.34%** for zero and **2.19–6.46%** for hold. | Settings reuse three archived timing repeats. They are not six independent hardware measurements. |
-| A ranking can change without deadline misses. | Shared has **0.275% lower** mean cost than Small at zero delay and **0.374% higher** cost under the original replay. | Small effects between complete fixed systems; process-level practical significance was not established. |
-| Original aggregate comparisons survive the tested step refinement. | Original zero-delay and zero-fallback replay mean rankings persist at **10, 5, and 2.5 ms**. | Additional replay/hold conditions were tested at **10 ms only**. Individual trajectories remain sensitive. |
+| Deadline commands change the observed FV-MPC loss. | Original replay raises mean cost by 25.02% under zero fallback and 2.35% under hold, relative to zero delay. | Matched request/deadline schedules; later states and commands respond to the intervention. |
+| Loss varies across fixed timing settings. | Across seven settings, zero increases cost by 11.70–79.34%; hold by 2.19–6.46%. | Recorded blocks are sensitivity cases, not a random-latency distribution. |
+| Recovery after forced zero can be prolonged. | 715 nonzero resets; 324 observed full-vector restorations and 391 censored. | Restoration is to a historical command, which need not remain thermally desirable. |
+| Small's replay advantage repeats, while its zero-delay ordering varies. | All three added seeds have lower replay mean cost than one fixed Shared checkpoint; only one reverses ordering. | Conditional Small initialization study; one validation-quality failure is retained. |
 
-<p align="center">
-  <img src="figures/replay_fallback_sensitivity.png" width="720" alt="FV-MPC replay cost changes with zero and hold deadline policies across archived timing settings.">
-</p>
+![FV cost sensitivity to replay and deadline policy](figures/replay_fallback_sensitivity.png)
 
-The diagnostic procedure connects the latency consumed by each request to deadline handling, applied commands, and paired outcomes. It does not establish universal controller superiority, hardware safety, or a checkpoint selector's general benefit.
+## Small initialization results
 
-## What changed in v1.1.0
+Percentages below are **100×(Small mean / Shared mean−1)**. Negative values favor Small. Each row uses the same 24 nominal episodes and one fixed Shared checkpoint.
 
-- Added **1,128 replay/fallback case records**: 240 original-condition reproductions, 720 additional-replay runs, and 168 FV hold runs, all on the same 24 normal episodes.
-- Added the **57 paired contrasts**, replay-setting rankings, fixed protocol settings, and audit receipts.
-- Added cost components, physical effect sizes, alpha-selection evidence, and the representative hold temperature curve.
-- Added the first-deadline command diagnostic and clarified **N=600 nominal decision slots**, distinct from actual requests/application events.
-- Added the complete map for **11 tables, six main figures, and two supplementary figures**, plus a three-page S1 guide.
+| Small initialization | Selected alpha | Zero delay | Original replay | Validation improvement |
+|---|---:|---:|---:|---|
+|6060 (original)|0.5|+0.275%|−0.373%|Pass|
+|6061|1.0|−0.349%|−1.049%|Pass|
+|6062|0.5|+0.147%|−0.412%|**Fail; retained**|
+|6063|1.0|−0.409%|−1.034%|Pass|
 
-The original v1.0.0 release and its two large raw-data assets remain unchanged. See [release notes](docs/RELEASE_NOTES.md).
+All three new models complete 450 optimizer steps but select warmup step 50. Seed 6062's final validation FV candidate-cost difference is 6.3398e−7, above the initial 6.2609e−7; infeasible selections and unexpected fallbacks are both zero. Its alpha is chosen by the separate, prespecified closed-loop validation rule. The failed outcome is included in every relevant summary.
+
+![Small initialization comparison with conditional episode intervals](figures/small_seed_cost_comparison.png)
+
+The new tests reuse Small's archived latency and calibration. Shared is not retrained. There are **24 unique test episodes**, not 72 independent observations per timing mode. Intervals resample matched episodes conditional on each checkpoint pair and fixed timing. The observed one-of-three reversal count is not a population probability. Architecture, pretraining and selected alpha are not isolated causal effects. The new models are evaluated only at the 10-ms plant cap.
 
 ## Quick start
 
-Use Python **3.10+**, NumPy, and Matplotlib. The saved-result analysis runs on the CPU and requires no model weights or GPU. Version 1.1.0 was checked with Python 3.12.7, NumPy 1.26.4, and Matplotlib 3.9.2.
+Python 3.10+ with NumPy and Matplotlib is sufficient; no GPU or model download is needed.
 
 ```bash
-git clone https://github.com/JoMinsu-KU/thermal-delay-evaluation.git
-cd thermal-delay-evaluation
-git checkout v1.1.0
 python -m pip install -r requirements.txt
 python -B scripts/reproduce_all.py
 ```
 
-The version tag becomes available when the maintainer publishes v1.1.0. Before then, use the prepared package directory directly and omit the clone/checkout commands.
+This verifies package hashes and regenerates the manuscript analyses, **four main figures and six supplementary figures**, including per-seed paired contrasts and validation checks. Outputs are written to `supplement/outputs/`; frozen inputs are unchanged.
 
-The command checks both manifests and runs all current saved-result analyses. Outputs are written to **`supplement/outputs/`**. It does not execute a simulator, model inference, training, or fresh timing measurements.
+For only the seed study:
 
-### Find a particular result
+```bash
+python -B supplement/scripts/reproduce_small_seed.py
+python -B supplement/scripts/make_small_seed_figure.py
+```
 
-Paths below are relative to `supplement/`.
+Inspect `supplement/outputs/small_seed/checks.json` and `paired_contrasts.csv`. The compact inputs and expected values are in [supplement/data/small_seed](supplement/data/small_seed). The complete [table/figure map](supplement/TABLE_FIGURE_MAP.md) identifies every source and generator. Historical output filenames preserve their original numbering.
 
-| Manuscript item | Input | Script | Output |
-|---|---|---|---|
-| Tables 7–8: primary and residual comparisons | `data/primary/episode_metrics.csv` | `scripts/reproduce.py` | `outputs/table6_primary_costs.csv`, `table7_paired_comparisons.csv` |
-| Table 9: replay/hold effects | `data/replay/episode_metrics.csv` | `scripts/reproduce_replay.py` | `outputs/replay_paired_results.json` (57 contrasts) |
-| Figure 4: replay/hold summary | `data/replay/replay_results.json` | `scripts/make_replay_figure.py` | `outputs/figures/replay_fallback_sensitivity.*` |
-| Table 10: physical effect sizes | `data/revision/cost_components.csv` | `scripts/reproduce_physical.py` | `outputs/physical_checks.json` |
-| Table 11: step sensitivity | `data/numerical/extended_metrics.csv` | `scripts/reproduce.py` | `outputs/table8_numerical_sensitivity.csv` |
-| Figure S2: first deadline miss | `data/minor_revision_r2/deadline_commands.csv` | `scripts/make_deadline_figure.py` | `outputs/figures/deadline_command_response.*` |
+## Data populations and experimental units
 
-The [full table/figure map](supplement/TABLE_FIGURE_MAP.md) gives every input and generated result. Historical `table5`–`table8` filenames correspond to current Tables 6, 7, 8, and 11. Current figures are regenerated in PNG and PDF; [supplementary captions](supplement/SUPPLEMENTARY_FIGURES.md) explain S1 and S2.
+| Evidence | Executions/records | Independent episode scope |
+|---|---|---|
+| Original nominal comparison | Five methods×two modes×24 episodes | 24 nominal test episodes; eight initially hot episodes reported separately |
+| Numerical checks | 720 D runs plus 21 selected-C checks | Same 24 D episodes; C is one post hoc selected case |
+| Replay/deadline-policy batch | 1,128 executions, including 240 baseline reproductions | Same 24 episodes; seven fixed timing settings |
+| Command/margin/response analysis | 336 FV application traces; 57,504 scored residual requests; 552 curves | Dependent events within reused episodes |
+| Small initialization study | 48 baseline tests+144 new tests+288 validation rollouts | Three new Small seeds; 24 test episodes; 16 separate validation episodes |
 
-For the first matched FV expiration at **6.8 s**, zero fallback changes `[0.64, 0.68, 0.64, 0.68]` to zeros while hold retains it. Figure S2 shows the resulting applied commands in the unchanged representative episode used for Figure 5.
-
-<p align="center">
-  <img src="figures/deadline_command_response.png" width="720" alt="Four heater commands near the first deadline miss: zero fallback resets each heater, while hold preserves its last applied command.">
-</p>
-
-## Small standalone supplement
-
-[Release v1.1.0](https://github.com/JoMinsu-KU/thermal-delay-evaluation/releases/tag/v1.1.0) is prepared with:
-
-- `thermal-delay-supplement-v1.1.0.zip`: compact inputs, scripts, licenses, and the S1 guide;
-- `Supplement_S1_guide.pdf`: three-page navigation guide with both supplementary figures;
-- `SHA256SUMS`: checksums for these two assets.
-
-After downloading and verifying the ZIP, extract it and run `python -B Supplement_S1/scripts/reproduce_review.py`. This produces the same analyses and eight figures as the repository entry point. Release download links become available after publication.
+No independent random-latency Monte Carlo outcomes are included in this version. Existing checkpoint comparisons remain original-checkpoint results unless explicitly identified as new Small repetitions.
 
 ## Download and audit the detailed records
 
@@ -134,60 +122,28 @@ The raw audit writes to `outputs/raw_audit/`. It checks **732 independent quadra
 
 Here, “independent reconstruction” describes recalculation from the saved records. It does not mean independently sampled runs or a new experiment.
 
-## Experimental units and limits
+## Reproduction scope
 
-| Evidence group | Coverage | Unit / boundary |
-|---|---|---|
-| A/B development | Checkpoint and validation records | Reused development episodes; no independent selector-benefit claim |
-| C diagnostic | One selected episode; three original conditions, nine refinements, 12 fixed-command runs | Earlier direct scorer; not the D controller version |
-| D original archive | 480 records: five methods × two modes × 48 episodes | Main sample: 24 normal test episodes; eight initially hot and 16 OOD episodes are separate |
-| D step refinement | 720 runs at 10/5/2.5 ms | Same 24 normal episodes |
-| Replay/fallback batch | 1,128 runs | Same 24 normal episodes; additional settings use a 10-ms cap |
-| Latency measurements | 180,000 original requests, three process repeats | Reused archived inputs/timing sequences |
+The compact repository reanalyses saved episode metrics, training histories, validation selection, application records and temperature summaries. It supports paired statistics, integrity checks and figure regeneration. The seed raw-cost audit reports a maximum reconstruction error of 2.78e−16 across 192 tests; that audit used full quadrature and fields that are **not included** in this compact update. Audit receipts document checks on the author's full archive and are not substitutes for independently repeating them.
 
-Bootstrap intervals condition on the selected models and fixed replay sequences, using **20,000 paired episode resamples**, seed **20261007**. Percentage changes in mean cost are ratios of means. Repeated conditions do not enlarge the independent episode sample.
-
-The compact supplement supports **saved-result reanalysis**. It omits model weights, full training/cache inputs, raw timing journals, complete quadrature arrays, and full fields. Original primary/numerical raw reconstruction is available through the unchanged v1.0.0 assets. **Full raw records for the later replay/hold batch are not part of this public update**; its published compact records and audit receipts cannot independently repeat the full raw-input audit or generate new closed-loop conditions.
+The supplied subset omits model weights, complete training inputs, the full Small result ZIP and raw replay/fallback trajectories. It does not rerun training, inference, new plant trajectories, or timing measurements. Original primary/numerical raw releases remain available separately as described above. The seed inference-failure counter is not an independent fault-tolerance metric; the paper reports completed runs, thermal-limit outcomes and deadline counts.
 
 ## Repository layout
 
-```text
-supplement/             Current manuscript inputs, methods, scripts, and S1 guide
-  data/replay/          All 1,128 compact case results and 57 contrasts
-  data/revision/        Cost components and physical/temperature inputs
-  data/minor_revision/ Alpha validation and representative hold temperature
-  data/minor_revision_r2/ Applied zero/hold command records and provenance
-  TABLE_FIGURE_MAP.md   Current table and figure mapping
-scripts/reproduce_all.py Current manuscript reproduction entry point
-data/                   Preserved original evidence and release metadata
-scripts/                Original analysis and raw-audit tools retained
-figures/                Current six main and two supplementary figures
-experiment_source/      Original source and replay/fallback implementation excerpts
-docs/                   Guide, reproduction scope, provenance, and release notes
-MANIFEST.sha256         Public repository file checksums
-```
+- `supplement/`: current compact inputs, methods, source map and portable analysis.
+- `figures/`: publication figures in PNG/PDF; the map identifies the current ten figures.
+- `docs/`: guide, release notes, reproduction scope and data dictionary.
+- `data/`, `scripts/`, `experiment_source/`: retained original records and analysis/implementation excerpts.
+- `MANIFEST.sha256`: integrity hashes for distributed repository files.
 
-The original `scripts/reproduce.py` remains available for the v1.0.0 analysis; it writes to root `outputs/` and retains historical figure/table numbering. Use **`scripts/reproduce_all.py` for the current manuscript**.
+The public data package omits manuscript drafts, review correspondence, author biographies, the journal class and fonts. Those private submission materials are maintained separately.
 
-## Citation
+## Citation and license
 
-Please cite the data release and record the version used. [CITATION.cff](CITATION.cff) supplies the GitHub citation metadata. No manuscript DOI or acceptance status is asserted.
-
-```bibtex
-@misc{jo2026thermaldelaydata,
-  author = {Jo, Minsu and Yoo, Namhyun and Choi, Hoansuk and Yang, Jinhong},
-  title = {Data and Analysis for Inference Delay and Deadline Handling in
-           Thermal Controller Evaluation: A Retrospective Simulation Study},
-  year = {2026},
-  version = {1.1.0},
-  url = {https://github.com/JoMinsu-KU/thermal-delay-evaluation/releases/tag/v1.1.0},
-  note = {Research data and analysis code; manuscript in preparation}
-}
-```
-
-## License
+Use [CITATION.cff](CITATION.cff) and identify the version and analysis subset used. Authors: Minsu Jo, Namhyun Yoo, Hoansuk Choi and Jinhong Yang. No archive DOI has been assigned.
 
 - **Code and documentation:** [MIT](LICENSE).
-- **Data and research figures:** [CC BY 4.0](DATA_LICENSE), with the [legal text](LICENSES/CC-BY-4.0.txt) included. Attribute the authors/version and indicate changes.
+- **Data and research figures:** [CC BY 4.0](DATA_LICENSE).
+- External software and models retain their own terms and are not redistributed here.
 
-External dependencies retain their own terms. Model weights, literature PDFs, journal templates/fonts, manuscript source, and internal review correspondence are not included. Report reproducibility issues through [GitHub Issues](https://github.com/JoMinsu-KU/thermal-delay-evaluation/issues) with the version, command, and relevant output.
+See [release notes](docs/RELEASE_NOTES.md) for changes from v1.1.0.

@@ -1,0 +1,590 @@
+{
+  "shared_physics": {
+    "zero": {
+      "l2_240064": {
+        "episode_cost": 0.05087377721611326,
+        "tracking_rmse_k": 22.336790680591648,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240065": {
+        "episode_cost": 0.00866883544564669,
+        "tracking_rmse_k": 9.02811987870342,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240066": {
+        "episode_cost": 0.003591336022729457,
+        "tracking_rmse_k": 5.843264558111426,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240068": {
+        "episode_cost": 0.0010099870524852984,
+        "tracking_rmse_k": 3.06555092729937,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240069": {
+        "episode_cost": 0.03080913045334564,
+        "tracking_rmse_k": 17.272937183848736,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240070": {
+        "episode_cost": 0.008020228550386064,
+        "tracking_rmse_k": 8.808881318937978,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240072": {
+        "episode_cost": 0.03610166344411742,
+        "tracking_rmse_k": 18.783949766979124,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240073": {
+        "episode_cost": 0.010055902088647638,
+        "tracking_rmse_k": 9.85074010025437,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240074": {
+        "episode_cost": 0.03287843427872758,
+        "tracking_rmse_k": 17.53667377482565,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240076": {
+        "episode_cost": 0.00182632676557666,
+        "tracking_rmse_k": 4.196928307027429,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240077": {
+        "episode_cost": 0.0008292656830893926,
+        "tracking_rmse_k": 2.775444779559589,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240078": {
+        "episode_cost": 0.02103685842224089,
+        "tracking_rmse_k": 14.372543248857617,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240080": {
+        "episode_cost": 0.0008050591266661328,
+        "tracking_rmse_k": 2.7363292325359487,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240081": {
+        "episode_cost": 0.0015862508244164758,
+        "tracking_rmse_k": 3.874469961513305,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240082": {
+        "episode_cost": 0.015592889401773368,
+        "tracking_rmse_k": 11.893945723161272,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240084": {
+        "episode_cost": 0.033062220989383946,
+        "tracking_rmse_k": 17.999830463250802,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240085": {
+        "episode_cost": 0.02022355864487276,
+        "tracking_rmse_k": 14.02257684379885,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240086": {
+        "episode_cost": 0.022753475071558504,
+        "tracking_rmse_k": 14.860856725786705,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240088": {
+        "episode_cost": 0.004679500719788977,
+        "tracking_rmse_k": 6.72685861510031,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240089": {
+        "episode_cost": 0.006217796913096677,
+        "tracking_rmse_k": 7.724855707366436,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240090": {
+        "episode_cost": 0.006536032921524743,
+        "tracking_rmse_k": 7.976452395328027,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240092": {
+        "episode_cost": 0.0027409275013752844,
+        "tracking_rmse_k": 5.11737960980451,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240093": {
+        "episode_cost": 0.001961220612806846,
+        "tracking_rmse_k": 4.327947274323867,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240094": {
+        "episode_cost": 0.01147948853605538,
+        "tracking_rmse_k": 10.340475288338396,
+        "new_violation": false,
+        "inference_failures": 0
+      }
+    },
+    "delayed": {
+      "l2_240064": {
+        "episode_cost": 0.051088128270302034,
+        "tracking_rmse_k": 22.38012541386965,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240065": {
+        "episode_cost": 0.00870572660896527,
+        "tracking_rmse_k": 9.048199536361716,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240066": {
+        "episode_cost": 0.003740946086417551,
+        "tracking_rmse_k": 5.944085497376212,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240068": {
+        "episode_cost": 0.0010173410213250018,
+        "tracking_rmse_k": 3.075313957158494,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240069": {
+        "episode_cost": 0.031132964995962065,
+        "tracking_rmse_k": 17.348176132593647,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240070": {
+        "episode_cost": 0.008059159070926414,
+        "tracking_rmse_k": 8.830597296618537,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240072": {
+        "episode_cost": 0.036301375073713,
+        "tracking_rmse_k": 18.834829414932162,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240073": {
+        "episode_cost": 0.010159843292694435,
+        "tracking_rmse_k": 9.900515651997463,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240074": {
+        "episode_cost": 0.033014981177057735,
+        "tracking_rmse_k": 17.57263567238995,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240076": {
+        "episode_cost": 0.0018397434778005053,
+        "tracking_rmse_k": 4.212761571626508,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240077": {
+        "episode_cost": 0.0008340960973984331,
+        "tracking_rmse_k": 2.781840656007048,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240078": {
+        "episode_cost": 0.02133533010798,
+        "tracking_rmse_k": 14.473202679913744,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240080": {
+        "episode_cost": 0.0008123133490051282,
+        "tracking_rmse_k": 2.7473531761624543,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240081": {
+        "episode_cost": 0.001598522945957482,
+        "tracking_rmse_k": 3.890708652295328,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240082": {
+        "episode_cost": 0.01565284514036586,
+        "tracking_rmse_k": 11.917558418350461,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240084": {
+        "episode_cost": 0.033337799597277964,
+        "tracking_rmse_k": 18.072314451889437,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240085": {
+        "episode_cost": 0.02048413547063111,
+        "tracking_rmse_k": 14.111365548446898,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240086": {
+        "episode_cost": 0.022830463608448856,
+        "tracking_rmse_k": 14.88797143961715,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240088": {
+        "episode_cost": 0.004800488889865703,
+        "tracking_rmse_k": 6.813727730813955,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240089": {
+        "episode_cost": 0.006246941161381188,
+        "tracking_rmse_k": 7.743633840096572,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240090": {
+        "episode_cost": 0.006578423846593625,
+        "tracking_rmse_k": 8.00166883555161,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240092": {
+        "episode_cost": 0.0027590097104921536,
+        "tracking_rmse_k": 5.134866619182518,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240093": {
+        "episode_cost": 0.0020175072472107852,
+        "tracking_rmse_k": 4.385561023414799,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240094": {
+        "episode_cost": 0.011978167194734456,
+        "tracking_rmse_k": 10.520288586057628,
+        "new_violation": false,
+        "inference_failures": 0
+      }
+    }
+  },
+  "small_physics": {
+    "zero": {
+      "l2_240064": {
+        "episode_cost": 0.05098661695967504,
+        "tracking_rmse_k": 22.346393092392546,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240065": {
+        "episode_cost": 0.00868740216266498,
+        "tracking_rmse_k": 9.035702448059219,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240066": {
+        "episode_cost": 0.0036094398491452757,
+        "tracking_rmse_k": 5.854654282800198,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240068": {
+        "episode_cost": 0.0010120776775342489,
+        "tracking_rmse_k": 3.068304541714978,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240069": {
+        "episode_cost": 0.030887405924561982,
+        "tracking_rmse_k": 17.28946117369328,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240070": {
+        "episode_cost": 0.008020713038954906,
+        "tracking_rmse_k": 8.808668083062303,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240072": {
+        "episode_cost": 0.036155890792019356,
+        "tracking_rmse_k": 18.79325708295263,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240073": {
+        "episode_cost": 0.010132797880582934,
+        "tracking_rmse_k": 9.882070033631418,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240074": {
+        "episode_cost": 0.032968450419960424,
+        "tracking_rmse_k": 17.55285663530531,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240076": {
+        "episode_cost": 0.0018278517955518825,
+        "tracking_rmse_k": 4.1989607387968695,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240077": {
+        "episode_cost": 0.000828928599797912,
+        "tracking_rmse_k": 2.7736854766785917,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240078": {
+        "episode_cost": 0.02134278936523499,
+        "tracking_rmse_k": 14.465516118616396,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240080": {
+        "episode_cost": 0.000806144685273796,
+        "tracking_rmse_k": 2.738062411345068,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240081": {
+        "episode_cost": 0.0015938503950484635,
+        "tracking_rmse_k": 3.8831383545670484,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240082": {
+        "episode_cost": 0.015577890217549715,
+        "tracking_rmse_k": 11.88862111145413,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240084": {
+        "episode_cost": 0.033110288691258934,
+        "tracking_rmse_k": 18.009693475780796,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240085": {
+        "episode_cost": 0.02026197032990158,
+        "tracking_rmse_k": 14.030306118484523,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240086": {
+        "episode_cost": 0.02275179410322329,
+        "tracking_rmse_k": 14.8579900396056,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240088": {
+        "episode_cost": 0.004688688221161783,
+        "tracking_rmse_k": 6.732107268100854,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240089": {
+        "episode_cost": 0.006216704625195733,
+        "tracking_rmse_k": 7.723085489409378,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240090": {
+        "episode_cost": 0.006569595249695874,
+        "tracking_rmse_k": 7.99293248155295,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240092": {
+        "episode_cost": 0.002741626421963709,
+        "tracking_rmse_k": 5.117936898433901,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240093": {
+        "episode_cost": 0.001980905900074963,
+        "tracking_rmse_k": 4.346616419339005,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240094": {
+        "episode_cost": 0.011498086038908666,
+        "tracking_rmse_k": 10.34751039607954,
+        "new_violation": false,
+        "inference_failures": 0
+      }
+    },
+    "delayed": {
+      "l2_240064": {
+        "episode_cost": 0.05104646348958785,
+        "tracking_rmse_k": 22.36012217600425,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240065": {
+        "episode_cost": 0.00870342508890308,
+        "tracking_rmse_k": 9.043827284412803,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240066": {
+        "episode_cost": 0.003743512437780065,
+        "tracking_rmse_k": 5.94307339553317,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240068": {
+        "episode_cost": 0.0010143005605410542,
+        "tracking_rmse_k": 3.0714454906061377,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240069": {
+        "episode_cost": 0.030947741107481216,
+        "tracking_rmse_k": 17.304731652369213,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240070": {
+        "episode_cost": 0.00803477572427029,
+        "tracking_rmse_k": 8.81638084493781,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240072": {
+        "episode_cost": 0.03620914645883817,
+        "tracking_rmse_k": 18.806516901990758,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240073": {
+        "episode_cost": 0.010139738043665945,
+        "tracking_rmse_k": 9.88653135164155,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240074": {
+        "episode_cost": 0.033028838480644404,
+        "tracking_rmse_k": 17.567372080292003,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240076": {
+        "episode_cost": 0.0018336324799539453,
+        "tracking_rmse_k": 4.206092982535566,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240077": {
+        "episode_cost": 0.0008308596307450058,
+        "tracking_rmse_k": 2.776951350773132,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240078": {
+        "episode_cost": 0.021381884991573525,
+        "tracking_rmse_k": 14.47845452539958,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240080": {
+        "episode_cost": 0.0008076143277683343,
+        "tracking_rmse_k": 2.740984153187312,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240081": {
+        "episode_cost": 0.0015972637439457316,
+        "tracking_rmse_k": 3.8875728997559853,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240082": {
+        "episode_cost": 0.015599077166858143,
+        "tracking_rmse_k": 11.89650961142676,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240084": {
+        "episode_cost": 0.03315610647390137,
+        "tracking_rmse_k": 18.021660227218376,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240085": {
+        "episode_cost": 0.02046990221733893,
+        "tracking_rmse_k": 14.101015033706206,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240086": {
+        "episode_cost": 0.022775974860384844,
+        "tracking_rmse_k": 14.86685795545699,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240088": {
+        "episode_cost": 0.004701307551726308,
+        "tracking_rmse_k": 6.740023040222457,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240089": {
+        "episode_cost": 0.006228062247528926,
+        "tracking_rmse_k": 7.73022847209764,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240090": {
+        "episode_cost": 0.006579105704290799,
+        "tracking_rmse_k": 7.9990109542414345,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240092": {
+        "episode_cost": 0.002747417388628043,
+        "tracking_rmse_k": 5.123389348701903,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240093": {
+        "episode_cost": 0.001984510471551623,
+        "tracking_rmse_k": 4.350796909954444,
+        "new_violation": false,
+        "inference_failures": 0
+      },
+      "l2_240094": {
+        "episode_cost": 0.011511704180776119,
+        "tracking_rmse_k": 10.353817447795077,
+        "new_violation": false,
+        "inference_failures": 0
+      }
+    }
+  }
+}

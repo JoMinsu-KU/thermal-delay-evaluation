@@ -1,0 +1,46 @@
+\subsection{Evidence cohorts and diagnostic procedure}
+
+\begin{table}[tbp]
+\centering
+\caption{Protocol-specific analysis populations. Repeated delays do not create additional independent plant episodes.}
+\label{tab:cohorts}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}lYY@{}}
+\toprule
+Cohort & Role and comparison & Population\\
+\midrule
+D & Primary independent comparison; five selected systems & 24 normal and 8 hot test episodes; paired zero/replay\\
+A & Development motivation; 250/1,000-step checkpoints & 6 normal and 2 hot validation episodes\\
+B & Checkpoint disagreement; 5 families, 3 rounds & Same 6 normal and 2 hot validation episodes, 5 delays\\
+B test & Selected policies only & Separate 24 normal test episodes; no unselected-checkpoint test\\
+C & Selected implementation diagnostic & 1 post hoc case from 9 fresh nominal confirmation episodes\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Table~\ref{tab:cohorts} separates the populations. D used 40 training, 16 validation, eight calibration, 32 test, and 16 out-of-distribution episodes. Four calibration episodes set the peak margin and four set probability calibration. Training data, residual scale, checkpoint choice, and correction strength excluded the test set. The supplementary protocol record maps the cohort labels to their source configurations; these cohorts are not training-seed replications of one experiment.
+
+Table~\ref{tab:procedure} gives the diagnostic inputs, branches, and outputs. A request identifier connects a candidate choice to its consumed timing row and application outcome. Episode pairing then connects those outcomes to cost and temperature changes. Deadline expiration and score-order changes require different follow-up evidence; neither can be inferred from a pooled timing quantile alone.
+
+\begin{table}[tbp]
+\centering
+\caption{Diagnostic procedure for a frozen control implementation.}
+\label{tab:procedure}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}lY@{}}
+\toprule
+Stage & Required record and operation\\
+\midrule
+Inputs & Fix model, episode, observations, candidate rules, solver, deadline policy, and timing source.\\
+Join & Match episode/request IDs to source latency, completion, expiration, application, and skipped ticks.\\
+Pair & Compare the same episode under zero delay and replay; retain cost components and temperatures.\\
+Expiration branch & Locate forced commands and later recovery; distinguish fallback-policy effects from elapsed time.\\
+No-expiration branch & Locate the first changed request; inspect score gaps, eligibility masks, and gate slack.\\
+Numerical check & Compare fixed applied commands and recomputed feedback at smaller plant steps.\\
+Outputs & Report paired effects, rankings, event evidence, and the conditions over which each conclusion holds.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+

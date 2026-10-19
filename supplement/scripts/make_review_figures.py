@@ -30,10 +30,10 @@ for ax,subset,title,scale in [(axes[0],methods,'(a) Delay effects: all five syst
  ax.set_xticks(range(len(subset)),[labels[methods.index(m)] for m in subset]);ax.axhline(0,color='.5',lw=.6)
  ax.set_ylabel('Replay - zero cost\n'+('$10^{-3}$' if scale==1e3 else '$10^{-5}$'));ax.set_title(title,loc='left')
 for e in episodes:
- v=[(cost[e,'shared_physics',mode]-cost[e,'small_physics',mode])*1e3 for mode in ('zero','delayed')]
+ v=[(cost[e,'shared_physics',mode]-cost[e,'small_physics',mode])*1e5 for mode in ('zero','delayed')]
  axes[2].plot([0,1],v,color='#879ead',lw=.65,alpha=.75);axes[2].scatter([0,1],v,color=['#0072B2','#D55E00'],s=10)
 axes[2].axhline(0,color='.5',ls='--',lw=.6);axes[2].set_xticks([0,1],['Zero delay','Measured replay']);axes[2].set_xlim(-.15,1.15)
-axes[2].set_ylabel('Shared - Small cost\n($10^{-3}$)');axes[2].set_title('(c) Paired residual-system comparison',loc='left')
+axes[2].set_ylabel('Shared - Small cost\n($10^{-5}$)');axes[2].set_title('(c) Paired residual-system comparison',loc='left')
 save(fig,'paired_test_results')
 
 info=json.loads((R/'physical_results.json').read_text(encoding='utf-8'))

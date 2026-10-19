@@ -1,0 +1,20 @@
+{
+  "analysis": "Post hoc saved-log analysis; no new runs",
+  "fixed_settings": 7,
+  "unique_episodes": 24,
+  "fv_zero_hold_cases": 336,
+  "nonzero_zero_reset_events": 715,
+  "completed_nonzero_restorations": 324,
+  "censored_nonzero_restorations": 391,
+  "all_hold_events_restored_immediately": true,
+  "event_descriptive_completed_restoration_range_s": [
+    0.175322539,
+    32.576986831
+  ],
+  "event_descriptive_coordinate_moves_range": [
+    1,
+    100
+  ],
+  "interpretation": "Events are dependent and censored; summaries do not estimate a new-timing distribution or infer a causal effect of expiration time.",
+  "physical_response_conditions": 11
+}

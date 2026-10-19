@@ -1,50 +1,50 @@
 # Manuscript-to-evidence map
 
-All paths are relative to Supplement_S1. Run `python -B scripts/reproduce_review.py` from any working directory; the script resolves inputs relative to its own location. Generated files are under `outputs/`. Regeneration uses saved outcomes and makes no calls to a model, GPU, or plant simulator.
+Paths are relative to Supplement_S1; generated results are under `outputs/`. Run `python -B scripts/reproduce_review.py`. This saved-result analysis calls no model, GPU, or simulator.
 
 ## Main tables
 
-| Current table | Evidence / input | Script and checkable output |
+| Table | Evidence | Script / output |
 |---|---|---|
-| 1. Related-work positioning | Sources cited in the main manuscript; this is a conceptual comparison | No numerical aggregation; verify against the cited publications |
-| 2. Plant and evaluation settings | `data/protocol/D_resolved_config.json`, `METHODS.md`, original implementation locators | Documented settings; no generated numeric table |
-| 3. Residual-training settings | `METHODS.md` Sections 1–2; `data/minor_revision/shared_physics_alpha_selection.json`, `small_physics_alpha_selection.json`, `alpha_validation_references.json` | `scripts/reproduce_method_details.py` → `outputs/method_detail_checks.json` recalculates alpha selection; training settings are documented from the archived source |
-| 4. Analysis populations | `data/primary/episode_metrics.csv`, `data/development/`, `data/numerical/case_index.csv`, `METHODS.md` | `scripts/reproduce.py` → `outputs/reproduction_checks.json` and `development_comparisons.json`; repeated conditions do not add independent episodes |
-| 5. Diagnostic procedure | Main Sections 3.4–3.7; `METHODS.md` Sections 5–6 | Procedural synthesis; no numerical aggregation |
-| 6. Latency quantiles | `data/primary/latency_quantiles.csv`, `latency_audit.json` | `scripts/reproduce.py` → `outputs/table5_latency_all_scopes.csv`; stored quantiles, not a fresh aggregation of omitted timing journals |
-| 7. Original D mean costs | `data/primary/episode_metrics.csv` | `scripts/reproduce.py` → `outputs/table6_primary_costs.csv` |
-| 8. Paired residual comparisons | `data/primary/episode_metrics.csv` | `scripts/reproduce.py` → `outputs/table7_paired_comparisons.csv` |
-| 9. Replay and deadline policy | `data/replay/episode_metrics.csv`, `sequence_summary.csv`, `method_rankings.json` | `scripts/reproduce_replay.py` → `outputs/replay_paired_results.json`; compare with `data/replay/paired_contrasts.csv` and `replay_results.json` |
-| 10. Physical effect sizes | `data/revision/cost_components.csv`, `physical_contrasts.csv`, `physical_results.json` | `scripts/reproduce_physical.py` → `outputs/physical_checks.json`; subtract the listed condition means for each reported contrast |
-| 11. D step sensitivity | `data/numerical/extended_metrics.csv`, `contrasts.csv` | `scripts/reproduce.py` → `outputs/table8_numerical_sensitivity.csv` |
+| 1 Related work | Publications cited in the main text | Conceptual comparison; no numerical aggregation |
+| 2 Plant | `data/protocol/D_resolved_config.json`, `METHODS.md` | Documented frozen settings |
+| 3 Analysis status | Original protocols and retrospective analysis history | `methods/cohorts_and_procedure.tex`; no external preregistration |
+| 4 Latency | `data/primary/latency_quantiles.csv`, `latency_audit.json` | `scripts/reproduce.py` → `table5_latency_all_scopes.csv`; stored quantiles, not fresh raw-journal aggregation |
+| 5 Original mean costs | `data/primary/episode_metrics.csv` | `scripts/reproduce.py` → `table6_primary_costs.csv` |
+| 6 Paired residual comparison | Same original episode metrics | `scripts/reproduce.py` → `table7_paired_comparisons.csv` |
+| 7 Eligible score margins | `data/revision_20261013/neartie/saved_score_vectors.jsonl.gz` | Sibling `reproduce_neartie.py` → `neartie/near_tie_summary.csv`, `threshold_fractions.csv`, `episode_threshold_fractions.csv` |
+| 8 Replay and policy | `data/replay/episode_metrics.csv`, `sequence_summary.csv`, `method_rankings.json` | `scripts/reproduce_replay.py` → `replay_paired_results.json` (57 contrasts) |
+| 9 Command restoration | `data/revision_20261013/mechanism/fv_application_records.csv.gz`, case metadata and curves | Sibling `reproduce_compact.py` → `mechanism/setting_summary.csv`, event/episode CSVs |
+| 10 FV thermal responses | `data/revision_20261013/mechanism/truth_curves.csv.gz` and metadata | Same script → `mechanism/physical_summary.csv`, `physical_episode_metrics.csv` |
+| 11 Step sensitivity | `data/numerical/extended_metrics.csv`, `contrasts.csv` | `scripts/reproduce.py` → `table8_numerical_sensitivity.csv` |
+| 12 Small initialization | `data/small_seed/` | `scripts/reproduce_small_seed.py` → `small_seed/paired_contrasts.csv`, training and selection checks |
 
-Tables 7, 8, 10, and 11 use the original interleaved replay with zero fallback. The new replay and hold settings in Table 9 were evaluated at 10 ms only. Output filenames `table5`–`table8` retain historical numbering and refer to current Tables 6, 7, 8, and 11, respectively.
+Historical `table5`–`table8` output names correspond to current Tables 4, 5, 6, and 11. Table 10 reports original conditions only; all eleven original method/condition summaries are retained in the supplement. Tables 7 and 9 use dependent requests/events descriptively, not as independent inferential samples.
 
-## Main figures
+## Figures
 
-| Current figure / output basename | Input | Generator |
+| Figure | Basename | Input / generator |
 |---|---|---|
-| 1. `evaluation_flow` | Documented observation, gate, deadline, and plant rules; `METHODS.md` | `scripts/make_review_figures.py` |
-| 2. `residual_architecture` | `METHODS.md` Sections 1–2 and documented tensor dimensions | `scripts/make_review_figures.py` |
-| 3. `paired_test_results` | `data/revision/cost_components.csv` | `scripts/make_review_figures.py` |
-| 4. `replay_fallback_sensitivity` | `data/replay/replay_results.json`, checked by `scripts/reproduce_replay.py` | `scripts/make_replay_figure.py` |
-| 5. `temperature_response` | `data/revision/representative_temperature.csv`, `physical_results.json`; `data/minor_revision/hold_temperature.csv` | `scripts/make_review_figures.py`; curve/provenance checks in `scripts/reproduce_method_details.py` |
-| 6. `numerical_case_C` | `data/numerical/independent_audit.json`, `initial_C_audit.json` | `scripts/plot_results.py`, called by `scripts/reproduce.py` |
+| Main 1 | `evaluation_flow` | Documented execution rules; `scripts/make_review_figures.py` |
+| Main 2 | `paired_test_results` | `data/revision/cost_components.csv`; same script; panel (c) uses 10^-5 units as Table 6 |
+| Main 3 | `replay_fallback_sensitivity` | `data/replay/replay_results.json`; `scripts/make_replay_figure.py` |
+| Main 4 | `temperature_response` | Representative temperature and hold curves; `scripts/make_review_figures.py` |
+| S1 | `first_command_divergence` | `data/selected_C/applied_commands.csv`; `scripts/plot_results.py` via `reproduce.py` |
+| S2 | `deadline_command_response` | `data/minor_revision_r2/deadline_commands.csv`; `scripts/make_deadline_figure.py` |
+| S3 | `residual_architecture` | Frozen model dimensions; `scripts/make_review_figures.py` |
+| S4 | `numerical_case_C` | `data/numerical/independent_audit.json`, `initial_C_audit.json`; `scripts/plot_results.py` |
+| S5 | `deadline_schedule_cost` | Compact mechanism setting summaries and schedule audit; `make_mechanism_figure.py` in that directory |
+| S6 | `small_seed_cost_comparison` | `data/small_seed/`; `scripts/reproduce_small_seed.py`, `make_small_seed_figure.py` |
 
-Every figure is written to `outputs/figures/` in PDF and PNG. Figure 5 uses the same lower-median zero-delay FV episode for all conditions; adding hold did not change the episode-selection rule. Its shaded intervals mark deadline fallback until the next nonfallback application. Solid temperature curves show spatial means, dashed curves spatial peaks, and the dotted curve the target.
+All ten are regenerated as PNG/PDF under `outputs/figures/`. Main Figure 4 and Figure S2 use the unchanged lower-median episode by zero-delay FV cost. Captions and limitations are in `SUPPLEMENTARY_FIGURES.md` and the guide PDF.
 
-## Supplementary evidence and limits
+## Moved details
 
-- `first_command_divergence`: `data/selected_C/applied_commands.csv`, generated by `scripts/plot_results.py`. The detailed interpretation is in `methods/selected_C_detail.tex`.
-- A/B development protocols: `methods/development_detail.tex`, `data/development/`, and `outputs/development_comparisons.json`.
-- PINO architecture, optimization, and loss: `METHODS.md` Section 3 and `methods/pino_training_detail.tex`.
-- All replay contrasts and ranks: `data/replay/paired_contrasts.csv`, `sequence_summary.csv`, `method_rankings.json`, and `outputs/replay_paired_results.json` (57 paired contrasts).
-- Delay and alpha checks: `outputs/method_detail_checks.json`; source-audit scope in `data/minor_revision/method_evidence.json`.
+- A/B protocols: `methods/development_detail.tex`; results and selected C numerical checks: `methods/development_and_selected_C_results.tex`.
+- Original cohort/procedure tables: `methods/cohorts_and_procedure.tex`.
+- Architecture/training: `methods/residual_architecture_detail.tex`, `residual_training_detail.tex`, `pino_training_detail.tex`, and `METHODS.md` Sections 1–3.
+- Cost-component contrasts: `methods/cost_component_table.tex`; `data/revision/physical_contrasts.csv`; `scripts/reproduce_physical.py` → `physical_checks.json`.
+- Detailed selected C commands: `methods/selected_C_detail.tex`.
+- Alpha, injected delays, and hold-curve checks: `scripts/reproduce_method_details.py` → `method_detail_checks.json`.
 
-Hash verification detects changes to the distributed files. It does not establish physical accuracy or numerical convergence. Raw timing journals, full quadrature and field records, model weights, and complete training inputs are not bundled. Raw-input reconstruction statements are author audit receipts; the executable checks here reproduce the saved-result analyses.
-
-## Supplementary Figure S2: first deadline miss
-
-`data/minor_revision_r2/deadline_commands.csv` stores all 592 application records for each of the matched zero/hold cases in the same representative episode as Figure 5. `scripts/make_deadline_figure.py` reconstructs the command-increment penalties with the fixed denominator N=600, then plots 6.4–9.0 s in `outputs/figures/deadline_command_response.pdf` and `.png`. The caption and interpretation are in SUPPLEMENTARY_FIGURES.md. No new simulation is executed.
-
-Table 10 is transposed in this revision for legibility. Its values still come from the same `physical_contrasts.csv` and condition means; no numerical values or units changed. Tables 8, 10, and 11 now use 9.5-point numeric text in the manuscript.
+Raw source audit receipts and portable compact-input checks have different scopes. Full timing journals, quadrature fields, weights, and training inputs are not distributed here.
