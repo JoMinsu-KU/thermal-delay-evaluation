@@ -12,7 +12,7 @@ Applied commands for all four heaters during 6.4–9.0 s of episode `l2_240070`,
 
 Immediately before 6.8 s, the applied command is [0.64, 0.68, 0.64, 0.68]. Zero fallback resets all four values to zero, whereas hold retains them. The next nonfallback command is [0.04, 0, 0, 0] with zero fallback and [0.68, 0.68, 0.64, 0.68] with hold. Subsequent commands are recalculated from each condition's evolving state, so the figure shows the deadline intervention and its downstream feedback effects. It does not isolate every contribution to the final temperature difference or establish a safe hardware policy.
 
-The episode is unchanged from main Figure 4: it was selected as the lower median by zero-delay FV-MPC cost, before the hold curve was added. `data/minor_revision_r2/deadline_command_evidence.json` records the source hashes and author audit scope. The compact script reconstructs command penalties and the plot; it does not repeat the omitted raw trace/seal audit.
+The episode is unchanged from main Figure 5: it was selected as the lower median by zero-delay FV-MPC cost, before the hold curve was added. `data/minor_revision_r2/deadline_command_evidence.json` records the source hashes and author audit scope. The compact script reconstructs command penalties and the plot; it does not repeat the omitted raw trace/seal audit.
 
 
 ## Figure S3. Residual architectures

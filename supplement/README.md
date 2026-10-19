@@ -1,8 +1,8 @@
 # Supplement S1: saved-result analysis
 
-Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*. Revision: 2026-10-19.
+Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation*. Revision: 2026-10-19.
 
-This public data package contains compact scientific records, implementation details, and scripts to regenerate **five main figures and six supplementary figures**. Version 1.3.1, prepared 19 October 2026, by Minsu Jo, Namhyun Yoo, Hoansuk Choi and Jinhong Yang. Code/documentation: MIT; data/research figures: CC BY 4.0. See LICENSE, DATA_LICENSE and CITATION.cff. External dependencies are not bundled. Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation.
+This public data package contains compact scientific records, implementation details, and scripts to regenerate **five main figures and six supplementary figures**. Version 1.3.3, prepared 19 October 2026, by Minsu Jo, Namhyun Yoo, Hoansuk Choi and Jinhong Yang. Code/documentation: MIT; data/research figures: CC BY 4.0. See LICENSE, DATA_LICENSE and CITATION.cff. External dependencies are not bundled. Repository: https://github.com/JoMinsu-KU/thermal-delay-evaluation.
 
 ## Reproduce
 
@@ -17,15 +17,15 @@ The command verifies SHA-256 hashes, recalculates paired episode contrasts and n
 
 ## Navigation
 
-The included [Supplement_S1_guide.pdf](Supplement_S1_guide.pdf) presents the supplementary figures and key moved results. [TABLE_FIGURE_MAP.md](TABLE_FIGURE_MAP.md) maps all fourteen main tables, five main figures, and six supplementary figures. Historical table numbers in output filenames are preserved for provenance.
+The included [Supplement_S1_guide.pdf](Supplement_S1_guide.pdf) presents the supplementary figures and key moved results. [TABLE_FIGURE_MAP.md](TABLE_FIGURE_MAP.md) maps all eleven main tables, five main figures, and six supplementary figures. Historical table numbers in output filenames are preserved for provenance.
 
 | Evidence | Input directory | Reproduction |
 |---|---|---|
 | Original 24-episode comparison | `data/primary/` | `scripts/reproduce.py` |
 | Seven fixed timing settings and FV zero/hold | `data/replay/` | `scripts/reproduce_replay.py` |
-| Score margins (Table 7) | `data/revision_20261013/neartie/` | `reproduce_neartie.py` in that directory |
-| Restoration and thermal response (Tables 9–10) | `data/revision_20261013/mechanism/` | `reproduce_compact.py` in that directory |
-| Numerical refinement (Table 11) | `data/numerical/` | `scripts/reproduce.py` |
+| Score margins (Table S2) | `data/revision_20261013/neartie/` | `reproduce_neartie.py` in that directory |
+| Restoration and thermal response (Tables 8–9) | `data/revision_20261013/mechanism/` | `reproduce_compact.py` in that directory |
+| Numerical refinement (Table 10) | `data/numerical/` | `scripts/reproduce.py` |
 
 The main driver runs each required script with explicit output directories. Individual analysis scripts may default to a sibling `reproduced/` directory; generated outputs are not frozen inputs.
 
@@ -61,7 +61,7 @@ python -B scripts/reproduce_monte_carlo.py
 python -B scripts/make_monte_carlo_figure.py
 ```
 
-The combined driver runs both. The first recomputes 384 group means, 18 distributions, all 39 rank-event probabilities and Wilson intervals, 64 paired FV effects, completion/thermal/deadline counts, and the sum of saved cost components. It checks every summary against the archived outputs. Figure 5 displays all 64 FV repetition means and their paired policy effect. Tables 13–14 use these outputs. There are **24 unique episodes and 64 independent timing repetitions conditional on the empirical pools**, not 9,216 independent physical scenarios.
+The combined driver runs both. The first recomputes 384 group means, 18 distributions, all 39 rank-event probabilities and Wilson intervals, 64 paired FV effects, completion/thermal/deadline counts, and the sum of saved cost components. It checks every summary against the archived outputs. Figure 3 displays all 64 FV repetition means and their paired policy effect. Tables 5–6 use these outputs. There are **24 unique episodes and 64 independent timing repetitions conditional on the empirical pools**, not 9,216 independent physical scenarios.
 
 Delays are sampled IID with replacement from method/path/token-matched pools made from three archived H200 repeats. The fixed 64-repetition design, seeded deterministic keys, and potential draw plans are in `design.json`. FV zero/hold share potential plans; the authors' raw audit confirms identical realized request/deadline schedules in all 1,536 pairs. Serial timing correlation, new hardware measurements, new training, and new plant-step refinements are absent. The empirical 2.5th–97.5th percentiles describe repetition spread; they are not confidence intervals for a mean. Wilson intervals describe conditional rank-event probabilities, not uncertainty over hardware, trained models or episode populations.
 
@@ -74,3 +74,13 @@ All 9,216 new runs complete without recorded thermal-limit violations. Missed de
 Quantiles use NumPy linear interpolation between adjacent ordered repetition values (the default `quantile` method); standard deviations use `ddof=1`. Rank events and episode-level FV win/tie/loss counts use the protocol absolute cost tolerance of 1e-10.
 
 Figure 1 was redrawn on 19 October 2026 with monochrome rectangular nodes, consistent straight arrows, and an attached orthogonal plant-to-observation feedback path. Its scientific labels and execution order are preserved. PDF and SVG are vector exports; PNG is 300 dpi. Run `python -B scripts/make_evaluation_flow.py --output outputs/figures` to regenerate this figure alone.
+
+
+## Balanced manuscript revision
+
+The main paper now presents the matched Monte Carlo policy effect before fixed-replay recovery and sensitivity results. All data, numerical outcomes and eleven figure images are preserved. Study chronology and detailed execution checks are collected in PROTOCOL_DETAILS.md; score margins and chronology are guide Tables S2 and S3. TABLE_FIGURE_MAP.md gives the current numbering.
+
+
+## Final submission consistency update
+
+Main-text citations now use one reference at a time in superscript brackets. METHODS.md uses the current Figure 5 temperature response, Equation (3) cost, and Figure 3 / Tables 5–6 Monte Carlo references. The manuscript distinguishes offline checkpoint selection from closed-loop correction-strength selection and specifies full-field, per-episode tracking RMSE before averaging. Experimental data, analysis scripts, and numerical results are unchanged.

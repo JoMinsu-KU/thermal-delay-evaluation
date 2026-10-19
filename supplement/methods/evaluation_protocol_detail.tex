@@ -1,0 +1,164 @@
+% Supplementary source fragments. These are retained protocol details, not a standalone document.
+
+
+Let $e_{i,a,\ell}$ denote the spatial mean of $((T-T_{\mathrm g})/100)^2$ at prediction step $\ell$ for anchor $i$ and candidate $a$. With $H=20$, the FV teacher cost is
+\begin{equation}
+\begin{aligned}
+Q_i(a)&=\frac{1}{H}\sum_{\ell=1}^{H}e_{i,a,\ell}
+       +0.5e_{i,a,H}\\
+&\quad+\frac{0.002}{H}\sum_{\ell=1}^{H}
+                  \frac{1}{4}\|u_{a,\ell}\|_2^2\\
+&\quad+\frac{0.02}{H}\sum_{\ell=1}^{H}
+                  \frac{1}{4}\|\Delta u_{a,\ell}\|_2^2.
+\end{aligned}
+\label{eq:teacher}
+\end{equation}
+The first increment is measured from the previous command. FV eligibility requires a valid candidate whose predicted maximum temperature does not exceed $120\,^{\circ}$C. Development-time offline choices use valid candidates admitted by the uncalibrated PINO peak mask. The final held-out offline evaluation instead uses the calibrated mask. Each chosen action is checked separately against FV eligibility.
+
+For evaluable anchors $\mathcal I$, the mean FV candidate-cost difference is
+\begin{equation}
+\mathcal D_{\mathrm{FV}}=\frac{1}{|\mathcal I|}
+\sum_{i\in\mathcal I}
+\left[Q_i(a_i^\pi)-\min_{a\in\mathcal E_i}Q_i(a)\right],
+\label{eq:regret}
+\end{equation}
+where $\mathcal E_i$ is the FV-eligible set and $a_i^\pi$ is the scorer's choice. Anchors require a usable observation, an eligible teacher candidate, and an available predicted choice. A selected FV-infeasible candidate remains in the cost-difference average and is also counted separately. The stored metric is named regret, but it is guaranteed nonnegative only when the chosen candidate belongs to $\mathcal E_i$. We therefore use candidate-cost difference throughout. A/B/D recorded zero FV-infeasible choices and zero unexpected fallbacks. For each final system, 376 of 384 offline test anchors defined the difference and eight produced expected fallback. Development-to-deployment disagreement can reflect both the added calibration margin and different visited states. Exact score ties are resolved by the first maximizing index; no numerical near-tie tolerance was used.
+
+Closed-loop cost uses the actual simulated field and asynchronously applied commands. Define $e(t)$ as the normalized spatial mean squared tracking error and let $t_f=60$~s. The recorded metric is
+\begin{equation}
+\begin{aligned}
+J_{\mathrm{cl}}&=\frac{1}{t_f}\int_0^{t_f}e(t)\,dt
+                       +0.5e(t_f)\\
+&\quad+\frac{0.002}{t_f}\int_0^{t_f}
+                       \frac{1}{4}\|u(t)\|_2^2\,dt\\
+&\quad+\frac{0.02}{N}\sum_{m}
+                       \frac{1}{4}\|\Delta u_m\|_2^2,
+\qquad N=600.
+\end{aligned}
+\label{eq:closedloop}
+\end{equation}
+Here, $N=600$ is the fixed number of nominal decision slots in 60~s, whereas $m$ indexes actual command-application events, including fallback-induced changes. The denominator remains 600 when requests are skipped or commands remain unchanged. Tracking is accumulated at the right endpoints of segments bounded by 10-ms sensor ticks and effective application events. Inner FV substeps can be shorter than these cost-evaluation segments. Both costs are dimensionless objectives, and the command penalty is not a measurement of energy consumption. Equation~\eqref{eq:teacher} evaluates a held action, whereas Eq.~\eqref{eq:closedloop} includes the future decisions induced by that action.
+
+
+
+
+Requests are scheduled every 100~ms, with at most one pending computation. The previous command is held until a new result is available. Nominal application time is
+\begin{equation}
+t_k^{\mathrm{app}}=t_k+\ell_k+\delta_k^{\mathrm c}+\delta_k^{\mathrm a},
+\label{eq:delay}
+\end{equation}
+where $\ell_k$ is replayed latency and the remaining terms are injected compute and application delays. Both injected terms are zero for the 24 nominal D test episodes and all additional replay/hold runs, as verified from the saved metrics. Under the original policy, an expired request applies zero fallback at its 100-ms deadline; the pending calculation can still cause a skipped tick. Section~\ref{sec:replay_protocol} specifies the additional hold-policy intervention. A nonfallback command failing the 0.04 increment check is rejected. The FV plant integrates between application events.
+
+Expiration occurs only when arrival is strictly later than the deadline. The expired result is discarded permanently, while the computation remains busy until its recorded completion time. At a scheduled tick, any application or deadline event due at that time is processed before checking whether a new request can start. A completion exactly at the tick permits a new request. Thus, zero fallback and the subsequent restricted candidate updates are part of the evaluated execution policy, rather than a pure time shift of otherwise identical commands.
+
+The primary timing metric is wall-clock time from in-memory snapshot construction through observation processing, candidate generation, observer, PINO, feasibility filtering, method scoring, CPU command conversion, and final CUDA synchronization. Timing starts after an initial synchronization. Loading, ring construction, warmup, initial graph capture, logging, external sensor wait, and physical actuation are outside this boundary. The CUDA-event field also spans host-controlled intervals and is not reported as pure GPU kernel time. Missing-observation fallback bypasses prediction and scoring; an empty feasible set bypasses method scoring after the PINO gate.
+
+Measurements used an NVIDIA H200 NVL with 139.8~GiB visible GPU memory, a four-core CPU quota, and a 26-GiB host-memory limit. The archived environment records Python 3.11.16, PyTorch 2.8.0 with CUDA 12.8, Transformers 5.10.2, and PEFT 0.19.1. PyTorch used two intra-operation threads and one inter-operation thread. The CPU model was not recorded. Residual inference used CUDA graphs with refreshed inputs, one observation per request, and nine candidate actions. The warm latency distribution excludes initial graph capture.
+
+Each of three process repeats measured 10,000 normal requests and 1,000 requests for each fallback path, after 200 normal and 20 path-specific warmups. The ring contained only 128 distinct normal, five missing-input, and four no-feasible inputs. Replay interleaves repeats, matches the fallback path and nearest token count, and indexes the matched pool by request number modulo pool length. Each episode restarts that sequence. Method-specific traces compare complete implementations. Matching the execution path and input token count holds the measured workload class fixed but does not establish state-independent latency. The 128-input ring cannot characterize all visited thermal states; replay assumes its conditional timing records remain applicable.
+
+For the final shared scorer, the recorded token count is the number of valid task, observation, and summary positions before padding. The small scorer counts its observation and summary positions. These are input sequence lengths, not generated text lengths. Paths that bypass the scorer report zero.
+
+During replay, arrival times come from the archived measurements. Wall-clock inference measured while generating the simulation trace is retained for auditing and is not substituted for the replayed latency.
+
+
+
+
+The primary archive used 40 training, 16 validation, eight calibration, 32 test, and 16 out-of-distribution episodes. Four calibration episodes set the peak margin and four set probability calibration. Training data, residual scale, checkpoint choice, and correction strength excluded the test set. The 24 nominal test episodes determine the primary comparisons. Eight initially hot test episodes are retained only as a separate check of the protective zero-command behavior; they contain little information about action selection.
+
+Table~\ref{tab:analysis_status} distinguishes frozen execution settings from retrospective analysis. None of the analyses was externally preregistered. Supplement S1 retains the earlier A/B development records, selected C case, and original procedural checklist. The checklist organizes trace inspection; its general methodological utility has not been validated against alternative procedures.
+
+\begin{table}[tbp]
+\centering
+\caption{Timing of design choices relative to the outcomes examined. A frozen execution protocol is distinct from a preregistered paper-level hypothesis.}
+\label{tab:analysis_status}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}lY@{}}
+\toprule
+Evidence & Design and analysis status\\
+\midrule
+Original held-out runs & Checkpoints and calibration fixed before test; present synthesis is retrospective.\\
+Plant-step checks & Designed after original outcomes; caps and case roster fixed before reruns.\\
+Replay/hold checks & Designed after original outcomes; six blocks and paired policies fixed before reruns.\\
+IID latency Monte Carlo & Designed after original outcomes; 64 repetitions, sampler and case roster fixed before execution.\\
+Small initialization repeats & Designed after original outcomes; three seeds and validation selection rules fixed before execution.\\
+Recovery, margins, thermal summaries & Post hoc analyses of saved records; definitions fixed before these extractions.\\
+A/B/C supplement & Development results and a deliberately selected diagnostic; no population estimate from C.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Unless explicitly identified as an initialization repeat, Small-Residual denotes the original checkpoint (seed 6060, $\alpha=0.5$). The six additional replay settings, Monte Carlo repetitions, score-margin analysis, representative temperature curves, and plant-step checks all retain that checkpoint.
+
+For D, the primary contrast is replay minus zero-delay cost in each of 24 nominal episodes. Secondary contrasts pair Shared-Residual with Small-Residual and PINO-MPC within execution mode. We report all paired values and percentile intervals from 20,000 bootstrap resamples of the episode indices, using seed 20261007. These 95\% intervals describe episode variation conditional on the fixed trained systems and fixed timing sequence. They exclude retraining and independently sampled latency variability. No significance test is performed. Win/tie/loss counts use an absolute reporting tolerance of $10^{-10}$; sensitivity at $10^{-8}$ and $10^{-6}$ is retained in the analysis package. These tolerances are not solver-error estimates. Relative mean-cost changes use $100(\overline J_B/\overline J_A-1)$, with the same episode resampling for their intervals; they differ from the mean of per-episode percentage changes.
+
+
+
+
+\label{sec:numerical_protocol}
+
+Numerical checks were executed on the original H200 instance after examining the archived outcomes. Models, residual strengths, normalization, calibration, episode conditions, and noise seeds were retained without retraining or reselection. The primary comparison was recomputed for all five methods, both execution modes, and the same 24 nominal episodes at maximum plant steps of 10, 5, and 2.5~ms, giving 720 runs. The additional 21 executions for the separately selected C case are documented in Supplement S1. Repeated settings do not increase the independent episode count. Initially hot and out-of-distribution episodes were excluded from these checks.
+
+Only the actual plant's maximum inner FV step changed. The FP64 spatial solver, controller prediction settings, 100-Hz sensor emission, 5-Hz thermal emission, 100-ms request clock, and archived latency replay rule were preserved. Cost quadrature and peak checks retained the original 10-ms sensor and effective-event endpoints. Repeated applications that left both command and fallback state unchanged introduced no integration boundary. This isolates the plant time-step change from changes in observation clocks or cost sampling.
+
+The 10-ms recomputations were checked against the original metrics, with absolute and relative tolerances of $10^{-10}$ and $10^{-8}$. Closed-loop reproduction additionally required identical semantic request and application records, excluding measured wall time and continuous candidate diagnostics. All 240 D baseline cases had to reproduce before its finer-step runs started. Costs were independently reconstructed from interval tracking errors, commands, and final fields. The primary reruns stored temperature summaries at 10~Hz while retaining 100-Hz sensor emission. Statistical comparisons remained paired by episode. Source hashes and detailed verification records accompany the supplementary analysis.
+
+
+
+
+\label{sec:replay_protocol}
+
+After the original outcomes were examined, a separate sensitivity protocol was fixed before its execution on the same H200 instance. It retained the 24 nominal D episodes, frozen models, selected residual strengths, calibration, and 10-ms maximum plant step. All 240 original method/mode/episode conditions had to reproduce before new conditions started. No retraining, model selection, or new timing measurement was performed.
+
+The original loader interleaves three measurement repeats. We separated those repeats and specified two blocks within each method's path/token-matched pools. Normal-path start indices were 0 and 5,000; fallback-path starts were 0 and 400. Each pool supplied up to 600 request indices. The rule preserved the exact fallback reason and nearest valid token count, using start plus global request index without wraparound. The six settings are denoted R1B1 through R3B2. They preserve order within conditional pools, not the full temporal correlation of an operational workload; fallback blocks can overlap. Each setting was crossed with five methods and 24 episodes, producing 720 runs under zero fallback.
+
+For FV-MPC, the original sequence and all six new settings were also evaluated with hold fallback, producing 168 runs. At expiration, hold retained the currently applied four-heater command and marked the fallback state. Computation remained busy until completion, skipped ticks were retained, and expired results were discarded. Other fallback causes still applied zero. Zero was inherited from the archived zero-command implementation; no tuning study or thermal-performance rationale for that default was recorded. It is evaluated as an implementation choice, not recommended as a process-safety policy. Subsequent decisions were recomputed from each condition's evolving state. Thus the intervention changes the deadline command and its downstream consequences while preserving the execution rules. The batch contains 1,128 executions, including 240 baseline reproductions, but only 24 distinct episodes.
+
+For these comparisons, 20,000 paired episode bootstrap resamples used seed 20261008. Intervals condition on each fixed replay setting. Across-setting ranges are descriptive: six blocks from three recorded repeats are not six independent hardware trials. Each episode restarts its setting, so the episode-bootstrap intervals omit timing-sequence uncertainty. These data do not estimate a deployment distribution or a ranking-reversal probability. The independently sampled latency study in Section~\ref{sec:mc_protocol} uses new closed-loop runs because changed arrival times alter future states, candidates, and requests. Supplement S1 retains every setting, paired comparison, and cost component. All cases were checked against interval quadrature, final fields, command logs, and the original latency journals.
+
+
+
+\label{sec:mc_protocol}
+
+After examining the original outcomes, we fixed 64 repetitions before execution on the same H200 instance. Each repetition evaluates the same 24 nominal episodes with all five frozen methods under zero fallback and with FV-MPC under hold, giving 9,216 new runs. A separate set of 240 original-condition reproductions precedes these runs. The original checkpoints, residual strengths, calibration, observations, 100-ms request period, and 10-ms plant cap are retained. This protocol samples timing variability; it performs no training or fresh latency measurement.
+
+For each method, the sampler pools the three archived timing repeats, retaining 30,000 normal-path and 3,000 records per fallback path before error exclusion. Each request matches the exact fallback reason and nearest valid token count, including equal-distance ties, then draws with replacement from that matched pool. Counter-based draws use protocol seed 20261013 and distinct method, episode, repetition, pool-membership, and request-index keys. FV zero and hold share these keys and potential draw plans. Subsequent decisions are recomputed from each trajectory. Actual path and clock agreement is checked because matching potential draws alone does not guarantee identical realized schedules. IID sampling removes temporal dependence and assumes that the recorded conditional workload remains applicable to the simulated states.
+
+One statistical unit is a complete repetition of the 24 fixed episodes. For method $m$, the relative change in repetition $b$ is $100(\overline J_{m,b}/\overline J_{m,0}-1)$, where the denominator is its fixed zero-delay mean. We report the mean and the 2.5th--97.5th percentiles across 64 repetitions; these percentiles describe the simulated distribution, not a confidence interval for its mean. Ranking frequencies use repetition-level means and Wilson 95\% intervals. Costs within $10^{-10}$ are tied. These intervals quantify Monte Carlo sampling precision conditional on the empirical pools, episodes, and checkpoints. They do not include uncertainty in the measured pools or a new episode population. The count was fixed before execution and all outcomes were retained.
+
+Completed runs, thermal-limit checks, and deadline counts are reported separately. The saved \texttt{inference\_failures} field is initialized to zero but is not incremented in the evaluated scheduler. We therefore do not interpret that field as a measured inference-failure rate in any cohort. Supplement S1 distinguishes portable analyses of saved metrics from author checks on raw traces, quadrature, fields, and source hashes.
+
+
+
+\label{sec:saved_analyses}
+
+The revision adds post hoc diagnostics from saved records. At each FV expiration, we retain all four pre-expiration commands. Full-vector restoration is the first later application at which every component regains its previous level (tolerance $10^{-8}$). Follow-up stops at the next expiration or 60~s; unobserved restorations are right-censored. This is a historical command-level diagnostic, not a desired thermal target or a settling-time definition. Events within an episode are dependent.
+
+Because an ordinary candidate changes only one coordinate, restoration from zero requires at least $\sum_{j=1}^{4}\lceil u_j^{\mathrm{pre}}/0.04\rceil$ successful increasing moves, with a numerical tolerance for grid-aligned values. The corresponding count of nominal 100-ms slots is not a wall-time bound: arrival times, skipped decisions, and subsequent command choices also matter. We checked the ordinary-update rule directly in the applied logs.
+
+For each scored residual request, we define the margin $g=s_{(1)}-s_{(2)}$ over candidates admitted by both validity and the calibrated temperature gate. The scores are the dimensionless corrected values in Eq.~\eqref{eq:residual}, before probability-temperature scaling. Quantiles and fractions below the fixed descriptive grid $\{0,10^{-4},10^{-3},10^{-2},0.1,1\}$ are reported without treating requests as independent samples. These thresholds are not estimates of solver or floating-point error.
+
+Thermal-response diagnostics use the saved 10-Hz spatial-mean temperature $y(t)$ and setpoint $r$. Late error is the trapezoidal mean of $|y-r|$ over 50--60~s. Sampled overshoot is $\max(0,\max_t[y(t)-r])$. Sampled settling is the first time after which every remaining sample through 60~s lies within $\pm1$~K; otherwise it is censored at 60~s. These finite-horizon measures do not establish asymptotic steady state or bound intersample/spatial peaks. Definitions and all episode-level values are supplied in S1.
+
+
+
+\begin{table}[tbp]
+\centering
+\caption{Eligible top-two score margins at the 10-ms plant cap. Each row contains 14,376 scored requests from 24 nominal episodes; 24 initial missing-input requests are excluded. Percentages are descriptive request fractions. No exact top-score tie occurred.}
+\label{tab:score_margins}
+\fontsize{9.5pt}{11.5pt}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}Yrrr@{}}
+\toprule
+System, mode & Median $g$ & $g\le.001$ & $g\le.01$\\
+\midrule
+Shared, zero & 0.0735 & 1.70\% & 15.04\%\\
+Shared, replay & 0.0953 & 1.84\% & 15.32\%\\
+Small, zero & 0.0766 & 1.93\% & 15.45\%\\
+Small, replay & 0.0775 & 1.89\% & 15.51\%\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% Main-source labels above are historical identifiers. See TABLE_FIGURE_MAP.md for current numbering.

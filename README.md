@@ -2,13 +2,13 @@
 
 **Reproducible data analysis of inference delay, deadline commands, and simulated thermal control.**
 
-Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation: A Retrospective Simulation Study*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is being prepared for J-KICS; no acceptance is claimed. **Version 1.3.1** redraws Figure 1 in monochrome with attached directional arrows and an orthogonal feedback path. It retains the complete v1.3.0 data, analyses and results.
+Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is being prepared for J-KICS; no acceptance is claimed. **Version 1.3.3** aligns the evidence map and supplementary guide with the final submission manuscript, corrects cross-references, and clarifies model-selection stages and tracking RMSE. It retains all experimental data, numerical results, and the monochrome Figure 1.
 
 [Quick start](#quick-start) · [Monte Carlo results](#monte-carlo-results) · [Evidence map](supplement/TABLE_FIGURE_MAP.md) · [S1 guide](docs/Supplement_S1_guide.pdf) · [Reproduction scope](docs/REPRODUCTION.md)
 
 ## Research question
 
-How do inference completion times and deadline commands change a controller comparison when ordinary commands are selected from a restricted candidate set? Five frozen implementations—PI, FV-MPC, PINO-MPC, Shared-Residual and Small-Residual—control the same simulated four-heater plate. Requests have a 100-ms deadline. Each ordinary candidate changes at most one heater by 0.04. A forced zero command therefore changes the starting point for subsequent command recovery.
+How do inference completion times and deadline commands change a controller comparison when ordinary commands are selected from a restricted candidate set? Five frozen implementations—PI, FV-MPC, PINO-MPC, Shared-Residual and Small-Residual—control the same simulated four-heater plate. Requests have a 100-ms deadline. Each ordinary candidate changes at most one heater by at most 0.04. A forced zero command therefore changes the starting point for subsequent command recovery.
 
 The study uses **24 nominal held-out episodes**. Repeated timing settings and model initializations reuse these episodes. Lower whole-episode cost is the ranking criterion; it does not establish lower temperature peaks, stability or deployment safety.
 
@@ -43,6 +43,10 @@ These percentiles describe the spread of 64 simulated repetition means; they are
 FV hold is compared against the other four methods retaining zero fallback. All 1,536 FV trajectory pairs share potential draws and, as checked in the full archive, realized request/deadline schedules. At the episode level, hold wins 1,034 pairs, ties 114 and loses 388, using the protocol's absolute 1e-10 cost tolerance. Its favorable aggregate result is not uniform across trajectories.
 
 **Scope:** frequencies and intervals condition on the fixed checkpoints, 24 episodes, empirical timing pools and IID sampling. IID sampling removes serial timing correlation. Finite-pool uncertainty, new hardware, new episodes and retraining are not included. The original Small checkpoint is used; the three additional Small seeds are not crossed with these 64 timing repetitions. The 9,216 runs are not 9,216 independent physical scenarios.
+
+## Thermal interpretation
+
+In the original replay, hold reduces whole-episode FV cost, while zero fallback yields lower late spatial-mean tracking error and overshoot (0.511 K and 2.130 K, versus 1.089 K and 4.641 K under hold). The policies therefore trade whole-episode tracking against late response; the cost ranking is tied to the stated objective.
 
 ## Earlier evidence retained
 
@@ -85,7 +89,7 @@ python -B supplement/scripts/reproduce_monte_carlo.py
 python -B supplement/scripts/make_monte_carlo_figure.py
 ```
 
-Inspect `supplement/outputs/monte_carlo/checks.json`. The script checks all 9,456 saved costs and component sums, the complete roster, 384 group means, 18 distributions, 39 rank-event probabilities and 64 paired effects. The [evidence map](supplement/TABLE_FIGURE_MAP.md) connects all fourteen main tables and eleven figures to inputs and generators. Historical filenames retain earlier numbering.
+Inspect `supplement/outputs/monte_carlo/checks.json`. The script checks all 9,456 saved costs and component sums, the complete roster, 384 group means, 18 distributions, 39 rank-event probabilities and 64 paired effects. The [evidence map](supplement/TABLE_FIGURE_MAP.md) connects all eleven main tables and eleven figures to inputs and generators. Historical filenames retain earlier numbering.
 
 ## Data populations
 
@@ -179,4 +183,4 @@ Use [CITATION.cff](CITATION.cff), identifying the version and subset used. No ar
 - **Data and research figures:** [CC BY 4.0](DATA_LICENSE).
 - External software and model terms remain applicable; those dependencies are not redistributed.
 
-See [release notes](docs/RELEASE_NOTES.md) for the v1.3.1 figure update.
+See [release notes](docs/RELEASE_NOTES.md) for the v1.3.3 submission documentation update.
