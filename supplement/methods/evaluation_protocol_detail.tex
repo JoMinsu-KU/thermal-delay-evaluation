@@ -133,7 +133,7 @@ Completed runs, thermal-limit checks, and deadline counts are reported separatel
 
 \label{sec:saved_analyses}
 
-The revision adds post hoc diagnostics from saved records. At each FV expiration, we retain all four pre-expiration commands. Full-vector restoration is the first later application at which every component regains its previous level (tolerance $10^{-8}$). Follow-up stops at the next expiration or 60~s; unobserved restorations are right-censored. This is a historical command-level diagnostic, not a desired thermal target or a settling-time definition. Events within an episode are dependent.
+The revision adds post hoc diagnostics from saved records. At each FV expiration, we retain all four pre-expiration commands. Full-vector restoration is the first later application satisfying $u_j(t)\geq u_j^{\mathrm{pre}}-10^{-8}$ for every heater $j$: each component reaches or exceeds its historical value within tolerance. Follow-up stops at the next expiration or 60~s; unobserved restorations are right-censored. This is a historical command-level diagnostic, not a desired thermal target or a settling-time definition. Events within an episode are dependent.
 
 Because an ordinary candidate changes only one coordinate, restoration from zero requires at least $\sum_{j=1}^{4}\lceil u_j^{\mathrm{pre}}/0.04\rceil$ successful increasing moves, with a numerical tolerance for grid-aligned values. The corresponding count of nominal 100-ms slots is not a wall-time bound: arrival times, skipped decisions, and subsequent command choices also matter. We checked the ordinary-update rule directly in the applied logs.
 
@@ -162,3 +162,7 @@ Small, replay & 0.0775 & 1.89\% & 15.51\%\\
 \end{table}
 
 % Main-source labels above are historical identifiers. See TABLE_FIGURE_MAP.md for current numbering.
+
+
+% October 19 minor-revision evidence extension.
+The compact FV Monte Carlo audit now includes all 1,536 actual zero/hold schedule pairs, consumed draw indices, the full FV timing pool, and the protocol-pinned sampler and scheduler. An independent verifier checks every saved FV draw and request, application, deadline, and busy-skip event. Its README distinguishes this executable schedule audit from the separate full-field and quadrature audit receipts.

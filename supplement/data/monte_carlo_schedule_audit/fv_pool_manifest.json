@@ -1,0 +1,9 @@
+{
+  "files": {
+    "rows.json.gz": "7f563b7a9237871cce526f056fe136a9fd2ae7b07dfd69e3f9e5f75a2f283d4a"
+  },
+  "metadata": {
+    "method": "fv_mpc",
+    "pool_object_sha256": "374bf671a217ffd7d6567a7a0d54861fb3baecb54a680434a47af4faeb3757db"
+  }
+}

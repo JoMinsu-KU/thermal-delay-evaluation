@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "pairs": 1536,
+  "replicates": 64,
+  "episodes": 24,
+  "cases": 3072,
+  "schedule_events": 3667828,
+  "draws_independently_recomputed": 1824628,
+  "zero_requests": 912314,
+  "zero_expired": 9091,
+  "zero_busy_skips": 9286,
+  "hold_requests": 912314,
+  "hold_expired": 9091,
+  "hold_busy_skips": 9286,
+  "raw_projection_comparison": true,
+  "all_actual_schedule_pairs_equal": true,
+  "all_actual_consumed_draw_pairs_equal": true,
+  "sampler_and_scheduler_protocol_hashes_match": true,
+  "distributed_harness_files_checked": 20,
+  "explicitly_withheld_attribution_metadata": [],
+  "elapsed_seconds": 150.062,
+  "scope": "Observed FV schedule events and actual sampled latency records. No model inference, plant dynamics, costs, command values, thermal fields, or new Monte Carlo runs are recomputed."
+}

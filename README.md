@@ -2,13 +2,13 @@
 
 **Reproducible data analysis of inference delay, deadline commands, and simulated thermal control.**
 
-Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is being prepared for J-KICS; no acceptance is claimed. **Version 1.3.3** aligns the evidence map and supplementary guide with the final submission manuscript, corrects cross-references, and clarifies model-selection stages and tracking RMSE. It retains all experimental data, numerical results, and the monochrome Figure 1.
+Companion to *Inference Delay and Deadline Handling in Thermal Controller Evaluation*, by **Minsu Jo, Namhyun Yoo, Hoansuk Choi, and Jinhong Yang**. The English manuscript is being prepared for J-KICS; no acceptance is claimed. **Version 1.3.4** adds independently executable evidence for all 1,536 FV Monte Carlo schedule pairs, fixes a Linux JSON line-ending comparison, and clarifies the command library and recovery definition. Existing experimental results are unchanged.
 
 [Quick start](#quick-start) · [Monte Carlo results](#monte-carlo-results) · [Evidence map](supplement/TABLE_FIGURE_MAP.md) · [S1 guide](docs/Supplement_S1_guide.pdf) · [Reproduction scope](docs/REPRODUCTION.md)
 
 ## Research question
 
-How do inference completion times and deadline commands change a controller comparison when ordinary commands are selected from a restricted candidate set? Five frozen implementations—PI, FV-MPC, PINO-MPC, Shared-Residual and Small-Residual—control the same simulated four-heater plate. Requests have a 100-ms deadline. Each ordinary candidate changes at most one heater by at most 0.04. A forced zero command therefore changes the starting point for subsequent command recovery.
+How do inference completion times and deadline commands change a controller comparison when ordinary commands are selected from a restricted candidate set? Five frozen implementations—PI, FV-MPC, PINO-MPC, Shared-Residual and Small-Residual—control the same simulated four-heater plate. Requests have a 100-ms deadline. Each ordinary candidate changes at most one heater by at most 0.04. This shared discrete search library is an evaluation-design choice, not a physical actuator slew-rate limit. A forced zero command therefore changes the starting point for subsequent command recovery.
 
 The study uses **24 nominal held-out episodes**. Repeated timing settings and model initializations reuse these episodes. Lower whole-episode cost is the ranking criterion; it does not establish lower temperature peaks, stability or deployment safety.
 
@@ -40,9 +40,19 @@ These percentiles describe the spread of 64 simulated repetition means; they are
 | FV hold has lower mean cost than FV zero | 64/64 | 94.34–100% |
 | Original Small has lower mean cost than Shared | 64/64 | 94.34–100% |
 
-FV hold is compared against the other four methods retaining zero fallback. All 1,536 FV trajectory pairs share potential draws and, as checked in the full archive, realized request/deadline schedules. At the episode level, hold wins 1,034 pairs, ties 114 and loses 388, using the protocol's absolute 1e-10 cost tolerance. Its favorable aggregate result is not uniform across trajectories.
+FV hold is compared against the other four methods retaining zero fallback. All 1,536 FV trajectory pairs share potential draws and, independently verified from the included actual logs, realized request/deadline schedules. At the episode level, hold wins 1,034 pairs, ties 114 and loses 388, using the protocol's absolute 1e-10 cost tolerance. Its favorable aggregate result is not uniform across trajectories.
 
 **Scope:** frequencies and intervals condition on the fixed checkpoints, 24 episodes, empirical timing pools and IID sampling. IID sampling removes serial timing correlation. Finite-pool uncertainty, new hardware, new episodes and retraining are not included. The original Small checkpoint is used; the three additional Small seeds are not crossed with these 64 timing repetitions. The 9,216 runs are not 9,216 independent physical scenarios.
+
+## Independently check the FV schedule claim
+
+```bash
+python -B supplement/scripts/reproduce_monte_carlo_schedule.py
+```
+
+The full reproduction command also runs this standard-library check. The approximately **33-MB evidence subset** contains both policy arms of all **1,536 pairs / 3,072 cases**, **3,667,828 schedule events**, **1,824,628 consumed draw records**, the complete **36,000-row FV timing pool**, and all 20 protocol-pinned harness files. The verifier independently reimplements deterministic draws and checks request admission, completion, application, strict expiration, and busy skips in integer nanoseconds. Every pair and draw passed; each policy has 912,314 requests, 9,091 expirations and 9,286 busy skips.
+
+The exported fields were also compared against every corresponding raw case log in the original 5.1-GB ZIP. See the [schema, provenance and commands](supplement/data/monte_carlo_schedule_audit/README.md). These are saved simulation-scheduler times computed from sampled measured latencies; the check runs no GPU inference or new control simulation. Full raw-field cost reconstruction remains a separate author audit receipt.
 
 ## Thermal interpretation
 
@@ -161,7 +171,7 @@ Here, “independent reconstruction” describes recalculation from the saved re
 
 This compact package reanalyses stored metrics, validation records, command traces and sampled temperature summaries. No fresh training, inference, simulation or latency measurement is run. All 9,216 new Monte Carlo runs completed without recorded thermal-limit violations. The added harness's inference-failure field is initialized but not incremented; its zeros are not evidence of a measured failure rate.
 
-Author audit receipts report full-archive reconstruction of 9,456 Monte Carlo costs (maximum error 6.67e-16), CRC/file-seal checks, all 1,536 matched FV schedules, and deterministic resampling checks on 384 selected cases. The compact executable audit checks saved arithmetic only. **Full raw Monte Carlo trajectories, timing pools, quadrature fields and weights are omitted**, so the raw audit cannot be independently repeated from this subset. The approximately 5.1-GB Monte Carlo ZIP is not bundled. Original raw-data releases remain available as described above.
+Author audit receipts report full-archive reconstruction of 9,456 Monte Carlo costs (maximum error 6.67e-16), CRC/file-seal checks, all 1,536 matched FV schedules, and deterministic resampling checks on 384 selected cases. The compact executable audit now checks all actual FV schedules and every consumed draw, using the included complete FV timing pool and archived sampler/scheduler. Full quadrature, temperature fields, weights and the other methods' raw timing journals are omitted; the cost reconstruction receipts therefore retain a separate scope. The approximately 5.1-GB Monte Carlo ZIP is not bundled. Original raw-data releases remain available as described above.
 
 Raw Monte Carlo `overshoot_k` uses spatial peaks at 10-ms/event endpoints. It is distinct from the paper's 10-Hz spatial-mean overshoot diagnostic. See [METHODS.md](supplement/METHODS.md) and [DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md).
 
@@ -183,4 +193,4 @@ Use [CITATION.cff](CITATION.cff), identifying the version and subset used. No ar
 - **Data and research figures:** [CC BY 4.0](DATA_LICENSE).
 - External software and model terms remain applicable; those dependencies are not redistributed.
 
-See [release notes](docs/RELEASE_NOTES.md) for the v1.3.3 submission documentation update.
+See [release notes](docs/RELEASE_NOTES.md) for the v1.3.4 reproducibility update.

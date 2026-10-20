@@ -1,0 +1,16 @@
+[
+  {
+    "matched_pool_sha256": "7a4806505c1ccd959ff6382250b45afc4fcbfaeb04ebefeaae3d557d75d47c7b",
+    "matched_pool_size": 3000,
+    "path": "missing_observation",
+    "fallback_reason": "cold_start_or_missing_observation",
+    "tokens": 0
+  },
+  {
+    "matched_pool_sha256": "e34c5b08a5907f352c351fa13566913c53ee5cb678cb8f78b37264fba1f43e2b",
+    "matched_pool_size": 30000,
+    "path": "normal",
+    "fallback_reason": null,
+    "tokens": 0
+  }
+]

@@ -63,3 +63,8 @@ Within latency rows, `e2e_ms` is warm end-to-end wall-clock inference time. `gpu
 ### `raw_data/numerical/initial_C/{case}/`
 
 Nine earlier closed-loop cases: metrics, compressed events, `truth_100hz.csv.gz`, and final fields. No interval quadrature was saved. The raw audit uses the reported tracking RMSE for these nine cases and identifies that limitation in its output.
+
+
+## FV Monte Carlo schedule audit
+
+`data/monte_carlo_schedule_audit/` supports the actual-schedule claim in the abstract and Section 4.2 (all 1,536 pairs). It contains actual_schedules.csv.xz, actual_draws.csv.xz, the complete original FV timing pool, case/source bindings, pinned sampler/scheduler, and an independent verifier. Column definitions and copied-versus-derived field status are in its README.md and schema.json. Run `scripts/reproduce_monte_carlo_schedule.py`; results go to `outputs/monte_carlo_schedule_audit/`. No new table or figure number is introduced.

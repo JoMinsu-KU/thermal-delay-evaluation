@@ -81,3 +81,8 @@ Nine earlier closed-loop cases: metrics, compressed events, `truth_100hz.csv.gz`
 ## Monte Carlo update
 
 `phase`: baseline or monte_carlo. `replicate`: zero-based 0–63 for new runs (blank for baseline). `episode`: one of 24 reused nominal IDs. `fallback_policy`: zero or hold (hold only for FV). `episode_cost`: stored full-field composite cost. `J_tracking`, `J_terminal`, `J_command`, `J_increment`: saved cost components, summed by the compact check. `relative_change_pct`: 100*(repetition mean / method's zero-delay mean - 1). `relative_hold_vs_zero_pct`: 100*(FV hold mean / paired FV zero mean - 1). `q025`/`q975`: empirical repetition percentiles, not confidence limits for a mean. Wilson limits apply to conditional repetition-level events. Ranks/ties use absolute tolerance 1e-10. `inference_failures` is inactive in this harness and cannot estimate reliability. `overshoot_k` is a spatial-peak diagnostic sampled at 10-ms/event endpoints; it is not the 10-Hz spatial-mean overshoot used for original thermal-response analysis. Audit receipts and raw metric hashes describe omitted full records.
+
+
+## Actual FV Monte Carlo schedules
+
+See `supplement/data/monte_carlo_schedule_audit/README.md` and `schema.json` for the original event/draw fields, compressed column schemas, factored dictionaries, exact checks and provenance. This subset adds all 3,072 original FV case logs as compact projections; it changes no existing numerical result.

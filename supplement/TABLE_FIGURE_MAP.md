@@ -57,3 +57,8 @@ The conceptual related-work comparison is retained in methods/related_work_posit
 ## Final submission consistency update
 
 Main-text citations now use one reference at a time in superscript brackets. METHODS.md uses the current Figure 5 temperature response, Equation (3) cost, and Figure 3 / Tables 5–6 Monte Carlo references. The manuscript distinguishes offline checkpoint selection from closed-loop correction-strength selection and specifies full-field, per-episode tracking RMSE before averaging. Experimental data, analysis scripts, and numerical results are unchanged.
+
+
+## FV Monte Carlo schedule audit
+
+`data/monte_carlo_schedule_audit/` supports the actual-schedule claim in the abstract and Section 4.2 (all 1,536 pairs). It contains actual_schedules.csv.xz, actual_draws.csv.xz, the complete original FV timing pool, case/source bindings, pinned sampler/scheduler, and an independent verifier. Column definitions and copied-versus-derived field status are in its README.md and schema.json. Run `scripts/reproduce_monte_carlo_schedule.py`; results go to `outputs/monte_carlo_schedule_audit/`. No new table or figure number is introduced.

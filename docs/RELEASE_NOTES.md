@@ -1,3 +1,18 @@
+# v1.3.4: Reproducibility and method clarification
+
+Prepared 19 October 2026 against public v1.3.3 commit `1bae8375b52c10ae1479a1a4ff8107a8f3e4fb27`.
+
+- Fix the CRLF/LF-sensitive derived `summary.json` comparison by parsing JSON. Regression checks accept equivalent line endings and reject genuine numerical changes. CSV equality and frozen input hashes remain byte-exact.
+- Add the actual schedules and consumed latency draw records for all 1,536 FV zero/hold pairs, the full FV timing pool, pinned sampler/scheduler source, a schema, provenance and an independent verifier. Every saved draw is recomputed; all exported fields were checked against all original case logs.
+- Clarify the candidate library as an evaluation-design constraint, componentwise reaches-or-exceeds restoration, end-to-end host request latency, fixed PI gains, and the PINO supervised phase's physics term.
+- Label Figure 1 candidate scoring and the PINO feasibility gate explicitly. Add the 13-page S1 guide and synchronize the evidence map.
+
+All 804 existing scientific data files and reported results are unchanged. New files expose existing experimental evidence; no training, inference, timing measurement or plant experiment was run for this update. The complete S1 driver passed on Windows and offline Linux. The public source subset includes both original license metadata files; the anonymous review subset explicitly withholds those two files.
+
+Manuscript PDFs, author biographies, private funding records and internal review correspondence are excluded. Code/documentation: MIT. Data/research figures: CC BY 4.0.
+
+---
+
 # v1.3.3: Final submission documentation
 
 Prepared 19 October 2026. This package consolidates the prepared v1.3.2 narrative/evidence-map update and the final submission corrections. The last public version checked during preparation was v1.3.1. Run this package directly; publishing the older prepared v1.3.2 package first is unnecessary.

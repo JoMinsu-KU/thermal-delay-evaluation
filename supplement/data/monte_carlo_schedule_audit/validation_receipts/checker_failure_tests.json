@@ -1,0 +1,7 @@
+{
+  "unaltered_case_passes": true,
+  "one_nanosecond_ready_change_rejected": true,
+  "flipped_expiry_rejected": true,
+  "missing_busy_skip_rejected": true,
+  "one_nanosecond_application_change_rejected": true
+}

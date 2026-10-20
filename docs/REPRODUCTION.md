@@ -8,7 +8,7 @@ Small inputs retain all 192 tests, 288 validation-selection rollouts and three t
 
 The original and fixed-replay analyses, score margins, command restoration, and sampled thermal summaries remain executable. The complete table/figure map is `supplement/TABLE_FIGURE_MAP.md`. Historical output filenames are retained for provenance.
 
-Full quadrature, temperature fields, model weights and timing pools are omitted from the compact update. Raw-cost, CRC/seal, schedule and sampled resampling audits are author receipts. They cannot be independently repeated from summary files alone. Optional v1.0.0 raw assets support the earlier separate original/numerical audits. The package does not execute new closed-loop conditions or measure a hardware failure rate.
+Full quadrature, temperature fields, model weights and other methods' timing pools are omitted. The complete FV timing pool, actual schedules, consumed draw records and pinned source are now included. Every FV schedule and draw can be checked offline; full raw-cost reconstruction remains an author audit receipt. Optional v1.0.0 raw assets support the earlier separate original/numerical audits. The package does not execute new closed-loop conditions or measure a hardware failure rate.
 
 
 ## Figure 1 format update (v1.3.1)
@@ -24,3 +24,8 @@ Use supplement/TABLE_FIGURE_MAP.md for the current 11 tables and five main figur
 ## Final submission consistency (v1.3.3)
 
 METHODS.md now uses current main-text references: Figure 5 (temperature), Equation (3) (cost), Figure 3 and Tables 5–6 (Monte Carlo). Checkpoint selection and correction-strength selection are separate stages; whole-field tracking RMSE is computed per episode before averaging. Scientific inputs and analysis scripts are unchanged.
+
+
+## v1.3.4 portable FV audit and Linux correction
+
+The full driver invokes `supplement/scripts/reproduce_monte_carlo_schedule.py`. It checks all 1,536 actual schedule pairs and 1,824,628 draws, without inference or simulation. Details, original-field definitions and exact source hashes are in `supplement/data/monte_carlo_schedule_audit/README.md`. The full anonymous S1 driver passed on Windows (Python 3.12) and Linux (Python 3.11), with NumPy 1.26.4 and Matplotlib 3.9.2. Derived JSON is compared as parsed content; CSVs and frozen input files retain byte-exact checks. The public bundle restores the two original license metadata files and checks all 20 pinned files.

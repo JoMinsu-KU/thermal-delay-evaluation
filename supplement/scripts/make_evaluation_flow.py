@@ -17,7 +17,7 @@ def draw_evaluation_flow(output_dir):
         nodes=[
             (3.25,'Observation and command history','Causal sensors, frames, and process context'),
             (2.63,'Nine candidate heater commands','Hold, or change one heater by +/-0.04'),
-            (2.01,'Learned score and feasibility gate','PINO screening; zero-command fallback'),
+            (2.01,'Candidate scoring and\nPINO feasibility gate','Method-specific scores; zero-command fallback'),
             (1.39,'Asynchronous command execution','Path-matched delay; 100-ms deadline\nOn expiration: zero or hold command'),
             (.77,'Finite-volume thermal plant','60 s trajectory; state evolves during delay'),
         ]
@@ -25,9 +25,10 @@ def draw_evaluation_flow(output_dir):
             ax.add_patch(Rectangle((left,y-h/2),right-left,h,
                                   facecolor='#f2f2f2' if y==1.39 else 'white',
                                   edgecolor='#202020',linewidth=.8,zorder=2))
-            ax.text(center,y+.105,title,ha='center',va='center',fontsize=7.7,
+            ax.text(center,y+(.06 if y==2.01 else .105),title,ha='center',va='center',fontsize=7.7,
+                    linespacing=1.03,
                     fontweight='bold',color='black',zorder=3)
-            ax.text(center,y-.070,detail,ha='center',va='center',fontsize=6.75,
+            ax.text(center,y-(.155 if y==2.01 else .070),detail,ha='center',va='center',fontsize=6.75,
                     linespacing=1.25,color='black',zorder=3)
         arrow=dict(arrowstyle='-|>',mutation_scale=8,linewidth=.8,
                    edgecolor='#202020',facecolor='#202020',shrinkA=0,shrinkB=0,
